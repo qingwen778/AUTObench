@@ -1,0 +1,5802 @@
+[
+  {
+    "prompt_index": 1,
+    "desc_merge": "In satellite deployment missions, engineers must select scientific instruments for launch where each instrument has a weight [1, 4, 2, 10, 6, 10, 9, 3, 1, 5], a volume [5, 5, 1, 1, 5, 5, 4, 4, 3, 4], and a scientific value [7, 17, 8, 14, 20, 17, 13, 11, 12, 19]. The launch vehicle has maximum payload weight 30 and maximum fairing volume 22 constraints. The objective is to maximize total scientific return by choosing instruments that fit within both limits, which directly impacts mission success and data collection capabilities.",
+    "data_template": {
+      "item_value": [
+        7,
+        17,
+        8,
+        14,
+        20,
+        17,
+        13,
+        11,
+        12,
+        19
+      ],
+      "item_weight": [
+        1,
+        4,
+        2,
+        10,
+        6,
+        10,
+        9,
+        3,
+        1,
+        5
+      ],
+      "item_volume": [
+        5,
+        5,
+        1,
+        1,
+        5,
+        5,
+        4,
+        4,
+        3,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 2,
+    "desc_merge": "A cloud service provider needs to allocate virtual machines to physical servers where each VM has a CPU requirement [4, 6, 7, 10, 8, 10, 2, 5, 6, 9], a memory requirement [1, 5, 1, 2, 5, 5, 2, 3, 1, 5], and a revenue contribution [20, 15, 15, 16, 14, 11, 18, 17, 9, 13]. Each physical server has maximum CPU capacity 40 and maximum memory capacity 18. The goal is to maximize total revenue by optimally packing VMs without exceeding server capacities, ensuring efficient resource utilization and energy savings.",
+    "data_template": {
+      "item_value": [
+        20,
+        15,
+        15,
+        16,
+        14,
+        11,
+        18,
+        17,
+        9,
+        13
+      ],
+      "item_weight": [
+        4,
+        6,
+        7,
+        10,
+        8,
+        10,
+        2,
+        5,
+        6,
+        9
+      ],
+      "item_volume": [
+        1,
+        5,
+        1,
+        2,
+        5,
+        5,
+        2,
+        3,
+        1,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 3,
+    "desc_merge": "A financial analyst must choose stocks for a client's portfolio where each stock has a risk score [1, 8, 1, 4, 5, 3, 9, 5, 5, 9], a liquidity measure [1, 4, 3, 5, 4, 1, 5, 5, 1, 3], and an expected return [11, 18, 10, 15, 19, 17, 13, 13, 20, 8]. The portfolio has maximum acceptable risk 30 and maximum illiquidity tolerance 19. The aim is to maximize total expected return while respecting both risk and liquidity constraints, which is vital for achieving balanced investment outcomes.",
+    "data_template": {
+      "item_value": [
+        11,
+        18,
+        10,
+        15,
+        19,
+        17,
+        13,
+        13,
+        20,
+        8
+      ],
+      "item_weight": [
+        1,
+        8,
+        1,
+        4,
+        5,
+        3,
+        9,
+        5,
+        5,
+        9
+      ],
+      "item_volume": [
+        1,
+        4,
+        3,
+        5,
+        4,
+        1,
+        5,
+        5,
+        1,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 4,
+    "desc_merge": "A distribution center must select items for a customer shipment where each product has a weight [2, 1, 8, 10, 7, 3, 3, 1, 3, 6], a storage volume [4, 5, 4, 4, 4, 1, 1, 1, 4, 2], and a priority score [10, 7, 19, 7, 15, 18, 16, 19, 9, 10]. The shipping box has maximum weight 26 and maximum volume 18 restrictions. The objective is to maximize total priority of shipped items while adhering to packaging limits, enhancing customer satisfaction and logistics efficiency.",
+    "data_template": {
+      "item_value": [
+        10,
+        7,
+        19,
+        7,
+        15,
+        18,
+        16,
+        19,
+        9,
+        10
+      ],
+      "item_weight": [
+        2,
+        1,
+        8,
+        10,
+        7,
+        3,
+        3,
+        1,
+        3,
+        6
+      ],
+      "item_volume": [
+        4,
+        5,
+        4,
+        4,
+        4,
+        1,
+        1,
+        1,
+        4,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 26,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 5,
+    "desc_merge": "Defense strategists must choose equipment for a tactical vehicle where each gear piece has a weight [3, 6, 6, 9, 10, 9, 1, 4, 8, 6], a space requirement [4, 3, 3, 4, 2, 2, 1, 1, 5, 4], and a combat effectiveness rating [18, 10, 13, 15, 2, 11, 11, 2, 12, 7]. The vehicle has maximum carrying weight 37 and maximum storage volume 17. The goal is to maximize total combat effectiveness while staying within transport capabilities, which directly influences mission readiness and operational success.",
+    "data_template": {
+      "item_value": [
+        18,
+        10,
+        13,
+        15,
+        2,
+        11,
+        11,
+        2,
+        12,
+        7
+      ],
+      "item_weight": [
+        3,
+        6,
+        6,
+        9,
+        10,
+        9,
+        1,
+        4,
+        8,
+        6
+      ],
+      "item_volume": [
+        4,
+        3,
+        3,
+        4,
+        2,
+        2,
+        1,
+        1,
+        5,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 6,
+    "desc_merge": "Household movers need to select which furniture and boxes to load onto a truck for a residential move, where each item has a weight [9, 5, 1, 4, 7, 4, 1, 3, 7, 10], a physical size [2, 3, 1, 3, 3, 2, 1, 4, 5, 1], and a priority value [19, 7, 12, 8, 11, 5, 8, 17, 5, 17] based on necessity. The moving truck has a maximum payload capacity 30 and a fixed cargo space 15. The objective is to maximize the total priority of the transported belongings while adhering to the truck's strict weight and spatial limits, ensuring a single, efficient trip.",
+    "data_template": {
+      "item_value": [
+        19,
+        7,
+        12,
+        8,
+        11,
+        5,
+        8,
+        17,
+        5,
+        17
+      ],
+      "item_weight": [
+        9,
+        5,
+        1,
+        4,
+        7,
+        4,
+        1,
+        3,
+        7,
+        10
+      ],
+      "item_volume": [
+        2,
+        3,
+        1,
+        3,
+        3,
+        2,
+        1,
+        4,
+        5,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 7,
+    "desc_merge": "University administrators must design a core curriculum by selecting courses from a list, where each course requires a student workload [1, 2, 5, 4, 3, 8, 2, 8, 1, 10], consumes a fixed number of classroom hours [5, 3, 2, 3, 4, 3, 1, 4, 2, 1], and has an educational value [10, 15, 12, 14, 16, 14, 1, 12, 16, 7]. The program has a maximum acceptable student workload 26 and a total available classroom hours 16. The goal is to maximize the aggregate educational value of the selected courses without surpassing the program's workload and scheduling constraints, shaping a balanced and high-quality education.",
+    "data_template": {
+      "item_value": [
+        10,
+        15,
+        12,
+        14,
+        16,
+        14,
+        1,
+        12,
+        16,
+        7
+      ],
+      "item_weight": [
+        1,
+        2,
+        5,
+        4,
+        3,
+        8,
+        2,
+        8,
+        1,
+        10
+      ],
+      "item_volume": [
+        5,
+        3,
+        2,
+        3,
+        4,
+        3,
+        1,
+        4,
+        2,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 26,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 8,
+    "desc_merge": "A player in a role-playing game must choose items to carry in a limited inventory, where each item, like a weapon or potion, has a character encumbrance [9, 9, 10, 1, 7, 7, 2, 6, 1, 8], an inventory slot size [2, 3, 3, 5, 5, 1, 1, 3, 2, 3], and a gameplay benefit score [5, 16, 15, 2, 6, 6, 8, 1, 12, 3]. The character's inventory has a maximum encumbrance limit 36 and a fixed number of slots 16. The challenge is to select items that maximize the total benefit for adventuring while staying within the character's carrying capacity and inventory space, which is vital for in-game survival.",
+    "data_template": {
+      "item_value": [
+        5,
+        16,
+        15,
+        2,
+        6,
+        6,
+        8,
+        1,
+        12,
+        3
+      ],
+      "item_weight": [
+        9,
+        9,
+        10,
+        1,
+        7,
+        7,
+        2,
+        6,
+        1,
+        8
+      ],
+      "item_volume": [
+        2,
+        3,
+        3,
+        5,
+        5,
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 9,
+    "desc_merge": "A food bank organization receives various donated food items and must choose which ones to accept for distribution, where each item has a physical weight [4, 3, 8, 1, 1, 2, 6, 9, 10, 4], a storage space requirement [13, 19, 19, 14, 10, 16, 19, 5, 16, 20], and a nutritional value [3, 5, 2, 2, 5, 3, 2, 5, 4, 5]. Their storage facility has a maximum floor load capacity 28 and a total refrigerated and shelf space 21. The aim is to maximize the total nutritional value of the stored donations without exceeding the facility's structural weight limit and available storage volume, optimizing aid to the community.",
+    "data_template": {
+      "item_value": [
+        13,
+        19,
+        19,
+        14,
+        10,
+        16,
+        19,
+        5,
+        16,
+        20
+      ],
+      "item_weight": [
+        4,
+        3,
+        8,
+        1,
+        1,
+        2,
+        6,
+        9,
+        10,
+        4
+      ],
+      "item_volume": [
+        3,
+        5,
+        2,
+        2,
+        5,
+        3,
+        2,
+        5,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 10,
+    "desc_merge": "A library is digitizing its special collection but faces constraints on its server infrastructure; each document to be digitized has a file size [2, 5, 5, 6, 4, 6, 1, 1, 8, 1], requires a specific amount of processing time [1, 1, 1, 4, 1, 5, 2, 2, 2, 2], and has a historical significance score [5, 15, 1, 7, 16, 6, 8, 8, 12, 18]. The library's server has a maximum storage capacity 23 and a total allocated processing time budget 12 for the project. The objective is to select a subset of documents that maximizes the total historical significance archived while complying with the digital storage and processing time limits, preserving the most valuable artifacts.",
+    "data_template": {
+      "item_value": [
+        5,
+        15,
+        1,
+        7,
+        16,
+        6,
+        8,
+        8,
+        12,
+        18
+      ],
+      "item_weight": [
+        2,
+        5,
+        5,
+        6,
+        4,
+        6,
+        1,
+        1,
+        8,
+        1
+      ],
+      "item_volume": [
+        1,
+        1,
+        1,
+        4,
+        1,
+        5,
+        2,
+        2,
+        2,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 23,
+        "volume": 12
+      }
+    }
+  },
+  {
+    "prompt_index": 11,
+    "desc_merge": "In commercial aviation, cargo managers must decide which freight items to load onto an aircraft's cargo hold where each item has a specific weight [2, 10, 8, 7, 3, 10, 7, 2, 1, 3], a storage volume [2, 4, 5, 3, 1, 3, 5, 5, 3, 4], and a revenue value [7, 17, 16, 16, 14, 19, 15, 19, 3, 2]; the aircraft has strict maximum takeoff weight 31 and available cargo space 21 constraints, and the objective is to maximize total revenue from transported freight without breaching either the weight or volume limits, a vital process for airline profitability.",
+    "data_template": {
+      "item_value": [
+        7,
+        17,
+        16,
+        16,
+        14,
+        19,
+        15,
+        19,
+        3,
+        2
+      ],
+      "item_weight": [
+        2,
+        10,
+        8,
+        7,
+        3,
+        10,
+        7,
+        2,
+        1,
+        3
+      ],
+      "item_volume": [
+        2,
+        4,
+        5,
+        3,
+        1,
+        3,
+        5,
+        5,
+        3,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 12,
+    "desc_merge": "For a software deployment, a DevOps engineer needs to choose which virtual machine instances to run on a physical server, where each instance type consumes a certain amount of CPU share [10, 8, 5, 6, 4, 6, 9, 8, 10, 3], memory [1, 4, 3, 4, 2, 4, 5, 5, 3, 4], and provides a performance benefit [14, 12, 10, 3, 9, 11, 3, 17, 17, 5]; the host server has a total CPU capacity 41 and a total RAM capacity 21, and the goal is to maximize the aggregate performance of the hosted instances while ensuring the server's computational and memory resources are not exceeded, optimizing infrastructure utilization.",
+    "data_template": {
+      "item_value": [
+        14,
+        12,
+        10,
+        3,
+        9,
+        11,
+        3,
+        17,
+        17,
+        5
+      ],
+      "item_weight": [
+        10,
+        8,
+        5,
+        6,
+        4,
+        6,
+        9,
+        8,
+        10,
+        3
+      ],
+      "item_volume": [
+        1,
+        4,
+        3,
+        4,
+        2,
+        4,
+        5,
+        5,
+        3,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 41,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 13,
+    "desc_merge": "A manufacturing plant manager must select a set of product batches to schedule in a single production cycle, with each batch requiring a machine runtime [5, 10, 9, 3, 5, 5, 9, 9, 8, 5], a floor space [5, 3, 3, 4, 5, 3, 3, 4, 2, 3], and generating a profit [1, 5, 11, 3, 4, 15, 19, 10, 7, 11]; the factory has a maximum available machine hours 40 and a limited cleanroom area 21 per cycle, and the aim is to maximize the total profit from the produced batches without surpassing the time or space constraints, which directly impacts operational throughput.",
+    "data_template": {
+      "item_value": [
+        1,
+        5,
+        11,
+        3,
+        4,
+        15,
+        19,
+        10,
+        7,
+        11
+      ],
+      "item_weight": [
+        5,
+        10,
+        9,
+        3,
+        5,
+        5,
+        9,
+        9,
+        8,
+        5
+      ],
+      "item_volume": [
+        5,
+        3,
+        3,
+        4,
+        5,
+        3,
+        3,
+        4,
+        2,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 14,
+    "desc_merge": "Event organizers for a music festival need to book artists for a single stage, where each performer has a set duration [2, 2, 9, 8, 9, 9, 9, 5, 10, 5], a stage setup footprint [3, 5, 1, 3, 4, 2, 2, 3, 1, 2], and an expected draw (popularity) [2, 6, 1, 20, 19, 7, 7, 16, 5, 6]; the stage has a total available time slot 40 and a maximum physical space 15 for equipment, and the objective is to maximize the overall audience attraction by selecting the optimal lineup that fits within the strict temporal and spatial limits of the venue.",
+    "data_template": {
+      "item_value": [
+        2,
+        6,
+        1,
+        20,
+        19,
+        7,
+        7,
+        16,
+        5,
+        6
+      ],
+      "item_weight": [
+        2,
+        2,
+        9,
+        8,
+        9,
+        9,
+        9,
+        5,
+        10,
+        5
+      ],
+      "item_volume": [
+        3,
+        5,
+        1,
+        3,
+        4,
+        2,
+        2,
+        3,
+        1,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 15,
+    "desc_merge": "Clinical researchers are selecting candidate drugs for a combined trial phase, where each drug candidate requires a dosage quantity [1, 6, 9, 2, 4, 2, 8, 7, 5, 1], a storage requirement for stability [2, 4, 2, 1, 4, 5, 4, 5, 4, 4], and has an estimated therapeutic potential [1, 17, 9, 2, 18, 10, 7, 2, 1, 6]; the trial protocol has a maximum total dosage limit for patient safety 27 and a fixed refrigeration capacity 21, and the goal is to maximize the collective therapeutic potential of the tested drugs while adhering to the safety and logistical constraints of the clinical study.",
+    "data_template": {
+      "item_value": [
+        1,
+        17,
+        9,
+        2,
+        18,
+        10,
+        7,
+        2,
+        1,
+        6
+      ],
+      "item_weight": [
+        1,
+        6,
+        9,
+        2,
+        4,
+        2,
+        8,
+        7,
+        5,
+        1
+      ],
+      "item_volume": [
+        2,
+        4,
+        2,
+        1,
+        4,
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 16,
+    "desc_merge": "A building contractor needs to select materials from a supplier's catalog to purchase within a single truckload, where each material type has a weight [7, 1, 9, 7, 3, 3, 1, 10, 4, 4], a storage volume [3, 3, 4, 4, 4, 4, 1, 5, 2, 1], and a project criticality value [9, 4, 4, 17, 2, 10, 13, 3, 2, 16]. The delivery truck has a maximum payload 29 and a cargo space limit 18. The objective is to maximize the total criticality of materials acquired for the ongoing construction phase without surpassing the vehicle's physical constraints, directly impacting project timelines and minimizing additional delivery trips.",
+    "data_template": {
+      "item_value": [
+        9,
+        4,
+        4,
+        17,
+        2,
+        10,
+        13,
+        3,
+        2,
+        16
+      ],
+      "item_weight": [
+        7,
+        1,
+        9,
+        7,
+        3,
+        3,
+        1,
+        10,
+        4,
+        4
+      ],
+      "item_volume": [
+        3,
+        3,
+        4,
+        4,
+        4,
+        4,
+        1,
+        5,
+        2,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 17,
+    "desc_merge": "An art gallery must securely transport a selection of high-value artworks to a special exhibition, where each piece has a fragile weight [8, 9, 2, 5, 5, 6, 2, 9, 1, 1], a crate size [1, 4, 5, 3, 5, 5, 3, 3, 5, 5], and an insured value [14, 3, 20, 2, 17, 13, 9, 9, 18, 15]. The specialized art transport vehicle has a strict maximum load 28 and a fixed internal space 23. The goal is to maximize the total insured value of the transported collection while adhering to the vehicle's strict weight and volume restrictions, ensuring the safety and security of the priceless items.",
+    "data_template": {
+      "item_value": [
+        14,
+        3,
+        20,
+        2,
+        17,
+        13,
+        9,
+        9,
+        18,
+        15
+      ],
+      "item_weight": [
+        8,
+        9,
+        2,
+        5,
+        5,
+        6,
+        2,
+        9,
+        1,
+        1
+      ],
+      "item_volume": [
+        1,
+        4,
+        5,
+        3,
+        5,
+        5,
+        3,
+        3,
+        5,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 23
+      }
+    }
+  },
+  {
+    "prompt_index": 18,
+    "desc_merge": "A chip fabrication plant must choose a set of silicon wafers from a production batch to process in a single furnace cycle, where each wafer lot has a handling weight [4, 4, 2, 9, 4, 1, 5, 10, 3, 9], a required storage footprint [1, 4, 2, 5, 4, 4, 3, 4, 2, 1], and a potential revenue [9, 20, 3, 1, 20, 5, 13, 4, 17, 7]. The processing furnace has a maximum weight tolerance 30 and a fixed chamber capacity 18. The aim is to maximize the total potential revenue from the processed wafers without exceeding the furnace's operational limits, which is vital for production throughput and yield.",
+    "data_template": {
+      "item_value": [
+        9,
+        20,
+        3,
+        1,
+        20,
+        5,
+        13,
+        4,
+        17,
+        7
+      ],
+      "item_weight": [
+        4,
+        4,
+        2,
+        9,
+        4,
+        1,
+        5,
+        10,
+        3,
+        9
+      ],
+      "item_volume": [
+        1,
+        4,
+        2,
+        5,
+        4,
+        4,
+        3,
+        4,
+        2,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 19,
+    "desc_merge": "A team of biologists planning a remote field study must decide which scientific instruments to bring, where each instrument has a pack weight [10, 3, 5, 2, 3, 7, 1, 3, 2, 5], a bulkiness [3, 1, 1, 2, 2, 4, 5, 2, 5, 5], and a research data value [18, 2, 15, 8, 3, 13, 1, 9, 7, 7]. Their all-terrain vehicle has a maximum gross vehicle weight 24 and a limited storage area 18. The objective is to maximize the collective data-gathering potential of the equipment selected while ensuring the vehicle remains within its safe operating weight and space capacities, which is essential for the expedition's success in isolated locations.",
+    "data_template": {
+      "item_value": [
+        18,
+        2,
+        15,
+        8,
+        3,
+        13,
+        1,
+        9,
+        7,
+        7
+      ],
+      "item_weight": [
+        10,
+        3,
+        5,
+        2,
+        3,
+        7,
+        1,
+        3,
+        2,
+        5
+      ],
+      "item_volume": [
+        3,
+        1,
+        1,
+        2,
+        2,
+        4,
+        5,
+        2,
+        5,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 24,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 20,
+    "desc_merge": "A catering company designs a menu for a large event where each dish option has a preparation time [4, 7, 2, 8, 2, 6, 1, 7, 3, 6], a storage space requirement [2, 4, 4, 2, 3, 2, 5, 4, 4, 4], and a guest satisfaction score [13, 6, 8, 2, 13, 5, 6, 1, 5, 17]. The kitchen has maximum preparation time 27 and maximum refrigeration space 20 constraints. The objective is to select dishes that maximize total guest satisfaction while adhering to time and space limitations, ensuring efficient kitchen operations and high attendee enjoyment.",
+    "data_template": {
+      "item_value": [
+        13,
+        6,
+        8,
+        2,
+        13,
+        5,
+        6,
+        1,
+        5,
+        17
+      ],
+      "item_weight": [
+        4,
+        7,
+        2,
+        8,
+        2,
+        6,
+        1,
+        7,
+        3,
+        6
+      ],
+      "item_volume": [
+        2,
+        4,
+        4,
+        2,
+        3,
+        2,
+        5,
+        4,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 21,
+    "desc_merge": "A video production studio manages its archival system where each media file has a processing load [7, 1, 10, 7, 8, 4, 10, 2, 3, 1], a storage size [8, 3, 2, 3, 18, 19, 14, 1, 3, 17], and a historical importance [4, 3, 1, 3, 5, 2, 4, 4, 1, 4]. The server has maximum processing capacity 31 and maximum storage space 18 restrictions. The aim is to retain files that maximize total historical value without exceeding system constraints, preserving critical assets while maintaining performance.",
+    "data_template": {
+      "item_value": [
+        8,
+        3,
+        2,
+        3,
+        18,
+        19,
+        14,
+        1,
+        3,
+        17
+      ],
+      "item_weight": [
+        7,
+        1,
+        10,
+        7,
+        8,
+        4,
+        10,
+        2,
+        3,
+        1
+      ],
+      "item_volume": [
+        4,
+        3,
+        1,
+        3,
+        5,
+        2,
+        4,
+        4,
+        1,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 22,
+    "desc_merge": "A trade show exhibitor selects display items where each exhibit has a setup time [4, 6, 8, 5, 10, 9, 7, 10, 5, 6], a footprint area [4, 5, 3, 1, 1, 1, 3, 5, 1, 3], and an engagement value [4, 4, 20, 9, 19, 6, 8, 4, 2, 3]. The booth has maximum setup duration 42 and maximum floor space 16 limits. The goal is to choose items that maximize visitor engagement while staying within time and spatial boundaries, optimizing impact within logistical confines.",
+    "data_template": {
+      "item_value": [
+        4,
+        4,
+        20,
+        9,
+        19,
+        6,
+        8,
+        4,
+        2,
+        3
+      ],
+      "item_weight": [
+        4,
+        6,
+        8,
+        5,
+        10,
+        9,
+        7,
+        10,
+        5,
+        6
+      ],
+      "item_volume": [
+        4,
+        5,
+        3,
+        1,
+        1,
+        1,
+        3,
+        5,
+        1,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 42,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 23,
+    "desc_merge": "A marketing firm chooses advertising slots where each slot has a cost [6, 9, 4, 9, 1, 6, 2, 8, 2, 6], an audience reach [1, 4, 1, 4, 5, 3, 3, 4, 1, 1], and an expected conversion rate [9, 13, 14, 12, 10, 13, 4, 7, 5, 17]. The campaign has a total budget 31 and a minimum reach requirement 16. The objective is to maximize total conversions while respecting budget and reach thresholds, enhancing campaign effectiveness through strategic media buying.",
+    "data_template": {
+      "item_value": [
+        9,
+        13,
+        14,
+        12,
+        10,
+        13,
+        4,
+        7,
+        5,
+        17
+      ],
+      "item_weight": [
+        6,
+        9,
+        4,
+        9,
+        1,
+        6,
+        2,
+        8,
+        2,
+        6
+      ],
+      "item_volume": [
+        1,
+        4,
+        1,
+        4,
+        5,
+        3,
+        3,
+        4,
+        1,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 24,
+    "desc_merge": "A funding agency evaluates research proposals where each project has a resource requirement [1, 5, 2, 6, 2, 6, 2, 2, 7, 2], a duration [1, 4, 3, 3, 3, 5, 4, 2, 3, 1], and a scientific impact score [7, 10, 1, 18, 6, 12, 5, 5, 15, 15]. The program has a total resource allocation 21 and a maximum timeline 17. The aim is to fund projects that maximize collective scientific impact without surpassing resource or temporal constraints, advancing knowledge efficiently within fixed parameters.",
+    "data_template": {
+      "item_value": [
+        7,
+        10,
+        1,
+        18,
+        6,
+        12,
+        5,
+        5,
+        15,
+        15
+      ],
+      "item_weight": [
+        1,
+        5,
+        2,
+        6,
+        2,
+        6,
+        2,
+        2,
+        7,
+        2
+      ],
+      "item_volume": [
+        1,
+        4,
+        3,
+        3,
+        3,
+        5,
+        4,
+        2,
+        3,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 21,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 25,
+    "desc_merge": "In freight logistics, a consolidation center must select a set of palletized shipments to load into a standard shipping container for an international voyage, where each pallet has a specific weight [10, 7, 6, 7, 2, 9, 6, 3, 5, 5], a volume [1, 2, 5, 1, 2, 5, 1, 3, 5, 2], and a revenue value [12, 13, 17, 6, 10, 18, 15, 8, 2, 6]. The container has strict maximum gross weight 36 and internal volume 16 restrictions. The objective is to maximize the total revenue from the shipped pallets without breaching the container's physical limits, a process vital for optimizing carrier profitability and vessel space utilization.",
+    "data_template": {
+      "item_value": [
+        12,
+        13,
+        17,
+        6,
+        10,
+        18,
+        15,
+        8,
+        2,
+        6
+      ],
+      "item_weight": [
+        10,
+        7,
+        6,
+        7,
+        2,
+        9,
+        6,
+        3,
+        5,
+        5
+      ],
+      "item_volume": [
+        1,
+        2,
+        5,
+        1,
+        2,
+        5,
+        1,
+        3,
+        5,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 26,
+    "desc_merge": "When provisioning an offshore oil platform, supply planners must choose which spare parts and consumables to send on a limited helicopter flight, with each item having a weight [6, 3, 9, 3, 8, 3, 3, 9, 9, 5], a volume [5, 5, 5, 2, 2, 3, 2, 4, 4, 1], and a criticality value [20, 12, 17, 15, 1, 8, 7, 5, 19, 5] for platform operations. The helicopter's payload has a maximum weight 34 and a maximum storage volume 19. The goal is to maximize the total criticality of the delivered supplies, ensuring uninterrupted platform functionality while adhering to the aircraft's stringent safety and capacity constraints.",
+    "data_template": {
+      "item_value": [
+        20,
+        12,
+        17,
+        15,
+        1,
+        8,
+        7,
+        5,
+        19,
+        5
+      ],
+      "item_weight": [
+        6,
+        3,
+        9,
+        3,
+        8,
+        3,
+        3,
+        9,
+        9,
+        5
+      ],
+      "item_volume": [
+        5,
+        5,
+        5,
+        2,
+        2,
+        3,
+        2,
+        4,
+        4,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 27,
+    "desc_merge": "A mobile medical unit preparing for a remote outreach mission needs to select medical supplies and equipment, each with a weight [1, 3, 4, 3, 10, 6, 1, 4, 2, 2], a volume [3, 5, 5, 3, 2, 3, 4, 5, 4, 3], and an expected patient benefit score [1, 16, 15, 1, 6, 17, 2, 19, 18, 20]. The vehicle used for transport has a maximum payload capacity 21 and a limited storage area with volume 22. The aim is to maximize the total expected benefit for the community served by carefully choosing items that stay within the vehicle's weight and space limitations, which directly impacts the clinic's effectiveness.",
+    "data_template": {
+      "item_value": [
+        1,
+        16,
+        15,
+        1,
+        6,
+        17,
+        2,
+        19,
+        18,
+        20
+      ],
+      "item_weight": [
+        1,
+        3,
+        4,
+        3,
+        10,
+        6,
+        1,
+        4,
+        2,
+        2
+      ],
+      "item_volume": [
+        3,
+        5,
+        5,
+        3,
+        2,
+        3,
+        4,
+        5,
+        4,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 21,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 28,
+    "desc_merge": "A film production manager must decide which pieces of rental equipment to procure for a location shoot, where each item, like lighting or sound gear, has a weight [4, 3, 3, 4, 10, 10, 4, 5, 8, 6], a volume [5, 5, 3, 4, 4, 2, 2, 3, 3, 4], and a creative necessity value [4, 11, 9, 17, 10, 14, 17, 14, 13, 13]. The production truck has a maximum load capacity 34 and a finite cargo space of volume 21. The objective is to maximize the total creative value of the equipment selected for the shoot without exceeding the transportation vehicle's weight and volume capacities, which is essential for staying on schedule and budget.",
+    "data_template": {
+      "item_value": [
+        4,
+        11,
+        9,
+        17,
+        10,
+        14,
+        17,
+        14,
+        13,
+        13
+      ],
+      "item_weight": [
+        4,
+        3,
+        3,
+        4,
+        10,
+        10,
+        4,
+        5,
+        8,
+        6
+      ],
+      "item_volume": [
+        5,
+        5,
+        3,
+        4,
+        4,
+        2,
+        2,
+        3,
+        3,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 29,
+    "desc_merge": "An agricultural research station with limited greenhouse space must choose which seed varieties to include in a biodiversity preservation study, where each seed packet has a weight [10, 6, 4, 6, 1, 7, 7, 10, 6, 8], a storage volume [1, 2, 4, 1, 4, 1, 2, 2, 1, 4], and a genetic uniqueness value [19, 3, 9, 2, 19, 3, 2, 13, 11, 10]. The allocated storage facility has a maximum weight limit 39 for the shelving and a total volume 13. The goal is to maximize the total genetic diversity preserved by selecting a subset of seeds that complies with both the weight and volume constraints of the storage unit, thereby maximizing the conservation effort's scientific impact.",
+    "data_template": {
+      "item_value": [
+        19,
+        3,
+        9,
+        2,
+        19,
+        3,
+        2,
+        13,
+        11,
+        10
+      ],
+      "item_weight": [
+        10,
+        6,
+        4,
+        6,
+        1,
+        7,
+        7,
+        10,
+        6,
+        8
+      ],
+      "item_volume": [
+        1,
+        2,
+        4,
+        1,
+        4,
+        1,
+        2,
+        2,
+        1,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 30,
+    "desc_merge": "In corporate data management, IT administrators must select critical digital assets for backup storage on a secure server where each asset has a storage size [3, 4, 8, 9, 9, 4, 6, 10, 6, 4], processing load [1, 5, 3, 2, 2, 1, 3, 5, 5, 3], and business criticality score [8, 8, 5, 9, 18, 18, 6, 9, 1, 4]. The server has maximum storage capacity 37 and maximum processing threshold 18. The objective is to maximize total criticality while respecting both technical constraints, ensuring business continuity and regulatory compliance.",
+    "data_template": {
+      "item_value": [
+        8,
+        8,
+        5,
+        9,
+        18,
+        18,
+        6,
+        9,
+        1,
+        4
+      ],
+      "item_weight": [
+        3,
+        4,
+        8,
+        9,
+        9,
+        4,
+        6,
+        10,
+        6,
+        4
+      ],
+      "item_volume": [
+        1,
+        5,
+        3,
+        2,
+        2,
+        1,
+        3,
+        5,
+        5,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 31,
+    "desc_merge": "Engineers designing a solar farm must choose photovoltaic components for installation where each unit has physical mass [10, 6, 10, 2, 2, 3, 9, 9, 8, 5], surface area requirement [3, 2, 1, 3, 1, 2, 3, 2, 3, 2], and energy output value [15, 15, 14, 2, 19, 11, 11, 5, 9, 13]. The installation platform supports maximum weight 38 and maximum area 13. The goal is to maximize total energy generation while maintaining structural integrity and space efficiency.",
+    "data_template": {
+      "item_value": [
+        15,
+        15,
+        14,
+        2,
+        19,
+        11,
+        11,
+        5,
+        9,
+        13
+      ],
+      "item_weight": [
+        10,
+        6,
+        10,
+        2,
+        2,
+        3,
+        9,
+        9,
+        8,
+        5
+      ],
+      "item_volume": [
+        3,
+        2,
+        1,
+        3,
+        1,
+        2,
+        3,
+        2,
+        3,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 32,
+    "desc_merge": "Disaster preparedness specialists assemble survival kits where each item has weight [4, 6, 8, 5, 5, 5, 5, 3, 8, 1], bulkiness [4, 2, 1, 1, 5, 4, 4, 3, 1, 3], and survival importance [11, 2, 19, 10, 17, 19, 7, 2, 12, 10]. The evacuation container has maximum carryable weight 30 and maximum storage space 16. The aim is to maximize lifesaving capability while ensuring portability during emergency evacuations.",
+    "data_template": {
+      "item_value": [
+        11,
+        2,
+        19,
+        10,
+        17,
+        19,
+        7,
+        2,
+        12,
+        10
+      ],
+      "item_weight": [
+        4,
+        6,
+        8,
+        5,
+        5,
+        5,
+        5,
+        3,
+        8,
+        1
+      ],
+      "item_volume": [
+        4,
+        2,
+        1,
+        1,
+        5,
+        4,
+        4,
+        3,
+        1,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 33,
+    "desc_merge": "Cultural institution curators select artifacts for traveling exhibitions where each piece has handling weight [6, 3, 10, 9, 2, 9, 9, 5, 5, 8], display case volume [2, 3, 4, 1, 4, 3, 4, 1, 1, 5], and cultural significance [12, 8, 3, 8, 7, 18, 9, 9, 17, 10]. The transport system has maximum weight tolerance 39 and maximum spatial dimensions 16. The challenge is to maximize exhibition impact while adhering to conservation and logistics limitations.",
+    "data_template": {
+      "item_value": [
+        12,
+        8,
+        3,
+        8,
+        7,
+        18,
+        9,
+        9,
+        17,
+        10
+      ],
+      "item_weight": [
+        6,
+        3,
+        10,
+        9,
+        2,
+        9,
+        9,
+        5,
+        5,
+        8
+      ],
+      "item_volume": [
+        2,
+        3,
+        4,
+        1,
+        4,
+        3,
+        4,
+        1,
+        1,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 34,
+    "desc_merge": "Farmers organizing crop transportation must select produce batches where each batch has weight [5, 7, 9, 3, 6, 6, 2, 5, 5, 3], storage volume [1, 4, 2, 5, 1, 5, 5, 1, 2, 3], and market value [2, 14, 2, 8, 12, 11, 2, 12, 13, 7]. The transport vehicle has maximum load weight 30 and maximum cargo space 17. The objective is to maximize total market value while complying with vehicle capacity and preservation requirements.",
+    "data_template": {
+      "item_value": [
+        2,
+        14,
+        2,
+        8,
+        12,
+        11,
+        2,
+        12,
+        13,
+        7
+      ],
+      "item_weight": [
+        5,
+        7,
+        9,
+        3,
+        6,
+        6,
+        2,
+        5,
+        5,
+        3
+      ],
+      "item_volume": [
+        1,
+        4,
+        2,
+        5,
+        1,
+        5,
+        5,
+        1,
+        2,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 35,
+    "desc_merge": "In the music industry, tour managers must select audio and lighting equipment for transport between venues, where each piece of gear has a weight [4, 4, 9, 1, 3, 4, 3, 7, 5, 3], a volume [4, 1, 3, 1, 4, 3, 1, 5, 2, 2], and a criticality value [13, 2, 18, 12, 10, 9, 12, 16, 19, 10] for the performance. The cargo truck has a strict maximum weight 25 and a maximum volume 15 it can carry. The objective is to maximize the total criticality of the equipment loaded, ensuring the show's quality, while adhering to the truck's physical constraints to avoid logistical delays.",
+    "data_template": {
+      "item_value": [
+        13,
+        2,
+        18,
+        12,
+        10,
+        9,
+        12,
+        16,
+        19,
+        10
+      ],
+      "item_weight": [
+        4,
+        4,
+        9,
+        1,
+        3,
+        4,
+        3,
+        7,
+        5,
+        3
+      ],
+      "item_volume": [
+        4,
+        1,
+        3,
+        1,
+        4,
+        3,
+        1,
+        5,
+        2,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 36,
+    "desc_merge": "A hospital pharmacy must choose which medications to include in a weekly restocking delivery, where each drug has a weight [7, 4, 9, 9, 8, 7, 7, 10, 5, 3], a storage volume [4, 1, 4, 2, 3, 1, 4, 3, 4, 5], and a priority value [5, 17, 5, 15, 4, 3, 14, 4, 3, 9] based on patient demand and critical need. The delivery cooler has a maximum weight 41 and a maximum internal volume 18. The goal is to maximize the total priority of the selected drugs to best serve patient care, without exceeding the cooler's capacity limits.",
+    "data_template": {
+      "item_value": [
+        5,
+        17,
+        5,
+        15,
+        4,
+        3,
+        14,
+        4,
+        3,
+        9
+      ],
+      "item_weight": [
+        7,
+        4,
+        9,
+        9,
+        8,
+        7,
+        7,
+        10,
+        5,
+        3
+      ],
+      "item_volume": [
+        4,
+        1,
+        4,
+        2,
+        3,
+        1,
+        4,
+        3,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 41,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 37,
+    "desc_merge": "Marine biologists on a research cruise must decide which sampling equipment to deploy, where each instrument has a weight [9, 3, 10, 5, 10, 1, 2, 3, 8, 5], a stowage volume [3, 1, 2, 1, 4, 4, 5, 3, 1, 3], and an expected scientific data value [10, 19, 19, 19, 11, 15, 3, 19, 2, 20]. The small submersible vehicle used for deployment has a maximum payload weight 33 and a maximum storage volume 16. The aim is to maximize the total scientific value of the data collected by selecting an optimal set of instruments that fits within the submersible's strict confines.",
+    "data_template": {
+      "item_value": [
+        10,
+        19,
+        19,
+        19,
+        11,
+        15,
+        3,
+        19,
+        2,
+        20
+      ],
+      "item_weight": [
+        9,
+        3,
+        10,
+        5,
+        10,
+        1,
+        2,
+        3,
+        8,
+        5
+      ],
+      "item_volume": [
+        3,
+        1,
+        2,
+        1,
+        4,
+        4,
+        5,
+        3,
+        1,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 38,
+    "desc_merge": "A store manager must select products to place on a premium display shelf, where each product has a weight [2, 8, 5, 6, 5, 8, 10, 5, 7, 1] (for shelf load), a physical size [1, 4, 2, 3, 5, 5, 5, 5, 3, 5], and a marginal profit value [15, 20, 18, 12, 1, 13, 15, 19, 9, 17]. The shelf has a maximum weight capacity 34 and a total available display volume 22. The objective is to maximize the total profit from the displayed items by choosing the best product mix, while ensuring the shelf's structural and spatial limits are not surpassed.",
+    "data_template": {
+      "item_value": [
+        15,
+        20,
+        18,
+        12,
+        1,
+        13,
+        15,
+        19,
+        9,
+        17
+      ],
+      "item_weight": [
+        2,
+        8,
+        5,
+        6,
+        5,
+        8,
+        10,
+        5,
+        7,
+        1
+      ],
+      "item_volume": [
+        1,
+        4,
+        2,
+        3,
+        5,
+        5,
+        5,
+        5,
+        3,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 39,
+    "desc_merge": "In professional sports logistics, team managers must select which equipment items to load into a team van for an away game, where each piece of gear, from medical kits to training apparatus, has a specific weight [5, 7, 1, 3, 10, 10, 9, 1, 8, 9], a bulkiness represented by volume [4, 4, 3, 1, 5, 4, 4, 1, 5, 5], and a criticality value [9, 19, 4, 17, 8, 18, 20, 11, 20, 7] for game-day success. The transport van has a strict maximum weight 37 and a maximum cargo space 21 to adhere to. The objective is to maximize the total criticality of the transported equipment while ensuring the vehicle's weight and volumetric capacities are not exceeded, a vital process for optimal team performance and logistical efficiency.",
+    "data_template": {
+      "item_value": [
+        9,
+        19,
+        4,
+        17,
+        8,
+        18,
+        20,
+        11,
+        20,
+        7
+      ],
+      "item_weight": [
+        5,
+        7,
+        1,
+        3,
+        10,
+        10,
+        9,
+        1,
+        8,
+        9
+      ],
+      "item_volume": [
+        4,
+        4,
+        3,
+        1,
+        5,
+        4,
+        4,
+        1,
+        5,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 40,
+    "desc_merge": "Manufacturing facilities face the challenge of stocking a centralized tool crib with a selection of tools and instruments where each tool has an associated weight [4, 5, 1, 5, 3, 10, 7, 3, 3, 1], a storage space requirement [3, 2, 1, 5, 4, 2, 2, 5, 2, 3], and a frequency-of-use value [2, 18, 13, 9, 12, 8, 4, 7, 18, 13] that indicates its importance to production lines. The tool crib itself has physical constraints of a maximum supported weight 25 and a fixed storage volume 17. The goal is to choose a subset of tools that maximizes the overall utility based on usage frequency without surpassing the crib's structural weight limit or available space, thereby minimizing production downtime.",
+    "data_template": {
+      "item_value": [
+        2,
+        18,
+        13,
+        9,
+        12,
+        8,
+        4,
+        7,
+        18,
+        13
+      ],
+      "item_weight": [
+        4,
+        5,
+        1,
+        5,
+        3,
+        10,
+        7,
+        3,
+        3,
+        1
+      ],
+      "item_volume": [
+        3,
+        2,
+        1,
+        5,
+        4,
+        2,
+        2,
+        5,
+        2,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 41,
+    "desc_merge": "During underwater resupply operations, a submarine must be loaded with vital provisions and spare parts, each item characterized by its mass [7, 7, 2, 4, 1, 4, 6, 7, 9, 2], its stowage volume [3, 2, 5, 3, 3, 2, 2, 4, 5, 5], and its strategic necessity value [12, 18, 19, 19, 2, 6, 15, 8, 20, 20] for the extended mission. The submarine has critical limits for total buoyancy affected by weight 29 and internal storage capacity 20. The aim is to maximize the collective strategic value of the loaded items while strictly adhering to both the weight and volume constraints, which is paramount for the vessel's operational range and crew survival.",
+    "data_template": {
+      "item_value": [
+        12,
+        18,
+        19,
+        19,
+        2,
+        6,
+        15,
+        8,
+        20,
+        20
+      ],
+      "item_weight": [
+        7,
+        7,
+        2,
+        4,
+        1,
+        4,
+        6,
+        7,
+        9,
+        2
+      ],
+      "item_volume": [
+        3,
+        2,
+        5,
+        3,
+        3,
+        2,
+        2,
+        4,
+        5,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 42,
+    "desc_merge": "For a mobile scientific unit deployed in remote areas, researchers need to select which analytical instruments to include, with each instrument having a mass [1, 4, 8, 9, 4, 10, 3, 4, 2, 1], a size [2, 2, 5, 3, 5, 5, 3, 1, 1, 5], and a research value [9, 10, 14, 11, 5, 13, 16, 17, 15, 19] correlating to its experimental importance. The mobile lab vehicle imposes a maximum axle weight 27 and a finite interior space 19. The optimization problem is to maximize the total research capability by selecting instruments whose combined weight and volume do not exceed the vehicle's limits, ensuring the unit's mobility and scientific effectiveness.",
+    "data_template": {
+      "item_value": [
+        9,
+        10,
+        14,
+        11,
+        5,
+        13,
+        16,
+        17,
+        15,
+        19
+      ],
+      "item_weight": [
+        1,
+        4,
+        8,
+        9,
+        4,
+        10,
+        3,
+        4,
+        2,
+        1
+      ],
+      "item_volume": [
+        2,
+        2,
+        5,
+        3,
+        5,
+        5,
+        3,
+        1,
+        1,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 43,
+    "desc_merge": "In tactical operations, commanders must select critical supplies to airdrop to forward units where each supply crate has a weight [2, 4, 2, 10, 4, 7, 4, 5, 7, 6], a volume [2, 2, 5, 4, 2, 1, 5, 4, 2, 4], and a tactical priority value [16, 14, 9, 18, 14, 11, 4, 14, 15, 7]. The aircraft has maximum cargo weight 30 and maximum storage volume 18 restrictions. The objective is to maximize the tactical value delivered while ensuring payload constraints are met, which directly impacts mission success and troop survivability.",
+    "data_template": {
+      "item_value": [
+        16,
+        14,
+        9,
+        18,
+        14,
+        11,
+        4,
+        14,
+        15,
+        7
+      ],
+      "item_weight": [
+        2,
+        4,
+        2,
+        10,
+        4,
+        7,
+        4,
+        5,
+        7,
+        6
+      ],
+      "item_volume": [
+        2,
+        2,
+        5,
+        4,
+        2,
+        1,
+        5,
+        4,
+        2,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 44,
+    "desc_merge": "Forensic investigators need to select digital evidence files for transfer to a secure server where each file has a data size [10, 4, 2, 10, 1, 7, 2, 2, 5, 2], a processing complexity [2, 4, 5, 4, 4, 1, 2, 1, 5, 4], and an evidentiary value [6, 8, 7, 20, 20, 16, 3, 14, 5, 19]. The transfer system has maximum data load 27 and maximum processing capacity 19 limits. The goal is to maximize the total evidentiary value transferred while staying within both technical constraints, ensuring critical evidence is preserved for legal proceedings.",
+    "data_template": {
+      "item_value": [
+        6,
+        8,
+        7,
+        20,
+        20,
+        16,
+        3,
+        14,
+        5,
+        19
+      ],
+      "item_weight": [
+        10,
+        4,
+        2,
+        10,
+        1,
+        7,
+        2,
+        2,
+        5,
+        2
+      ],
+      "item_volume": [
+        2,
+        4,
+        5,
+        4,
+        4,
+        1,
+        2,
+        1,
+        5,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 45,
+    "desc_merge": "City planners must choose recreational facilities to install in a new park where each facility has a land footprint [8, 7, 10, 1, 5, 10, 1, 8, 8, 1], a maintenance requirement [4, 3, 5, 3, 1, 1, 3, 3, 4, 5], and a community benefit score [1, 3, 8, 4, 18, 2, 16, 5, 9, 14]. The park has maximum area 35 and maximum maintenance budget 19 constraints. The aim is to maximize overall community benefit while adhering to spatial and resource limitations, which determines the park's functionality and public satisfaction.",
+    "data_template": {
+      "item_value": [
+        1,
+        3,
+        8,
+        4,
+        18,
+        2,
+        16,
+        5,
+        9,
+        14
+      ],
+      "item_weight": [
+        8,
+        7,
+        10,
+        1,
+        5,
+        10,
+        1,
+        8,
+        8,
+        1
+      ],
+      "item_volume": [
+        4,
+        3,
+        5,
+        3,
+        1,
+        1,
+        3,
+        3,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 46,
+    "desc_merge": "Movie producers must select camera equipment to rent for a shoot where each item has a physical weight [9, 7, 3, 7, 1, 3, 4, 9, 5, 6], a setup complexity [5, 2, 5, 2, 1, 2, 4, 3, 1, 2], and a production value contribution [5, 2, 5, 14, 10, 7, 11, 19, 4, 11]. The production van has maximum payload 32 and maximum setup time allowance 16 restrictions. The objective is to maximize the total production value while respecting both physical and temporal constraints, directly affecting filming efficiency and artistic quality.",
+    "data_template": {
+      "item_value": [
+        5,
+        2,
+        5,
+        14,
+        10,
+        7,
+        11,
+        19,
+        4,
+        11
+      ],
+      "item_weight": [
+        9,
+        7,
+        3,
+        7,
+        1,
+        3,
+        4,
+        9,
+        5,
+        6
+      ],
+      "item_volume": [
+        5,
+        2,
+        5,
+        2,
+        1,
+        2,
+        4,
+        3,
+        1,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 47,
+    "desc_merge": "Field archaeologists must choose artifacts for transportation to a research lab where each artifact has a physical mass [6, 5, 3, 5, 6, 10, 10, 1, 3, 5], a fragility rating [4, 2, 2, 4, 4, 1, 1, 2, 2, 3], and a research significance value [12, 11, 3, 11, 7, 1, 9, 3, 17, 1]. The transport case has maximum safe weight 32 and maximum protection capacity 15 limits. The goal is to maximize the total research significance transported while ensuring no damage occurs during transit, which preserves invaluable historical information.",
+    "data_template": {
+      "item_value": [
+        12,
+        11,
+        3,
+        11,
+        7,
+        1,
+        9,
+        3,
+        17,
+        1
+      ],
+      "item_weight": [
+        6,
+        5,
+        3,
+        5,
+        6,
+        10,
+        10,
+        1,
+        3,
+        5
+      ],
+      "item_volume": [
+        4,
+        2,
+        2,
+        4,
+        4,
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 48,
+    "desc_merge": "In the assembly of a new satellite, engineers must select a set of critical components from a catalog where each component has a mass [9, 5, 2, 10, 6, 8, 3, 6, 9, 10], a spatial footprint [1, 5, 2, 4, 4, 2, 1, 3, 3, 3], and a performance contribution score [9, 5, 13, 15, 1, 12, 12, 1, 1, 20]. The satellite's payload bay has strict maximum mass 40 and maximum volume 16 constraints. The objective is to maximize the total performance score of the integrated system without exceeding the launch vehicle's mass or volumetric limits, which is fundamental to the mission's success.",
+    "data_template": {
+      "item_value": [
+        9,
+        5,
+        13,
+        15,
+        1,
+        12,
+        12,
+        1,
+        1,
+        20
+      ],
+      "item_weight": [
+        9,
+        5,
+        2,
+        10,
+        6,
+        8,
+        3,
+        6,
+        9,
+        10
+      ],
+      "item_volume": [
+        1,
+        5,
+        2,
+        4,
+        4,
+        2,
+        1,
+        3,
+        3,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 49,
+    "desc_merge": "For deploying a rapid-response medical unit to a remote area, logisticians must choose which medical supplies to pack where each supply crate has a weight [1, 7, 8, 8, 4, 7, 9, 6, 10, 7], a storage volume [3, 1, 5, 1, 3, 3, 3, 1, 4, 4], and a priority rating based on expected medical need [10, 18, 2, 5, 7, 10, 10, 8, 5, 12]. The transport aircraft has a maximum payload 40 and a fixed cargo hold volume 16. The goal is to maximize the overall medical preparedness by selecting the most critical supplies while adhering to the aircraft's strict weight and space limitations.",
+    "data_template": {
+      "item_value": [
+        10,
+        18,
+        2,
+        5,
+        7,
+        10,
+        10,
+        8,
+        5,
+        12
+      ],
+      "item_weight": [
+        1,
+        7,
+        8,
+        8,
+        4,
+        7,
+        9,
+        6,
+        10,
+        7
+      ],
+      "item_volume": [
+        3,
+        1,
+        5,
+        1,
+        3,
+        3,
+        3,
+        1,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 50,
+    "desc_merge": "An art logistics company is tasked with securing a collection for international loan where each artwork has an insured weight [6, 8, 8, 2, 9, 10, 7, 6, 4, 2], a crate size [5, 2, 4, 1, 1, 4, 3, 5, 5, 4], and an irreplaceability value [5, 3, 16, 16, 2, 1, 6, 1, 9, 9]. The specialized climate-controlled transport container has a maximum load limit 37 and a fixed internal volume 20. The aim is to maximize the total cultural value of the transported collection without compromising the structural integrity or environmental controls of the container.",
+    "data_template": {
+      "item_value": [
+        5,
+        3,
+        16,
+        16,
+        2,
+        1,
+        6,
+        1,
+        9,
+        9
+      ],
+      "item_weight": [
+        6,
+        8,
+        8,
+        2,
+        9,
+        10,
+        7,
+        6,
+        4,
+        2
+      ],
+      "item_volume": [
+        5,
+        2,
+        4,
+        1,
+        1,
+        4,
+        3,
+        5,
+        5,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 51,
+    "desc_merge": "When preparing an autonomous underwater vehicle (AUV) for a deep-sea survey, scientists must select scientific instruments where each instrument has a mass [10, 1, 9, 3, 7, 1, 1, 4, 3, 9], a physical size [1, 4, 2, 2, 2, 4, 1, 3, 2, 2], and a data value score [19, 17, 16, 12, 13, 2, 18, 7, 11, 3]. The AUV has a maximum buoyancy-adjusted mass capacity 28 and limited external mounting space with a total volume 13. The objective is to maximize the scientific return of the mission by choosing the optimal suite of instruments that fit within the vehicle's strict operational constraints.",
+    "data_template": {
+      "item_value": [
+        19,
+        17,
+        16,
+        12,
+        13,
+        2,
+        18,
+        7,
+        11,
+        3
+      ],
+      "item_weight": [
+        10,
+        1,
+        9,
+        3,
+        7,
+        1,
+        1,
+        4,
+        3,
+        9
+      ],
+      "item_volume": [
+        1,
+        4,
+        2,
+        2,
+        2,
+        4,
+        1,
+        3,
+        2,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 52,
+    "desc_merge": "A humanitarian organization is assembling emergency shelter kits for rapid deployment where each kit component (e.g., tent, sleeping bag, stove) has a weight [9, 4, 7, 8, 3, 1, 6, 4, 9, 3], a packed size [1, 5, 3, 5, 1, 2, 4, 3, 3, 2], and a utility score for survival [20, 13, 3, 10, 5, 12, 12, 5, 19, 20]. The standard shipping pallet used for airlift has a maximum weight 32 and a maximum cubic volume 17. The goal is to maximize the survival utility provided by each palletized kit while ensuring it can be transported and handled efficiently within the established logistics framework.",
+    "data_template": {
+      "item_value": [
+        20,
+        13,
+        3,
+        10,
+        5,
+        12,
+        12,
+        5,
+        19,
+        20
+      ],
+      "item_weight": [
+        9,
+        4,
+        7,
+        8,
+        3,
+        1,
+        6,
+        4,
+        9,
+        3
+      ],
+      "item_volume": [
+        1,
+        5,
+        3,
+        5,
+        1,
+        2,
+        4,
+        3,
+        3,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 53,
+    "desc_merge": "Shipping companies must select cargo containers to load onto a vessel where each container has a weight [9, 4, 2, 6, 9, 4, 8, 9, 4, 7], a volume [5, 4, 1, 3, 3, 1, 2, 2, 3, 5], and a revenue value [7, 3, 6, 11, 14, 4, 6, 12, 18, 11]. The ship has maximum weight 37 and maximum volume 17 constraints. The objective is to maximize total revenue by choosing containers that fit within the vessel's weight and volume capacities, which directly impacts operational profitability and resource utilization.",
+    "data_template": {
+      "item_value": [
+        7,
+        3,
+        6,
+        11,
+        14,
+        4,
+        6,
+        12,
+        18,
+        11
+      ],
+      "item_weight": [
+        9,
+        4,
+        2,
+        6,
+        9,
+        4,
+        8,
+        9,
+        4,
+        7
+      ],
+      "item_volume": [
+        5,
+        4,
+        1,
+        3,
+        3,
+        1,
+        2,
+        2,
+        3,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 54,
+    "desc_merge": "Medical teams assembling kits for field operations must choose supplies where each item has a weight [2, 5, 8, 9, 4, 4, 8, 5, 5, 5], a volume [3, 2, 5, 3, 2, 1, 5, 4, 1, 1], and a criticality score [6, 2, 5, 1, 3, 11, 8, 4, 4, 19]. The kit bag has maximum weight 33 and maximum volume 16 limits. The goal is to maximize the total criticality of included supplies while adhering to the bag's constraints, ensuring life-saving capabilities in resource-limited environments.",
+    "data_template": {
+      "item_value": [
+        6,
+        2,
+        5,
+        1,
+        3,
+        11,
+        8,
+        4,
+        4,
+        19
+      ],
+      "item_weight": [
+        2,
+        5,
+        8,
+        9,
+        4,
+        4,
+        8,
+        5,
+        5,
+        5
+      ],
+      "item_volume": [
+        3,
+        2,
+        5,
+        3,
+        2,
+        1,
+        5,
+        4,
+        1,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 55,
+    "desc_merge": "Media archivists need to select videos for storage on a server where each file has a data size [4, 4, 5, 3, 1, 1, 7, 1, 1, 6], a processing requirement [4, 1, 2, 1, 3, 2, 2, 1, 4, 4], and a cultural value [19, 7, 20, 17, 14, 15, 7, 19, 11, 10]. The server has maximum storage 19 and maximum processing load 14 capacities. The aim is to maximize the total cultural value of archived videos without exceeding server limitations, preserving important digital heritage efficiently.",
+    "data_template": {
+      "item_value": [
+        19,
+        7,
+        20,
+        17,
+        14,
+        15,
+        7,
+        19,
+        11,
+        10
+      ],
+      "item_weight": [
+        4,
+        4,
+        5,
+        3,
+        1,
+        1,
+        7,
+        1,
+        1,
+        6
+      ],
+      "item_volume": [
+        4,
+        1,
+        2,
+        1,
+        3,
+        2,
+        2,
+        1,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 19,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 56,
+    "desc_merge": "Tour operators packing gear for guided expeditions must choose equipment where each piece has a weight [4, 9, 2, 6, 1, 5, 5, 9, 6, 2], a bulkiness [2, 3, 1, 5, 1, 2, 4, 5, 4, 5], and a safety utility [5, 20, 9, 11, 2, 14, 20, 7, 18, 19]. The transport vehicle has maximum weight 29 and maximum space 19 restrictions. The objective is to maximize overall safety utility by selecting gear that stays within the vehicle's capacity, ensuring participant security and trip success.",
+    "data_template": {
+      "item_value": [
+        5,
+        20,
+        9,
+        11,
+        2,
+        14,
+        20,
+        7,
+        18,
+        19
+      ],
+      "item_weight": [
+        4,
+        9,
+        2,
+        6,
+        1,
+        5,
+        5,
+        9,
+        6,
+        2
+      ],
+      "item_volume": [
+        2,
+        3,
+        1,
+        5,
+        1,
+        2,
+        4,
+        5,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 57,
+    "desc_merge": "Engineers installing solar kits in remote areas must select components where each has a mass [6, 7, 1, 9, 9, 2, 1, 10, 6, 2], a size [4, 5, 2, 2, 4, 2, 1, 3, 5, 4], and an energy output value [14, 4, 10, 3, 3, 7, 1, 13, 17, 16]. The installation vehicle has maximum load 31 and maximum storage 19 limits. The goal is to maximize total energy output by choosing components that do not exceed the vehicle's constraints, optimizing sustainable power delivery in off-grid locations.",
+    "data_template": {
+      "item_value": [
+        14,
+        4,
+        10,
+        3,
+        3,
+        7,
+        1,
+        13,
+        17,
+        16
+      ],
+      "item_weight": [
+        6,
+        7,
+        1,
+        9,
+        9,
+        2,
+        1,
+        10,
+        6,
+        2
+      ],
+      "item_volume": [
+        4,
+        5,
+        2,
+        2,
+        4,
+        2,
+        1,
+        3,
+        5,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 58,
+    "desc_merge": "In manufacturing, engineers must choose which components to include in a production batch for a specialized machine, where each component has a physical weight [3, 5, 8, 4, 7, 3, 10, 7, 2, 9], a storage volume [5, 1, 3, 3, 3, 5, 3, 2, 3, 5], and a criticality score [14, 2, 7, 19, 19, 19, 10, 9, 12, 20] for the assembly process. The machine's loading bay has a strict maximum weight limit 34 and a spatial volume constraint 19. The objective is to maximize the total criticality of the components processed in a single batch without surpassing the machine's physical limitations, which directly impacts production throughput and efficiency.",
+    "data_template": {
+      "item_value": [
+        14,
+        2,
+        7,
+        19,
+        19,
+        19,
+        10,
+        9,
+        12,
+        20
+      ],
+      "item_weight": [
+        3,
+        5,
+        8,
+        4,
+        7,
+        3,
+        10,
+        7,
+        2,
+        9
+      ],
+      "item_volume": [
+        5,
+        1,
+        3,
+        3,
+        3,
+        5,
+        3,
+        2,
+        3,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 59,
+    "desc_merge": "When configuring a server rack for a high-performance computing cluster, each server unit has a power consumption (acting as weight) [8, 1, 10, 6, 8, 8, 7, 6, 2, 3], a physical rack-unit size [5, 2, 1, 4, 1, 1, 2, 3, 2, 3], and a computational performance score [11, 9, 9, 12, 18, 12, 19, 7, 4, 17]. The rack has a maximum power supply capacity 35 and a fixed number of available rack units 14. The goal is to select a set of servers that delivers the highest total computational performance while staying within the rack's power and space constraints, a critical task for optimizing data center operations.",
+    "data_template": {
+      "item_value": [
+        11,
+        9,
+        9,
+        12,
+        18,
+        12,
+        19,
+        7,
+        4,
+        17
+      ],
+      "item_weight": [
+        8,
+        1,
+        10,
+        6,
+        8,
+        8,
+        7,
+        6,
+        2,
+        3
+      ],
+      "item_volume": [
+        5,
+        2,
+        1,
+        4,
+        1,
+        1,
+        2,
+        3,
+        2,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 60,
+    "desc_merge": "For a mobile medical unit operating in a remote area, healthcare workers must select pharmaceuticals to stock, where each drug type has a weight [5, 4, 5, 7, 4, 5, 5, 9, 3, 3], a storage volume [5, 4, 4, 3, 5, 1, 5, 4, 2, 1], and a treatment priority value [7, 10, 13, 15, 16, 6, 17, 5, 6, 1] based on local health needs. The clinic's storage compartment has a maximum permissible weight 30 and a limited storage volume 20. The aim is to maximize the overall healthcare impact by packing the most critical drugs without exceeding the vehicle's weight or space limits, ensuring effective medical outreach.",
+    "data_template": {
+      "item_value": [
+        7,
+        10,
+        13,
+        15,
+        16,
+        6,
+        17,
+        5,
+        6,
+        1
+      ],
+      "item_weight": [
+        5,
+        4,
+        5,
+        7,
+        4,
+        5,
+        5,
+        9,
+        3,
+        3
+      ],
+      "item_volume": [
+        5,
+        4,
+        4,
+        3,
+        5,
+        1,
+        5,
+        4,
+        2,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 61,
+    "desc_merge": "A film production crew needs to select equipment to transport to a remote shooting location, where each piece of gear, like cameras or lighting, has a weight [4, 10, 4, 10, 2, 4, 1, 4, 7, 2], a bulky volume [5, 3, 2, 5, 2, 2, 2, 4, 1, 4], and an essentiality value [1, 19, 14, 9, 9, 17, 19, 10, 11, 2] for the planned scenes. The transport vehicle has a maximum payload 28 and a cargo hold volume limit 18. The objective is to maximize the on-set creative capability by choosing the most essential equipment combination that fits within the vehicle's strict weight and volumetric capacities, which is vital for staying on schedule and budget.",
+    "data_template": {
+      "item_value": [
+        1,
+        19,
+        14,
+        9,
+        9,
+        17,
+        19,
+        10,
+        11,
+        2
+      ],
+      "item_weight": [
+        4,
+        10,
+        4,
+        10,
+        2,
+        4,
+        1,
+        4,
+        7,
+        2
+      ],
+      "item_volume": [
+        5,
+        3,
+        2,
+        5,
+        2,
+        2,
+        2,
+        4,
+        1,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 62,
+    "desc_merge": "Humanitarian organizations assembling survival kits for refugees must select items like blankets and food packets, where each item has a weight [5, 8, 2, 3, 2, 8, 9, 5, 6, 7], a packed volume [3, 1, 5, 3, 2, 3, 2, 1, 2, 4], and a survival necessity value [11, 15, 7, 16, 5, 18, 12, 4, 8, 18]. The standardized aid package has a maximum weight limit 33 for portability and a fixed volume 15. The goal is to maximize the life-sustaining utility of each package by including the most vital items while adhering to the strict weight and volume constraints, which is crucial for efficient distribution and maximum humanitarian benefit.",
+    "data_template": {
+      "item_value": [
+        11,
+        15,
+        7,
+        16,
+        5,
+        18,
+        12,
+        4,
+        8,
+        18
+      ],
+      "item_weight": [
+        5,
+        8,
+        2,
+        3,
+        2,
+        8,
+        9,
+        5,
+        6,
+        7
+      ],
+      "item_volume": [
+        3,
+        1,
+        5,
+        3,
+        2,
+        3,
+        2,
+        1,
+        2,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 63,
+    "desc_merge": "A county library system operating a fleet of mobile library vans must select which books and media to stock on each vehicle for a weekly route; each item has a physical weight [9, 5, 1, 8, 3, 8, 1, 7, 9, 9], a shelf space requirement [1, 2, 1, 2, 5, 1, 2, 4, 3, 2], and an estimated circulation value [18, 3, 17, 13, 2, 12, 19, 16, 5, 15] based on community demand. Each van has a maximum axle weight limit 36 and a finite shelf space 13. The objective is to maximize the total predicted circulation value for the route while adhering to both the vehicle's structural weight limit and physical space constraints, ensuring optimal community service.",
+    "data_template": {
+      "item_value": [
+        18,
+        3,
+        17,
+        13,
+        2,
+        12,
+        19,
+        16,
+        5,
+        15
+      ],
+      "item_weight": [
+        9,
+        5,
+        1,
+        8,
+        3,
+        8,
+        1,
+        7,
+        9,
+        9
+      ],
+      "item_volume": [
+        1,
+        2,
+        1,
+        2,
+        5,
+        1,
+        2,
+        4,
+        3,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 64,
+    "desc_merge": "A university research team launching a high-altitude balloon must choose which scientific instruments to include in the payload; each instrument has a mass [7, 3, 2, 4, 3, 3, 6, 2, 7, 1], a physical size [4, 2, 5, 1, 1, 2, 4, 4, 4, 4], and a scientific data value [4, 18, 2, 6, 9, 17, 13, 14, 4, 1]. The gondola has a strict maximum mass limit 22 to achieve target altitude and a confined volume 18 dictated by its aerodynamic shell. The goal is to maximize the total scientific return from the flight by selecting instruments without exceeding either the mass or volume capacity, which is critical for mission success.",
+    "data_template": {
+      "item_value": [
+        4,
+        18,
+        2,
+        6,
+        9,
+        17,
+        13,
+        14,
+        4,
+        1
+      ],
+      "item_weight": [
+        7,
+        3,
+        2,
+        4,
+        3,
+        3,
+        6,
+        2,
+        7,
+        1
+      ],
+      "item_volume": [
+        4,
+        2,
+        5,
+        1,
+        1,
+        2,
+        4,
+        4,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 22,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 65,
+    "desc_merge": "A wildlife rehabilitation center dispatching a rescue vehicle to an oil spill site must select salvage equipment and initial treatment supplies; each item has a weight [3, 6, 5, 1, 1, 4, 9, 6, 10, 7], a storage bulk [5, 1, 5, 3, 5, 5, 4, 4, 3, 5], and a criticality value [7, 2, 12, 11, 6, 15, 3, 15, 6, 9] for treating affected animals. The vehicle has a gross vehicle weight rating 31 and a limited cargo area 24. The aim is to maximize the preparedness and impact of the rescue mission by prioritizing high-criticality items while ensuring the vehicle remains within safe operating weight and space limits.",
+    "data_template": {
+      "item_value": [
+        7,
+        2,
+        12,
+        11,
+        6,
+        15,
+        3,
+        15,
+        6,
+        9
+      ],
+      "item_weight": [
+        3,
+        6,
+        5,
+        1,
+        1,
+        4,
+        9,
+        6,
+        10,
+        7
+      ],
+      "item_volume": [
+        5,
+        1,
+        5,
+        3,
+        5,
+        5,
+        4,
+        4,
+        3,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 24
+      }
+    }
+  },
+  {
+    "prompt_index": 66,
+    "desc_merge": "The annual resupply ship for a remote Antarctic station must load a critical selection of spare parts and specialized food items; each crate has a weight [1, 10, 3, 5, 8, 2, 5, 1, 1, 6], a storage volume [3, 2, 5, 5, 2, 1, 2, 4, 4, 5], and a priority value [8, 8, 6, 7, 8, 18, 20, 13, 1, 19] for the station's winter-over survival and research continuity. The ship's helicopter, used for final delivery, has a maximum lift capacity 25 and a limited cargo hold size 19. The objective is to maximize the total priority of delivered goods per flight without surpassing the helicopter's lift capacity or cargo space, a vital logistical challenge.",
+    "data_template": {
+      "item_value": [
+        8,
+        8,
+        6,
+        7,
+        8,
+        18,
+        20,
+        13,
+        1,
+        19
+      ],
+      "item_weight": [
+        1,
+        10,
+        3,
+        5,
+        8,
+        2,
+        5,
+        1,
+        1,
+        6
+      ],
+      "item_volume": [
+        3,
+        2,
+        5,
+        5,
+        2,
+        1,
+        2,
+        4,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 67,
+    "desc_merge": "In combat logistics, military planners must select critical supplies to load onto an armored transport vehicle where each supply crate has a weight [10, 5, 5, 3, 8, 2, 2, 6, 4, 7], a volume [5, 2, 1, 4, 5, 5, 3, 3, 3, 2], and a tactical value [5, 10, 8, 20, 12, 16, 1, 6, 4, 17]. The vehicle has maximum weight 31 and maximum volume 19 constraints. The objective is to maximize the tactical value of delivered supplies while ensuring the vehicle remains within its operational weight and volume limits, which is vital for mission success and troop survivability.",
+    "data_template": {
+      "item_value": [
+        5,
+        10,
+        8,
+        20,
+        12,
+        16,
+        1,
+        6,
+        4,
+        17
+      ],
+      "item_weight": [
+        10,
+        5,
+        5,
+        3,
+        8,
+        2,
+        2,
+        6,
+        4,
+        7
+      ],
+      "item_volume": [
+        5,
+        2,
+        1,
+        4,
+        5,
+        5,
+        3,
+        3,
+        3,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 68,
+    "desc_merge": "Film crews on location must choose which pieces of filming equipment to load into a production truck where each item has a weight [2, 10, 2, 10, 8, 1, 5, 1, 9, 1], a volume [2, 1, 4, 4, 5, 2, 1, 4, 3, 4], and a production necessity score [15, 10, 1, 13, 13, 7, 14, 16, 5, 4]. The truck has maximum weight 29 and maximum volume 18 restrictions. The goal is to maximize the total production necessity score while adhering to the truck's capacity limits, ensuring all essential equipment is available for shooting without logistical issues.",
+    "data_template": {
+      "item_value": [
+        15,
+        10,
+        1,
+        13,
+        13,
+        7,
+        14,
+        16,
+        5,
+        4
+      ],
+      "item_weight": [
+        2,
+        10,
+        2,
+        10,
+        8,
+        1,
+        5,
+        1,
+        9,
+        1
+      ],
+      "item_volume": [
+        2,
+        1,
+        4,
+        4,
+        5,
+        2,
+        1,
+        4,
+        3,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 69,
+    "desc_merge": "Humanitarian organizations must prioritize aid items for delivery to a refugee camp where each relief package has a weight [7, 9, 10, 8, 9, 4, 8, 4, 7, 6], a volume [3, 5, 2, 1, 2, 2, 4, 2, 1, 5], and a humanitarian impact value [17, 7, 14, 4, 19, 18, 11, 3, 8, 12]. The delivery vehicle has maximum weight 43 and maximum volume 16 capacities. The aim is to maximize the total humanitarian impact of delivered aid while staying within the vehicle's weight and volume constraints, which is critical for addressing the most urgent needs of displaced populations.",
+    "data_template": {
+      "item_value": [
+        17,
+        7,
+        14,
+        4,
+        19,
+        18,
+        11,
+        3,
+        8,
+        12
+      ],
+      "item_weight": [
+        7,
+        9,
+        10,
+        8,
+        9,
+        4,
+        8,
+        4,
+        7,
+        6
+      ],
+      "item_volume": [
+        3,
+        5,
+        2,
+        1,
+        2,
+        2,
+        4,
+        2,
+        1,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 43,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 70,
+    "desc_merge": "Researchers preparing for a remote scientific expedition must select which instruments and supplies to bring where each item has a weight [9, 4, 4, 8, 6, 3, 7, 8, 1, 8], a volume [3, 1, 2, 1, 2, 3, 4, 5, 1, 2], and a research value [1, 6, 5, 13, 12, 6, 11, 10, 6, 2]. The expedition vehicle has maximum weight 34 and maximum volume 14 limits. The objective is to maximize the total research value of selected items while ensuring the vehicle does not exceed its weight or volume capacity, which is essential for the success of data collection and field studies.",
+    "data_template": {
+      "item_value": [
+        1,
+        6,
+        5,
+        13,
+        12,
+        6,
+        11,
+        10,
+        6,
+        2
+      ],
+      "item_weight": [
+        9,
+        4,
+        4,
+        8,
+        6,
+        3,
+        7,
+        8,
+        1,
+        8
+      ],
+      "item_volume": [
+        3,
+        1,
+        2,
+        1,
+        2,
+        3,
+        4,
+        5,
+        1,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 71,
+    "desc_merge": "Fine art logistics companies must choose which artworks to transport in a specialized security vehicle where each piece has a weight [7, 9, 7, 10, 7, 9, 9, 6, 1, 4], a volume [4, 2, 4, 4, 1, 5, 2, 3, 1, 2], and an insured value [15, 12, 18, 13, 12, 1, 8, 5, 13, 9]. The vehicle has maximum weight 41 and maximum volume 16 restrictions. The goal is to maximize the total insured value of transported artworks while complying with the vehicle's weight and volume limits, ensuring both security and preservation of priceless cultural assets during transit.",
+    "data_template": {
+      "item_value": [
+        15,
+        12,
+        18,
+        13,
+        12,
+        1,
+        8,
+        5,
+        13,
+        9
+      ],
+      "item_weight": [
+        7,
+        9,
+        7,
+        10,
+        7,
+        9,
+        9,
+        6,
+        1,
+        4
+      ],
+      "item_volume": [
+        4,
+        2,
+        4,
+        4,
+        1,
+        5,
+        2,
+        3,
+        1,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 41,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 72,
+    "desc_merge": "In organizing a mobile blood donation clinic, medical coordinators must select which medical supplies and testing equipment to load onto the vehicle, where each item has a weight [9, 7, 2, 4, 5, 8, 6, 9, 7, 2], a volume [5, 4, 4, 4, 1, 3, 2, 1, 3, 1], and a criticality value [19, 17, 4, 10, 12, 6, 10, 16, 2, 1] for conducting donations safely and efficiently. The mobile unit has strict maximum weight 35 and maximum storage volume 16 constraints. The objective is to maximize the total criticality of the onboard equipment without surpassing the vehicle's structural or spatial limits, ensuring the clinic can operate effectively at its destination.",
+    "data_template": {
+      "item_value": [
+        19,
+        17,
+        4,
+        10,
+        12,
+        6,
+        10,
+        16,
+        2,
+        1
+      ],
+      "item_weight": [
+        9,
+        7,
+        2,
+        4,
+        5,
+        8,
+        6,
+        9,
+        7,
+        2
+      ],
+      "item_volume": [
+        5,
+        4,
+        4,
+        4,
+        1,
+        3,
+        2,
+        1,
+        3,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 73,
+    "desc_merge": "For a custom computer assembly service, a technician must choose components from an inventory where each part, like a GPU or CPU, has a physical weight [8, 8, 10, 10, 5, 10, 7, 8, 2, 8], a spatial volume [3, 4, 2, 5, 2, 2, 4, 5, 5, 5] it occupies within the case, and a performance contribution score [3, 20, 14, 17, 18, 9, 19, 5, 20, 1]. The computer case has a maximum supported weight 45 for the motherboard and a maximum internal volume 22 for components. The aim is to select components that maximize the total performance score while adhering to the case's physical constraints, which is essential for building a stable, high-performance system.",
+    "data_template": {
+      "item_value": [
+        3,
+        20,
+        14,
+        17,
+        18,
+        9,
+        19,
+        5,
+        20,
+        1
+      ],
+      "item_weight": [
+        8,
+        8,
+        10,
+        10,
+        5,
+        10,
+        7,
+        8,
+        2,
+        8
+      ],
+      "item_volume": [
+        3,
+        4,
+        2,
+        5,
+        2,
+        2,
+        4,
+        5,
+        5,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 45,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 74,
+    "desc_merge": "Aerospace engineers face the challenge of selecting scientific instruments for a satellite mission, where each instrument has a mass [4, 10, 2, 5, 10, 1, 1, 10, 3, 8], a physical size [5, 4, 5, 5, 5, 4, 3, 5, 3, 4], and a scientific data value [12, 2, 7, 3, 6, 18, 9, 12, 10, 8]. The satellite bus has a stringent maximum launch mass 32 and a fixed payload bay volume 25. The goal is to maximize the total scientific return by choosing an optimal set of instruments that do not exceed the mass and volume capacities, a critical decision for mission success.",
+    "data_template": {
+      "item_value": [
+        12,
+        2,
+        7,
+        3,
+        6,
+        18,
+        9,
+        12,
+        10,
+        8
+      ],
+      "item_weight": [
+        4,
+        10,
+        2,
+        5,
+        10,
+        1,
+        1,
+        10,
+        3,
+        8
+      ],
+      "item_volume": [
+        5,
+        4,
+        5,
+        5,
+        5,
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 25
+      }
+    }
+  },
+  {
+    "prompt_index": 75,
+    "desc_merge": "A secure logistics company must plan the contents of an armored vehicle shipment, where each secured item, such as bullion or documents, has a weight [8, 10, 8, 6, 3, 2, 7, 3, 8, 6], a volume [5, 1, 2, 1, 3, 1, 4, 2, 5, 3] it occupies in the vault, and an insured value [12, 13, 8, 2, 11, 14, 18, 17, 6, 3]. The armored truck has a maximum payload capacity 36 and a limited internal vault volume 16. The objective is to maximize the total insured value of the shipment while ensuring the vehicle remains within its safe operational weight and volume limits, which is paramount for security and efficiency.",
+    "data_template": {
+      "item_value": [
+        12,
+        13,
+        8,
+        2,
+        11,
+        14,
+        18,
+        17,
+        6,
+        3
+      ],
+      "item_weight": [
+        8,
+        10,
+        8,
+        6,
+        3,
+        2,
+        7,
+        3,
+        8,
+        6
+      ],
+      "item_volume": [
+        5,
+        1,
+        2,
+        1,
+        3,
+        1,
+        4,
+        2,
+        5,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 76,
+    "desc_merge": "Adventure tour operators must carefully select equipment for clients embarking on extreme expeditions, where each gear piece has a weight [2, 6, 8, 3, 10, 10, 1, 1, 1, 5], a volume [3, 5, 1, 1, 5, 2, 5, 4, 5, 4], and a safety-critical utility value [16, 3, 19, 5, 13, 20, 20, 4, 7, 20]. The expedition vehicle has strict maximum weight 28 and maximum volume 21 restrictions. The objective is to maximize the total safety utility of the gear while adhering to the vehicle's physical constraints, which is essential for participant survival in remote environments.",
+    "data_template": {
+      "item_value": [
+        16,
+        3,
+        19,
+        5,
+        13,
+        20,
+        20,
+        4,
+        7,
+        20
+      ],
+      "item_weight": [
+        2,
+        6,
+        8,
+        3,
+        10,
+        10,
+        1,
+        1,
+        1,
+        5
+      ],
+      "item_volume": [
+        3,
+        5,
+        1,
+        1,
+        5,
+        2,
+        5,
+        4,
+        5,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 77,
+    "desc_merge": "Blood bank coordinators need to choose medical supplies for mobile donation units where each supply item has a weight [2, 8, 2, 7, 3, 9, 9, 4, 9, 5], a volume [1, 1, 3, 4, 1, 5, 3, 3, 3, 3], and a criticality score [10, 13, 19, 7, 2, 5, 7, 20, 19, 5]. The mobile unit has maximum weight 34 and maximum volume 16 limitations. The goal is to maximize the total criticality of transported supplies while staying within the unit's capacity limits, ensuring efficient blood collection operations in diverse locations.",
+    "data_template": {
+      "item_value": [
+        10,
+        13,
+        19,
+        7,
+        2,
+        5,
+        7,
+        20,
+        19,
+        5
+      ],
+      "item_weight": [
+        2,
+        8,
+        2,
+        7,
+        3,
+        9,
+        9,
+        4,
+        9,
+        5
+      ],
+      "item_volume": [
+        1,
+        1,
+        3,
+        4,
+        1,
+        5,
+        3,
+        3,
+        3,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 78,
+    "desc_merge": "PC builders must select components for custom gaming rigs where each part has a weight [9, 9, 3, 6, 6, 4, 2, 2, 8, 5], a physical size [2, 1, 1, 3, 4, 3, 3, 5, 4, 4], and a performance score [17, 19, 16, 12, 7, 12, 5, 8, 19, 17]. The computer case has maximum weight 32 and maximum volume 18 constraints. The aim is to maximize total system performance while ensuring all components fit within the case's physical and weight limitations, delivering optimal gaming experiences to customers.",
+    "data_template": {
+      "item_value": [
+        17,
+        19,
+        16,
+        12,
+        7,
+        12,
+        5,
+        8,
+        19,
+        17
+      ],
+      "item_weight": [
+        9,
+        9,
+        3,
+        6,
+        6,
+        4,
+        2,
+        2,
+        8,
+        5
+      ],
+      "item_volume": [
+        2,
+        1,
+        1,
+        3,
+        4,
+        3,
+        3,
+        5,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 79,
+    "desc_merge": "Aerospace engineers must choose scientific instruments for satellite missions where each instrument has a mass [2, 4, 1, 8, 10, 1, 10, 9, 9, 3], a dimensional footprint [5, 4, 1, 5, 1, 4, 1, 4, 3, 3], and a scientific value [16, 18, 3, 18, 13, 2, 20, 3, 1, 9]. The satellite bus has maximum mass 34 and maximum volume 18 restrictions. The objective is to maximize the total scientific return while complying with launch vehicle payload constraints, which determines mission success in space exploration.",
+    "data_template": {
+      "item_value": [
+        16,
+        18,
+        3,
+        18,
+        13,
+        2,
+        20,
+        3,
+        1,
+        9
+      ],
+      "item_weight": [
+        2,
+        4,
+        1,
+        8,
+        10,
+        1,
+        10,
+        9,
+        9,
+        3
+      ],
+      "item_volume": [
+        5,
+        4,
+        1,
+        5,
+        1,
+        4,
+        1,
+        4,
+        3,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 80,
+    "desc_merge": "Armored vehicle operators need to select valuable items for secure transportation where each asset has a weight [6, 4, 2, 10, 7, 7, 10, 8, 4, 5], a storage requirement [2, 3, 2, 5, 3, 3, 1, 3, 4, 1], and an insured value [6, 18, 11, 16, 16, 9, 7, 5, 9, 18]. The armored truck has maximum weight 37 and maximum volume 16 capacities. The goal is to maximize the total insured value transported while maintaining the vehicle's structural and security limitations, ensuring profitable and secure delivery operations.",
+    "data_template": {
+      "item_value": [
+        6,
+        18,
+        11,
+        16,
+        16,
+        9,
+        7,
+        5,
+        9,
+        18
+      ],
+      "item_weight": [
+        6,
+        4,
+        2,
+        10,
+        7,
+        7,
+        10,
+        8,
+        4,
+        5
+      ],
+      "item_volume": [
+        2,
+        3,
+        2,
+        5,
+        3,
+        3,
+        1,
+        3,
+        4,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 81,
+    "desc_merge": "In organizing a mobile blood donation drive, coordinators must select which medical supplies and equipment to load into the mobile unit, where each item, such as donation kits or testing devices, has a specific weight [3, 7, 10, 7, 8, 2, 9, 3, 6, 9], a storage volume [4, 4, 2, 1, 5, 5, 3, 2, 4, 2], and a criticality value [6, 1, 18, 3, 19, 5, 1, 1, 1, 16] based on its necessity for the donation process. The mobile van has a strict maximum weight 38 and a maximum storage volume 19 that cannot be exceeded. The objective is to maximize the total criticality of the loaded supplies to ensure a successful and efficient drive, which is vital for maximizing community blood collection.",
+    "data_template": {
+      "item_value": [
+        6,
+        1,
+        18,
+        3,
+        19,
+        5,
+        1,
+        1,
+        1,
+        16
+      ],
+      "item_weight": [
+        3,
+        7,
+        10,
+        7,
+        8,
+        2,
+        9,
+        3,
+        6,
+        9
+      ],
+      "item_volume": [
+        4,
+        4,
+        2,
+        1,
+        5,
+        5,
+        3,
+        2,
+        4,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 82,
+    "desc_merge": "For a custom PC assembly service, technicians must choose components from inventory to include in a customer's build, where each part like a GPU or CPU has a physical weight [6, 4, 4, 9, 10, 10, 2, 2, 1, 9], a spatial volume [5, 5, 1, 1, 4, 3, 5, 3, 4, 5] it occupies within the case, and a performance contribution value [6, 4, 16, 20, 10, 14, 15, 8, 6, 4]. The computer case has a maximum supported weight 34 for structural integrity and a finite internal volume 21. The goal is to select components that collectively yield the highest possible performance score without surpassing the case's physical constraints, ensuring a stable, high-end system.",
+    "data_template": {
+      "item_value": [
+        6,
+        4,
+        16,
+        20,
+        10,
+        14,
+        15,
+        8,
+        6,
+        4
+      ],
+      "item_weight": [
+        6,
+        4,
+        4,
+        9,
+        10,
+        10,
+        2,
+        2,
+        1,
+        9
+      ],
+      "item_volume": [
+        5,
+        5,
+        1,
+        1,
+        4,
+        3,
+        5,
+        3,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 83,
+    "desc_merge": "Aerospace engineers face the challenge of selecting scientific instruments for a satellite mission, where each instrument has a mass [5, 4, 4, 2, 3, 7, 3, 7, 9, 2], a physical size [1, 3, 5, 3, 1, 2, 3, 1, 1, 3], and a scientific data value [20, 11, 2, 10, 4, 1, 10, 18, 18, 8]. The satellite's payload bay has a stringent maximum mass 27 for launch vehicle compatibility and a fixed volumetric capacity 13. The aim is to maximize the total scientific return of the mission by choosing an optimal set of instruments that do not violate the mass and volume limits, which is fundamental to the mission's success.",
+    "data_template": {
+      "item_value": [
+        20,
+        11,
+        2,
+        10,
+        4,
+        1,
+        10,
+        18,
+        18,
+        8
+      ],
+      "item_weight": [
+        5,
+        4,
+        4,
+        2,
+        3,
+        7,
+        3,
+        7,
+        9,
+        2
+      ],
+      "item_volume": [
+        1,
+        3,
+        5,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 84,
+    "desc_merge": "A secure logistics firm must plan the contents of an armored vehicle shipment, where each secured item, such as bullion or artworks, has a weight [8, 7, 1, 4, 5, 10, 6, 4, 10, 8], a volume [1, 2, 2, 2, 2, 3, 5, 3, 2, 4], and an insured monetary value [1, 7, 18, 13, 11, 1, 7, 16, 16, 5]. The armored truck has a maximum payload capacity 37 and a secure storage volume 15. The objective is to maximize the total insured value of the transported goods while strictly adhering to the vehicle's weight and volume restrictions, which is crucial for both profitability and operational safety.",
+    "data_template": {
+      "item_value": [
+        1,
+        7,
+        18,
+        13,
+        11,
+        1,
+        7,
+        16,
+        16,
+        5
+      ],
+      "item_weight": [
+        8,
+        7,
+        1,
+        4,
+        5,
+        10,
+        6,
+        4,
+        10,
+        8
+      ],
+      "item_volume": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        3,
+        5,
+        3,
+        2,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 85,
+    "desc_merge": "A mobile library service operating from a vehicle must select which books and media to carry on its route, where each item has a weight [7, 9, 7, 3, 6, 2, 10, 9, 2, 10], a shelf space volume [3, 1, 2, 4, 2, 2, 1, 2, 1, 5], and a patron demand or educational value [13, 15, 14, 4, 19, 5, 2, 6, 11, 13]. The library van has a maximum axle weight limit 39 and a finite shelving volume 13. The goal is to maximize the total value to the community by choosing a collection that stays within the vehicle's physical capacities, ensuring a diverse and popular selection for patrons.",
+    "data_template": {
+      "item_value": [
+        13,
+        15,
+        14,
+        4,
+        19,
+        5,
+        2,
+        6,
+        11,
+        13
+      ],
+      "item_weight": [
+        7,
+        9,
+        7,
+        3,
+        6,
+        2,
+        10,
+        9,
+        2,
+        10
+      ],
+      "item_volume": [
+        3,
+        1,
+        2,
+        4,
+        2,
+        2,
+        1,
+        2,
+        1,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 86,
+    "desc_merge": "In multi-sport endurance races, athletes must carefully select gear for diverse segments where each item has a weight [7, 8, 2, 8, 3, 9, 6, 10, 9, 7], a volume [1, 4, 3, 3, 3, 5, 5, 1, 5, 2], and a survival value [12, 3, 14, 15, 19, 2, 9, 5, 20, 10]. Their gear bag has maximum weight 41 and maximum volume 19 restrictions. The challenge is to maximize survival utility while strictly adhering to physical constraints, which directly impacts race performance and safety.",
+    "data_template": {
+      "item_value": [
+        12,
+        3,
+        14,
+        15,
+        19,
+        2,
+        9,
+        5,
+        20,
+        10
+      ],
+      "item_weight": [
+        7,
+        8,
+        2,
+        8,
+        3,
+        9,
+        6,
+        10,
+        9,
+        7
+      ],
+      "item_volume": [
+        1,
+        4,
+        3,
+        3,
+        3,
+        5,
+        5,
+        1,
+        5,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 41,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 87,
+    "desc_merge": "During criminal investigations, forensic teams must choose digital evidence files to transfer to secure storage where each file has a storage size [5, 5, 7, 7, 6, 8, 5, 2, 3, 7], a processing complexity [4, 4, 3, 3, 2, 3, 4, 2, 1, 4], and an evidentiary value [18, 18, 4, 8, 8, 1, 5, 7, 8, 14]. The transfer device has maximum storage 33 and maximum processing load 18 thresholds. The objective is to maximize total evidentiary value without exceeding technical limitations, ensuring legal admissibility and investigative efficiency.",
+    "data_template": {
+      "item_value": [
+        18,
+        18,
+        4,
+        8,
+        8,
+        1,
+        5,
+        7,
+        8,
+        14
+      ],
+      "item_weight": [
+        5,
+        5,
+        7,
+        7,
+        6,
+        8,
+        5,
+        2,
+        3,
+        7
+      ],
+      "item_volume": [
+        4,
+        4,
+        3,
+        3,
+        2,
+        3,
+        4,
+        2,
+        1,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 88,
+    "desc_merge": "Game developers optimizing app size must select in-game assets for inclusion where each asset has a download size [7, 4, 2, 8, 4, 8, 9, 8, 3, 3], a memory footprint [2, 3, 3, 2, 1, 3, 1, 5, 1, 1], and a player engagement value [8, 2, 10, 2, 16, 9, 20, 14, 2, 8]. The app bundle has maximum download size 33 and maximum memory usage 13 caps. The goal is to maximize player engagement while respecting mobile platform constraints, directly affecting user retention and market performance.",
+    "data_template": {
+      "item_value": [
+        8,
+        2,
+        10,
+        2,
+        16,
+        9,
+        20,
+        14,
+        2,
+        8
+      ],
+      "item_weight": [
+        7,
+        4,
+        2,
+        8,
+        4,
+        8,
+        9,
+        8,
+        3,
+        3
+      ],
+      "item_volume": [
+        2,
+        3,
+        3,
+        2,
+        1,
+        3,
+        1,
+        5,
+        1,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 89,
+    "desc_merge": "Museum curators relocating fragile artifacts must select items for a single shipment where each artifact has a handling weight [10, 8, 3, 2, 7, 10, 5, 8, 6, 4], a spatial footprint [3, 2, 5, 1, 3, 5, 3, 1, 2, 1], and a cultural significance score [8, 15, 1, 8, 12, 9, 16, 11, 9, 16]. The transport crate has maximum handling weight 37 and maximum spatial capacity 15 limits. The aim is to maximize cultural preservation value while ensuring safe transport conditions, which is vital for heritage conservation.",
+    "data_template": {
+      "item_value": [
+        8,
+        15,
+        1,
+        8,
+        12,
+        9,
+        16,
+        11,
+        9,
+        16
+      ],
+      "item_weight": [
+        10,
+        8,
+        3,
+        2,
+        7,
+        10,
+        5,
+        8,
+        6,
+        4
+      ],
+      "item_volume": [
+        3,
+        2,
+        5,
+        1,
+        3,
+        5,
+        3,
+        1,
+        2,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 90,
+    "desc_merge": "Medical teams deploying to crisis zones must prioritize medical supplies where each supply has a transport weight [9, 6, 10, 6, 5, 5, 1, 2, 8, 5], a storage bulk [1, 1, 4, 2, 1, 1, 2, 5, 5, 4], and a treatment priority value [2, 1, 16, 12, 12, 17, 9, 4, 6, 10]. The field hospital's supply vehicle has maximum payload 34 and maximum storage space 15 restrictions. The objective is to maximize treatment capability while maintaining mobility, crucial for effective emergency medical response.",
+    "data_template": {
+      "item_value": [
+        2,
+        1,
+        16,
+        12,
+        12,
+        17,
+        9,
+        4,
+        6,
+        10
+      ],
+      "item_weight": [
+        9,
+        6,
+        10,
+        6,
+        5,
+        5,
+        1,
+        2,
+        8,
+        5
+      ],
+      "item_volume": [
+        1,
+        1,
+        4,
+        2,
+        1,
+        1,
+        2,
+        5,
+        5,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 91,
+    "desc_merge": "In managing an electric vehicle battery swap station, operators must select which battery packs to stock at a service kiosk where each battery type has a weight [1, 3, 2, 10, 10, 2, 9, 7, 2, 8], a physical size [5, 5, 1, 2, 4, 3, 1, 5, 3, 3], and an energy capacity value [13, 6, 6, 15, 15, 6, 4, 4, 6, 11]. The service kiosk has a maximum structural load capacity 32 and a fixed storage space 19. The objective is to maximize the total available energy capacity for customers by choosing an optimal set of batteries without exceeding the kiosk's weight or space constraints, ensuring efficient service and customer satisfaction.",
+    "data_template": {
+      "item_value": [
+        13,
+        6,
+        6,
+        15,
+        15,
+        6,
+        4,
+        4,
+        6,
+        11
+      ],
+      "item_weight": [
+        1,
+        3,
+        2,
+        10,
+        10,
+        2,
+        9,
+        7,
+        2,
+        8
+      ],
+      "item_volume": [
+        5,
+        5,
+        1,
+        2,
+        4,
+        3,
+        1,
+        5,
+        3,
+        3
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 92,
+    "desc_merge": "For a mobile game developer optimizing a downloadable content bundle, each in-game asset (like a character skin or weapon) has a download size [4, 2, 7, 1, 4, 9, 5, 5, 7, 10], a required memory footprint [4, 3, 5, 1, 1, 1, 3, 1, 4, 5], and a player desirability score [12, 6, 3, 10, 14, 18, 2, 12, 3, 10]. The bundle has a maximum allowable total download size 32 and a maximum memory usage limit 16 to ensure smooth performance on target devices. The challenge is to select assets that maximize total player desirability while adhering strictly to both technical constraints.",
+    "data_template": {
+      "item_value": [
+        12,
+        6,
+        3,
+        10,
+        14,
+        18,
+        2,
+        12,
+        3,
+        10
+      ],
+      "item_weight": [
+        4,
+        2,
+        7,
+        1,
+        4,
+        9,
+        5,
+        5,
+        7,
+        10
+      ],
+      "item_volume": [
+        4,
+        3,
+        5,
+        1,
+        1,
+        1,
+        3,
+        1,
+        4,
+        5
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 93,
+    "desc_merge": "Humanitarian organizations assembling essential aid packages for refugees must choose items where each article, such as a blanket or food ration, has a weight [8, 6, 1, 3, 3, 3, 9, 10, 1, 4], a packed size [2, 4, 4, 5, 5, 1, 3, 1, 4, 1], and a survival necessity value [1, 6, 6, 5, 15, 20, 20, 1, 8, 20]. The standard distribution package has a maximum permissible weight 28 and a fixed volume 18. The aim is to maximize the total necessity value of the package's contents for the recipients, a critical factor for effective aid delivery under logistical limitations.",
+    "data_template": {
+      "item_value": [
+        1,
+        6,
+        6,
+        5,
+        15,
+        20,
+        20,
+        1,
+        8,
+        20
+      ],
+      "item_weight": [
+        8,
+        6,
+        1,
+        3,
+        3,
+        3,
+        9,
+        10,
+        1,
+        4
+      ],
+      "item_volume": [
+        2,
+        4,
+        4,
+        5,
+        5,
+        1,
+        3,
+        1,
+        4,
+        1
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 94,
+    "desc_merge": "A film production company needs to load a single truck with camera and lighting gear for a remote shoot, where each piece of equipment has a weight [3, 9, 4, 2, 7, 3, 3, 2, 8, 10], a crate size [5, 5, 2, 3, 4, 5, 3, 1, 3, 2], and a criticality value [11, 7, 15, 12, 4, 16, 3, 7, 9, 17] for the day's scenes. The truck has a maximum payload 30 and a cargo hold volume 19. The goal is to maximize the total on-set production capability by selecting the most critical equipment without surpassing the vehicle's physical capacities, which is vital for staying on schedule.",
+    "data_template": {
+      "item_value": [
+        11,
+        7,
+        15,
+        12,
+        4,
+        16,
+        3,
+        7,
+        9,
+        17
+      ],
+      "item_weight": [
+        3,
+        9,
+        4,
+        2,
+        7,
+        3,
+        3,
+        2,
+        8,
+        10
+      ],
+      "item_volume": [
+        5,
+        5,
+        2,
+        3,
+        4,
+        5,
+        3,
+        1,
+        3,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 95,
+    "desc_merge": "Scientists planning a high-altitude balloon experiment must select instruments where each device has a mass [8, 5, 9, 3, 10, 3, 5, 7, 5, 2], a dimensional size [3, 4, 3, 1, 2, 3, 1, 4, 1, 4], and a scientific data value [3, 17, 19, 15, 8, 16, 6, 13, 11, 2]. The gondola carrying the payload has a strict maximum mass limit 34 and a confined physical envelope 15. The objective is to maximize the total scientific return from the mission by choosing a combination of instruments that stays within the balloon's stringent lift and space capabilities.",
+    "data_template": {
+      "item_value": [
+        3,
+        17,
+        19,
+        15,
+        8,
+        16,
+        6,
+        13,
+        11,
+        2
+      ],
+      "item_weight": [
+        8,
+        5,
+        9,
+        3,
+        10,
+        3,
+        5,
+        7,
+        5,
+        2
+      ],
+      "item_volume": [
+        3,
+        4,
+        3,
+        1,
+        2,
+        3,
+        1,
+        4,
+        1,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 96,
+    "desc_merge": "In global logistics, a shipping company must optimize the loading of standardized containers for international freight, where each cargo unit has a specific weight [8, 8, 4, 2, 9, 10, 4, 7, 3, 10], a storage volume [4, 2, 2, 1, 2, 5, 5, 4, 2, 2], and a revenue value [14, 9, 2, 10, 2, 6, 9, 7, 1, 3]; the container itself has a strict maximum weight capacity 39 and a fixed internal volume 17, requiring the selection of a cargo subset that maximizes total revenue without exceeding either physical constraint, which is fundamental for profitability and contractual adherence.",
+    "data_template": {
+      "item_value": [
+        14,
+        9,
+        2,
+        10,
+        2,
+        6,
+        9,
+        7,
+        1,
+        3
+      ],
+      "item_weight": [
+        8,
+        8,
+        4,
+        2,
+        9,
+        10,
+        4,
+        7,
+        3,
+        10
+      ],
+      "item_volume": [
+        4,
+        2,
+        2,
+        1,
+        2,
+        5,
+        5,
+        4,
+        2,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 97,
+    "desc_merge": "For a tactical surveillance mission, engineers must select electronic equipment to mount on an unmanned aerial vehicle, with each device having an operational weight [1, 7, 6, 3, 5, 7, 5, 4, 3, 10], a physical size [1, 4, 4, 4, 1, 2, 1, 1, 1, 2], and an intelligence value [17, 6, 6, 10, 3, 11, 10, 2, 16, 19]; the drone has a maximum lift capacity 30 and a limited payload bay volume 12, and the objective is to maximize the intelligence-gathering potential of the payload while strictly adhering to the aircraft's weight and space limitations to ensure flight stability and mission success.",
+    "data_template": {
+      "item_value": [
+        17,
+        6,
+        6,
+        10,
+        3,
+        11,
+        10,
+        2,
+        16,
+        19
+      ],
+      "item_weight": [
+        1,
+        7,
+        6,
+        3,
+        5,
+        7,
+        5,
+        4,
+        3,
+        10
+      ],
+      "item_volume": [
+        1,
+        4,
+        4,
+        4,
+        1,
+        2,
+        1,
+        1,
+        1,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 12
+      }
+    }
+  },
+  {
+    "prompt_index": 98,
+    "desc_merge": "A forestry management team plans a selective logging operation in a protected area, where each tree species has a harvest weight [2, 10, 3, 4, 1, 3, 3, 8, 9, 10], a storage volume [1, 3, 1, 2, 1, 4, 2, 3, 1, 2] once felled, and an economic value [18, 3, 6, 5, 13, 20, 11, 7, 3, 5]; the transport vehicle for moving logs has a maximum load weight 31 and a cargo hold volume 12, and the goal is to select a set of trees that maximizes the total economic return while ensuring the harvested wood does not exceed the vehicle's weight or volume limits, thereby promoting sustainable resource extraction.",
+    "data_template": {
+      "item_value": [
+        18,
+        3,
+        6,
+        5,
+        13,
+        20,
+        11,
+        7,
+        3,
+        5
+      ],
+      "item_weight": [
+        2,
+        10,
+        3,
+        4,
+        1,
+        3,
+        3,
+        8,
+        9,
+        10
+      ],
+      "item_volume": [
+        1,
+        3,
+        1,
+        2,
+        1,
+        4,
+        2,
+        3,
+        1,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 12
+      }
+    }
+  },
+  {
+    "prompt_index": 99,
+    "desc_merge": "A streaming service provider aims to pre-load popular media files on edge servers to reduce latency, where each media file has a data size equivalent to a weight [7, 7, 1, 7, 3, 2, 5, 9, 6, 8], a processing memory footprint [5, 4, 4, 4, 5, 1, 3, 1, 4, 4], and a user demand score [5, 4, 6, 17, 11, 18, 2, 5, 19, 9]; each server has a maximum storage capacity 33 and a RAM limit 21, requiring the selection of files that maximize the total user satisfaction score without surpassing the server's storage and memory constraints, which is vital for maintaining high-quality streaming performance.",
+    "data_template": {
+      "item_value": [
+        5,
+        4,
+        6,
+        17,
+        11,
+        18,
+        2,
+        5,
+        19,
+        9
+      ],
+      "item_weight": [
+        7,
+        7,
+        1,
+        7,
+        3,
+        2,
+        5,
+        9,
+        6,
+        8
+      ],
+      "item_volume": [
+        5,
+        4,
+        4,
+        4,
+        5,
+        1,
+        3,
+        1,
+        4,
+        4
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 100,
+    "desc_merge": "A humanitarian organization prepares emergency kits for rapid deployment to crisis zones, where each supply item (like blankets or food packets) has a weight [9, 9, 6, 9, 2, 4, 4, 1, 7, 1], a packed size [5, 5, 3, 4, 3, 4, 4, 3, 4, 2], and a survival utility value [1, 16, 7, 12, 16, 18, 17, 17, 1, 12]; the standard emergency kit container has a maximum carry weight 31 and a fixed internal volume 22, and the aim is to assemble a kit that maximizes the total utility for survivors while keeping the entire kit portable and within its designated weight and volume specifications.",
+    "data_template": {
+      "item_value": [
+        1,
+        16,
+        7,
+        12,
+        16,
+        18,
+        17,
+        17,
+        1,
+        12
+      ],
+      "item_weight": [
+        9,
+        9,
+        6,
+        9,
+        2,
+        4,
+        4,
+        1,
+        7,
+        1
+      ],
+      "item_volume": [
+        5,
+        5,
+        3,
+        4,
+        3,
+        4,
+        4,
+        3,
+        4,
+        2
+      ],
+      "item_limit": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 22
+      }
+    }
+  }
+]

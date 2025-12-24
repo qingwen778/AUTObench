@@ -1,0 +1,5802 @@
+[
+  {
+    "prompt_index": 1,
+    "desc_merge": "An investor aims to allocate capital 34 across various financial assets, where each asset requires an investment amount [10, 7, 10, 4, 6, 1, 6, 5, 1, 8] and offers an expected return [1, 16, 13, 1, 13, 17, 19, 2, 20, 5], with the possibility of purchasing fractional shares of the same asset multiple times to maximize total returns without surpassing the capital limit.",
+    "data_template": {
+      "item_value": [
+        1,
+        16,
+        13,
+        1,
+        13,
+        17,
+        19,
+        2,
+        20,
+        5
+      ],
+      "item_weight": [
+        10,
+        7,
+        10,
+        4,
+        6,
+        1,
+        6,
+        5,
+        1,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 2,
+    "desc_merge": "A cloud service provider needs to distribute virtual machines to clients within a data center's total processing power 20, where each VM configuration consumes CPU cycles [7, 2, 4, 1, 1, 2, 2, 2, 8, 5] and generates revenue [11, 1, 2, 13, 7, 18, 11, 12, 4, 20], and identical VMs can be deployed repeatedly to maximize total revenue while adhering to the processing capacity.",
+    "data_template": {
+      "item_value": [
+        11,
+        1,
+        2,
+        13,
+        7,
+        18,
+        11,
+        12,
+        4,
+        20
+      ],
+      "item_weight": [
+        7,
+        2,
+        4,
+        1,
+        1,
+        2,
+        2,
+        2,
+        8,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 20,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 3,
+    "desc_merge": "A nonprofit organization has a fixed donation fund 39 to support various aid projects, where each project requires funding [10, 2, 9, 8, 6, 7, 8, 6, 6, 3] and yields a social impact score [15, 17, 19, 2, 3, 15, 12, 5, 11, 4], and projects can be partially or fully funded multiple times to achieve the highest overall social benefit without exceeding the fund's constraints.",
+    "data_template": {
+      "item_value": [
+        15,
+        17,
+        19,
+        2,
+        3,
+        15,
+        12,
+        5,
+        11,
+        4
+      ],
+      "item_weight": [
+        10,
+        2,
+        9,
+        8,
+        6,
+        7,
+        8,
+        6,
+        6,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 4,
+    "desc_merge": "A farmer plans crop cultivation on available land 45, considering different crop types that each need acreage [10, 5, 10, 10, 10, 7, 6, 9, 4, 4] and provide an estimated harvest value [4, 17, 3, 10, 15, 12, 8, 12, 6, 16], with the option to plant the same crop in multiple plots to maximize total harvest value while staying within the land area limit.",
+    "data_template": {
+      "item_value": [
+        4,
+        17,
+        3,
+        10,
+        15,
+        12,
+        8,
+        12,
+        6,
+        16
+      ],
+      "item_weight": [
+        10,
+        5,
+        10,
+        10,
+        10,
+        7,
+        6,
+        9,
+        4,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 45,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 5,
+    "desc_merge": "An engineer designs a battery system with total energy capacity 31 using various battery modules, each occupying physical space [1, 7, 10, 5, 6, 6, 5, 3, 9, 1] and storing energy [14, 2, 6, 3, 20, 20, 9, 11, 10, 9], and modules of the same type can be installed multiple times to optimize total energy storage without surpassing the system's spatial constraints.",
+    "data_template": {
+      "item_value": [
+        14,
+        2,
+        6,
+        3,
+        20,
+        20,
+        9,
+        11,
+        10,
+        9
+      ],
+      "item_weight": [
+        1,
+        7,
+        10,
+        5,
+        6,
+        6,
+        5,
+        3,
+        9,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 6,
+    "desc_merge": "A logistics company must load a freight plane with various types of cargo containers, where each container type has a specific weight [5, 4, 6, 5, 7, 3, 9, 2, 1, 10] and a shipping revenue [14, 9, 15, 15, 17, 4, 16, 10, 5, 15], and the plane's total weight capacity is 31. Since multiple containers of the same type can be loaded, the objective is to maximize the total revenue from the shipped cargo without exceeding the aircraft's weight limit.",
+    "data_template": {
+      "item_value": [
+        14,
+        9,
+        15,
+        15,
+        17,
+        4,
+        16,
+        10,
+        5,
+        15
+      ],
+      "item_weight": [
+        5,
+        4,
+        6,
+        5,
+        7,
+        3,
+        9,
+        2,
+        1,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 7,
+    "desc_merge": "A research foundation has a fixed budget 37 to fund various clinical trials, where each trial requires a cost [8, 10, 9, 3, 7, 3, 6, 5, 5, 6] and has an estimated societal benefit score [4, 10, 2, 11, 14, 20, 8, 18, 16, 16]. Trials of the same design can be funded multiple times at different locations, and the goal is to maximize the total societal benefit without overspending the budget.",
+    "data_template": {
+      "item_value": [
+        4,
+        10,
+        2,
+        11,
+        14,
+        20,
+        8,
+        18,
+        16,
+        16
+      ],
+      "item_weight": [
+        8,
+        10,
+        9,
+        3,
+        7,
+        3,
+        6,
+        5,
+        5,
+        6
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 8,
+    "desc_merge": "A game development studio is designing a loot crate system where players can earn crates containing various in-game items, with each item type having a data size [10, 5, 1, 8, 6, 3, 3, 7, 6, 4] and a player desirability rating [17, 1, 10, 15, 19, 8, 17, 1, 4, 8]; the crate's total data capacity is 31. Items can be included multiple times, and the aim is to maximize the total desirability of the crate's contents within its size limit.",
+    "data_template": {
+      "item_value": [
+        17,
+        1,
+        10,
+        15,
+        19,
+        8,
+        17,
+        1,
+        4,
+        8
+      ],
+      "item_weight": [
+        10,
+        5,
+        1,
+        8,
+        6,
+        3,
+        3,
+        7,
+        6,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 9,
+    "desc_merge": "An aid organization is preparing emergency relief packages for disaster zones, where each type of supply (like water packets or medical kits) has a volume [1, 3, 10, 6, 4, 9, 7, 5, 6, 10] and a utility value [16, 16, 18, 5, 2, 3, 7, 15, 10, 17] for survivors, and the vehicle used for transport has a total cargo volume capacity of 36. Supplies can be packed in multiple units, and the challenge is to maximize the total utility of the relief package without exceeding the vehicle's volume limit.",
+    "data_template": {
+      "item_value": [
+        16,
+        16,
+        18,
+        5,
+        2,
+        3,
+        7,
+        15,
+        10,
+        17
+      ],
+      "item_weight": [
+        1,
+        3,
+        10,
+        6,
+        4,
+        9,
+        7,
+        5,
+        6,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 10,
+    "desc_merge": "A music streaming service wants to create a featured playlist for users with limited mobile data, where each song has a file size [3, 10, 3, 3, 10, 8, 1, 2, 3, 6] and a user engagement score [1, 4, 11, 10, 17, 1, 7, 16, 12, 15], and the total playlist has a maximum data usage limit of 29. Songs can be added multiple times, and the objective is to maximize the total engagement of the playlist while staying within the data cap.",
+    "data_template": {
+      "item_value": [
+        1,
+        4,
+        11,
+        10,
+        17,
+        1,
+        7,
+        16,
+        12,
+        15
+      ],
+      "item_weight": [
+        3,
+        10,
+        3,
+        3,
+        10,
+        8,
+        1,
+        2,
+        3,
+        6
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 11,
+    "desc_merge": "An investment firm must allocate capital from a fund 37 to various projects, where each project requires an initial capital outlay [9, 6, 8, 4, 3, 5, 7, 9, 8, 3] and promises a projected net return [6, 5, 19, 3, 7, 7, 20, 16, 1, 17]. Since fractional or full reinvestment in similar projects is possible, the goal is to maximize the total return on the fund by selecting a combination of projects without exceeding the total capital.",
+    "data_template": {
+      "item_value": [
+        6,
+        5,
+        19,
+        3,
+        7,
+        7,
+        20,
+        16,
+        1,
+        17
+      ],
+      "item_weight": [
+        9,
+        6,
+        8,
+        4,
+        3,
+        5,
+        7,
+        9,
+        8,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 12,
+    "desc_merge": "A tech company needs to provision virtual machines for a workload within a total budget 30, where each instance type has an hourly cost [3, 6, 9, 6, 4, 7, 2, 8, 4, 2] and provides a processing performance score [13, 1, 3, 7, 8, 5, 11, 4, 5, 16]. Identical instances can be selected multiple times, and the objective is to maximize the total processing performance for the workload while staying within the financial constraint.",
+    "data_template": {
+      "item_value": [
+        13,
+        1,
+        3,
+        7,
+        8,
+        5,
+        11,
+        4,
+        5,
+        16
+      ],
+      "item_weight": [
+        3,
+        6,
+        9,
+        6,
+        4,
+        7,
+        2,
+        8,
+        4,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 13,
+    "desc_merge": "A humanitarian organization assembles aid packages with a total weight limit 32 for shipping, where each type of supply item has a weight [2, 10, 6, 4, 7, 6, 7, 1, 9, 2] and a quantified benefit score [19, 5, 20, 13, 6, 12, 17, 13, 9, 14]. Multiple units of each supply item can be included, aiming to maximize the total benefit of the aid package without surpassing the weight limit for transport.",
+    "data_template": {
+      "item_value": [
+        19,
+        5,
+        20,
+        13,
+        6,
+        12,
+        17,
+        13,
+        9,
+        14
+      ],
+      "item_weight": [
+        2,
+        10,
+        6,
+        4,
+        7,
+        6,
+        7,
+        1,
+        9,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 14,
+    "desc_merge": "A farmer plans the season's planting for a field of fixed area 25, where each crop type requires a certain amount of land per unit [9, 10, 2, 1, 3, 4, 10, 1, 1, 1] and has an expected profit per unit [17, 18, 17, 1, 17, 13, 11, 18, 6, 10]. The same crop can be planted in multiple plots, and the challenge is to determine the planting strategy that maximizes total profit without using more land than available.",
+    "data_template": {
+      "item_value": [
+        17,
+        18,
+        17,
+        1,
+        17,
+        13,
+        11,
+        18,
+        6,
+        10
+      ],
+      "item_weight": [
+        9,
+        10,
+        2,
+        1,
+        3,
+        4,
+        10,
+        1,
+        1,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 15,
+    "desc_merge": "An engineer designs a battery system with a total weight constraint 39 for an electric vehicle, where each battery module has a weight [1, 5, 7, 7, 10, 10, 7, 10, 4, 5] and provides a specific amount of energy storage [6, 11, 10, 7, 16, 8, 13, 18, 16, 15]. Multiple modules of the same type can be used, and the goal is to maximize the total energy capacity of the system while adhering to the strict weight limit.",
+    "data_template": {
+      "item_value": [
+        6,
+        11,
+        10,
+        7,
+        16,
+        8,
+        13,
+        18,
+        16,
+        15
+      ],
+      "item_weight": [
+        1,
+        5,
+        7,
+        7,
+        10,
+        10,
+        7,
+        10,
+        4,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 16,
+    "desc_merge": "An investment firm must allocate capital from a fund 28 into various investment opportunities, where each opportunity requires a capital commitment [4, 2, 8, 2, 1, 8, 9, 1, 10, 2] and offers an expected return [16, 19, 2, 19, 12, 13, 1, 7, 19, 9]. Since opportunities can be invested in multiple times, the goal is to maximize the total expected return without exceeding the fund's capital limit.",
+    "data_template": {
+      "item_value": [
+        16,
+        19,
+        2,
+        19,
+        12,
+        13,
+        1,
+        7,
+        19,
+        9
+      ],
+      "item_weight": [
+        4,
+        2,
+        8,
+        2,
+        1,
+        8,
+        9,
+        1,
+        10,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 17,
+    "desc_merge": "A cloud provider needs to distribute a fixed pool of virtual machine instances 39 to different client applications, where each application requires a number of CPU cores [6, 3, 8, 7, 2, 8, 6, 7, 10, 8] and generates a revenue [4, 18, 15, 2, 4, 3, 17, 14, 3, 10]. Applications can be allocated multiple instances, and the objective is to maximize total revenue while staying within the total core limit.",
+    "data_template": {
+      "item_value": [
+        4,
+        18,
+        15,
+        2,
+        4,
+        3,
+        17,
+        14,
+        3,
+        10
+      ],
+      "item_weight": [
+        6,
+        3,
+        8,
+        7,
+        2,
+        8,
+        6,
+        7,
+        10,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 18,
+    "desc_merge": "A charity organization has a shipment container with a weight limit 26 to send aid packages, where each type of package has a weight [6, 1, 8, 1, 1, 9, 1, 8, 1, 8] and provides a quantified benefit to recipients [17, 15, 8, 19, 11, 18, 19, 14, 9, 14]. Multiple packages of the same type can be included, aiming to maximize the total benefit without surpassing the container's weight capacity.",
+    "data_template": {
+      "item_value": [
+        17,
+        15,
+        8,
+        19,
+        11,
+        18,
+        19,
+        14,
+        9,
+        14
+      ],
+      "item_weight": [
+        6,
+        1,
+        8,
+        1,
+        1,
+        9,
+        1,
+        8,
+        1,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 26,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 19,
+    "desc_merge": "A farmer has a field with a limited area 28 to plant crops, where each crop type requires a certain area [1, 8, 2, 9, 3, 2, 8, 3, 8, 4] and yields a profit [17, 5, 1, 14, 7, 11, 2, 2, 10, 17]. The same crop can be planted in multiple plots, and the strategy is to maximize total profit while not exceeding the available land area.",
+    "data_template": {
+      "item_value": [
+        17,
+        5,
+        1,
+        14,
+        7,
+        11,
+        2,
+        2,
+        10,
+        17
+      ],
+      "item_weight": [
+        1,
+        8,
+        2,
+        9,
+        3,
+        2,
+        8,
+        3,
+        8,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 20,
+    "desc_merge": "An engineer is designing a battery system with a total weight constraint 27, selecting from battery modules each with a weight [9, 1, 3, 9, 2, 6, 2, 2, 2, 9] and an energy capacity [11, 13, 20, 3, 13, 8, 10, 2, 5, 4]. Multiple modules of the same type can be used, and the goal is to maximize the total energy storage capacity of the system without violating the overall weight limit.",
+    "data_template": {
+      "item_value": [
+        11,
+        13,
+        20,
+        3,
+        13,
+        8,
+        10,
+        2,
+        5,
+        4
+      ],
+      "item_weight": [
+        9,
+        1,
+        3,
+        9,
+        2,
+        6,
+        2,
+        2,
+        2,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 21,
+    "desc_merge": "A public library is allocating its annual acquisition budget 25 to purchase multiple copies of various media items, where each item has a purchase cost [1, 9, 3, 9, 8, 3, 1, 5, 2, 1] and an estimated patron usage value [20, 3, 18, 1, 12, 10, 15, 19, 1, 5]; the goal is to maximize the total projected usage for the community by selecting how many copies of each item to buy without exceeding the budget.",
+    "data_template": {
+      "item_value": [
+        20,
+        3,
+        18,
+        1,
+        12,
+        10,
+        15,
+        19,
+        1,
+        5
+      ],
+      "item_weight": [
+        1,
+        9,
+        3,
+        9,
+        8,
+        3,
+        1,
+        5,
+        2,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 22,
+    "desc_merge": "For a large-scale construction project, a procurement manager must source materials from suppliers, where each material type has a per-unit cost [5, 3, 8, 4, 3, 1, 7, 1, 9, 5] and contributes a structural integrity value [15, 2, 12, 17, 2, 11, 8, 19, 10, 16] to the project, with the total project material budget being 27; multiple units of the same material can be purchased to maximize the total structural integrity within the financial constraint.",
+    "data_template": {
+      "item_value": [
+        15,
+        2,
+        12,
+        17,
+        2,
+        11,
+        8,
+        19,
+        10,
+        16
+      ],
+      "item_weight": [
+        5,
+        3,
+        8,
+        4,
+        3,
+        1,
+        7,
+        1,
+        9,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 23,
+    "desc_merge": "A sports team's nutritionist is designing a daily meal plan for athletes with a strict total calorie limit 28, where each food item provides a certain number of calories [1, 10, 2, 6, 5, 9, 5, 1, 3, 6] and a nutritional benefit score [13, 15, 18, 3, 18, 14, 12, 4, 16, 14]; the objective is to maximize the total nutritional benefit by including multiple servings of the same food while adhering to the calorie restriction.",
+    "data_template": {
+      "item_value": [
+        13,
+        15,
+        18,
+        3,
+        18,
+        14,
+        12,
+        4,
+        16,
+        14
+      ],
+      "item_weight": [
+        1,
+        10,
+        2,
+        6,
+        5,
+        9,
+        5,
+        1,
+        3,
+        6
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 24,
+    "desc_merge": "A retail store manager needs to create a weekly schedule within a total allowed labor hour limit 37, where each shift type has a duration [8, 7, 10, 2, 7, 7, 3, 10, 5, 3] and a calculated customer service effectiveness score [16, 18, 3, 8, 6, 11, 20, 5, 16, 12]; multiple shifts of the same type can be scheduled to maximize the overall service effectiveness without surpassing the total labor hours.",
+    "data_template": {
+      "item_value": [
+        16,
+        18,
+        3,
+        8,
+        6,
+        11,
+        20,
+        5,
+        16,
+        12
+      ],
+      "item_weight": [
+        8,
+        7,
+        10,
+        2,
+        7,
+        7,
+        3,
+        10,
+        5,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 25,
+    "desc_merge": "An IT department is upgrading its data center's cooling capacity with a fixed budget 40 for purchasing cooling units, where each unit model has a cost [10, 6, 5, 5, 5, 2, 8, 10, 10, 7] and provides a cooling efficiency rating [17, 17, 3, 2, 4, 4, 3, 6, 4, 14]; the aim is to maximize the total cooling efficiency by potentially buying multiple units of the same model while staying within the budgetary limit.",
+    "data_template": {
+      "item_value": [
+        17,
+        17,
+        3,
+        2,
+        4,
+        4,
+        3,
+        6,
+        4,
+        14
+      ],
+      "item_weight": [
+        10,
+        6,
+        5,
+        5,
+        5,
+        2,
+        8,
+        10,
+        10,
+        7
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 26,
+    "desc_merge": "A traveler plans a vacation with a total time budget 30 and considers various activities, where each activity takes a certain amount of time [9, 1, 5, 6, 6, 7, 8, 3, 4, 2] and provides a level of enjoyment [10, 18, 11, 11, 9, 9, 1, 20, 10, 14]. Activities like visiting a museum or going for a hike can be repeated, and the goal is to maximize the total enjoyment of the trip without exceeding the time budget.",
+    "data_template": {
+      "item_value": [
+        10,
+        18,
+        11,
+        11,
+        9,
+        9,
+        1,
+        20,
+        10,
+        14
+      ],
+      "item_weight": [
+        9,
+        1,
+        5,
+        6,
+        6,
+        7,
+        8,
+        3,
+        4,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 27,
+    "desc_merge": "A logistics manager needs to load a shipping container of capacity 18 with pallets of goods, where each pallet type occupies a specific volume [5, 2, 1, 1, 3, 5, 2, 7, 1, 3] and has a total value [1, 6, 17, 15, 14, 1, 13, 17, 19, 9]. Identical pallets can be loaded multiple times, and the objective is to maximize the total value of the shipment while staying within the container's volume limit.",
+    "data_template": {
+      "item_value": [
+        1,
+        6,
+        17,
+        15,
+        14,
+        1,
+        13,
+        17,
+        19,
+        9
+      ],
+      "item_weight": [
+        5,
+        2,
+        1,
+        1,
+        3,
+        5,
+        2,
+        7,
+        1,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 18,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 28,
+    "desc_merge": "A nutritionist is designing a daily meal plan with a strict calorie limit 29, selecting from food items where each serving has a calorie count [5, 2, 5, 7, 9, 3, 5, 6, 2, 5] and a nutritional score [11, 8, 8, 7, 3, 20, 19, 1, 11, 4]. Servings of the same food can be included multiple times, aiming to maximize the total nutritional score of the plan without surpassing the calorie constraint.",
+    "data_template": {
+      "item_value": [
+        11,
+        8,
+        8,
+        7,
+        3,
+        20,
+        19,
+        1,
+        11,
+        4
+      ],
+      "item_weight": [
+        5,
+        2,
+        5,
+        7,
+        9,
+        3,
+        5,
+        6,
+        2,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 29,
+    "desc_merge": "A factory must place an order for raw materials with a total budget 31, where each material type has a cost per unit [1, 1, 6, 8, 3, 7, 10, 4, 9, 3] and a contribution to production output [11, 15, 14, 3, 12, 10, 11, 16, 20, 17]. Units of the same material can be ordered multiple times, and the goal is to maximize the total production contribution of the order while adhering to the budget.",
+    "data_template": {
+      "item_value": [
+        11,
+        15,
+        14,
+        3,
+        12,
+        10,
+        11,
+        16,
+        20,
+        17
+      ],
+      "item_weight": [
+        1,
+        1,
+        6,
+        8,
+        3,
+        7,
+        10,
+        4,
+        9,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 30,
+    "desc_merge": "A city planner has a budget 33 to install amenities in a new park, where each amenity type (e.g., bench, fountain) has an installation cost [1, 6, 8, 6, 8, 2, 9, 8, 7, 1] and an estimated public benefit score [16, 15, 10, 15, 16, 9, 15, 12, 16, 17]. Multiple units of the same amenity can be installed, with the objective being to maximize the total public benefit for the park within the financial constraint.",
+    "data_template": {
+      "item_value": [
+        16,
+        15,
+        10,
+        15,
+        16,
+        9,
+        15,
+        12,
+        16,
+        17
+      ],
+      "item_weight": [
+        1,
+        6,
+        8,
+        6,
+        8,
+        2,
+        9,
+        8,
+        7,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 31,
+    "desc_merge": "A music streaming service wants to create a featured playlist for a user with a specific time constraint 33, where each song has a duration [7, 4, 4, 2, 8, 6, 6, 4, 7, 8] and a user engagement score [14, 14, 12, 2, 6, 15, 15, 18, 2, 5]. Songs can be repeated, and the goal is to maximize the total engagement score of the playlist without exceeding the total time limit.",
+    "data_template": {
+      "item_value": [
+        14,
+        14,
+        12,
+        2,
+        6,
+        15,
+        15,
+        18,
+        2,
+        5
+      ],
+      "item_weight": [
+        7,
+        4,
+        4,
+        2,
+        8,
+        6,
+        6,
+        4,
+        7,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 32,
+    "desc_merge": "An engineer is designing a microgrid for a remote community with a maximum power output capacity 22. Each type of renewable generator (e.g., solar panel, wind turbine) has a power output [1, 7, 2, 3, 1, 3, 3, 8, 2, 8] and an installation cost-effectiveness score [20, 1, 20, 7, 20, 5, 1, 6, 19, 14]. Multiple units of each generator type can be installed, and the objective is to maximize the total cost-effectiveness of the energy system while staying within the power output limit.",
+    "data_template": {
+      "item_value": [
+        20,
+        1,
+        20,
+        7,
+        20,
+        5,
+        1,
+        6,
+        19,
+        14
+      ],
+      "item_weight": [
+        1,
+        7,
+        2,
+        3,
+        1,
+        3,
+        3,
+        8,
+        2,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 22,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 33,
+    "desc_merge": "A university department must design a core curriculum for a degree program with a fixed total credit hour limit 13. Each potential course module requires a number of credit hours [1, 4, 4, 3, 2, 2, 1, 1, 2, 2] and provides an estimated educational value [14, 6, 15, 2, 20, 5, 20, 13, 20, 2] to the students. Modules can be selected multiple times, and the aim is to maximize the total educational value of the curriculum without surpassing the credit hour constraint.",
+    "data_template": {
+      "item_value": [
+        14,
+        6,
+        15,
+        2,
+        20,
+        5,
+        20,
+        13,
+        20,
+        2
+      ],
+      "item_weight": [
+        1,
+        4,
+        4,
+        3,
+        2,
+        2,
+        1,
+        1,
+        2,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 13,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 34,
+    "desc_merge": "A telecommunications company is assembling promotional data plan packages for a target market segment with a total data cap 30. Each add-on service (e.g., social media data, international roaming) consumes a portion of the data cap [2, 5, 7, 10, 2, 7, 1, 9, 2, 5] and has an associated customer attractiveness rating [3, 17, 15, 6, 4, 13, 7, 12, 17, 14]. Add-ons can be included multiple times, and the goal is to maximize the total attractiveness of the data package while adhering to the overall data limit.",
+    "data_template": {
+      "item_value": [
+        3,
+        17,
+        15,
+        6,
+        4,
+        13,
+        7,
+        12,
+        17,
+        14
+      ],
+      "item_weight": [
+        2,
+        5,
+        7,
+        10,
+        2,
+        7,
+        1,
+        9,
+        2,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 35,
+    "desc_merge": "A logistics center needs to schedule charging for a fleet of warehouse robots during a limited charging window 32. Each charging cycle provides a certain amount of operational energy [8, 2, 1, 2, 10, 7, 5, 8, 3, 8] and has a corresponding efficiency rating [17, 17, 6, 17, 14, 20, 19, 5, 6, 10]. Multiple charging cycles can be allocated, and the objective is to maximize the total operational efficiency of the fleet within the available charging time.",
+    "data_template": {
+      "item_value": [
+        17,
+        17,
+        6,
+        17,
+        14,
+        20,
+        19,
+        5,
+        6,
+        10
+      ],
+      "item_weight": [
+        8,
+        2,
+        1,
+        2,
+        10,
+        7,
+        5,
+        8,
+        3,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 36,
+    "desc_merge": "A music streaming service needs to generate a playlist for a user's workout session of a fixed duration 33, where each song has a specific playtime [10, 2, 5, 5, 8, 6, 5, 6, 7, 1] and a user enjoyment score [6, 5, 8, 5, 6, 9, 11, 6, 3, 2]. Songs can be repeated, and the goal is to maximize the total enjoyment score of the playlist without exceeding the total time limit.",
+    "data_template": {
+      "item_value": [
+        6,
+        5,
+        8,
+        5,
+        6,
+        9,
+        11,
+        6,
+        3,
+        2
+      ],
+      "item_weight": [
+        10,
+        2,
+        5,
+        5,
+        8,
+        6,
+        5,
+        6,
+        7,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 37,
+    "desc_merge": "A factory manager must order raw materials for a production run with a total budget 25, where each type of material has a cost per unit [7, 3, 3, 8, 3, 1, 3, 1, 7, 6] and contributes a certain profit margin [12, 12, 17, 2, 20, 18, 9, 9, 13, 16] to the finished goods. Materials can be ordered in any quantity, and the objective is to maximize the total profit margin while staying within the budgetary constraints.",
+    "data_template": {
+      "item_value": [
+        12,
+        12,
+        17,
+        2,
+        20,
+        18,
+        9,
+        9,
+        13,
+        16
+      ],
+      "item_weight": [
+        7,
+        3,
+        3,
+        8,
+        3,
+        1,
+        3,
+        1,
+        7,
+        6
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 38,
+    "desc_merge": "A city planner is tasked with installing amenities in a new park with a total area 33, where each amenity type (e.g., bench, fountain) requires a specific ground area [6, 2, 1, 7, 9, 2, 8, 4, 8, 8] and provides an estimated public benefit score [13, 5, 4, 6, 12, 1, 15, 4, 17, 15]. Multiple units of the same amenity can be installed, aiming to maximize the total public benefit without surpassing the available park area.",
+    "data_template": {
+      "item_value": [
+        13,
+        5,
+        4,
+        6,
+        12,
+        1,
+        15,
+        4,
+        17,
+        15
+      ],
+      "item_weight": [
+        6,
+        2,
+        1,
+        7,
+        9,
+        2,
+        8,
+        4,
+        8,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 39,
+    "desc_merge": "An academic administrator must design a course curriculum with a fixed total credit hour limit 35, where each teaching module requires a certain number of credit hours [6, 5, 6, 5, 8, 9, 9, 7, 3, 1] and has an educational value score [15, 20, 3, 17, 12, 4, 16, 20, 17, 19]. Modules can be selected multiple times, and the goal is to maximize the total educational value of the curriculum while adhering to the credit hour constraint.",
+    "data_template": {
+      "item_value": [
+        15,
+        20,
+        3,
+        17,
+        12,
+        4,
+        16,
+        20,
+        17,
+        19
+      ],
+      "item_weight": [
+        6,
+        5,
+        6,
+        5,
+        8,
+        9,
+        9,
+        7,
+        3,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 40,
+    "desc_merge": "A telecommunications company is assembling data plan packages for a prepaid market with a total data cap 42, where each add-on service (e.g., social media bundle, video streaming pass) consumes a specific amount of data [10, 5, 10, 9, 1, 10, 7, 10, 5, 4] and has an associated customer attractiveness rating [7, 14, 13, 9, 2, 6, 11, 12, 16, 11]. Add-ons can be included multiple times, and the objective is to maximize the total attractiveness of the data plan package without exceeding the data cap.",
+    "data_template": {
+      "item_value": [
+        7,
+        14,
+        13,
+        9,
+        2,
+        6,
+        11,
+        12,
+        16,
+        11
+      ],
+      "item_weight": [
+        10,
+        5,
+        10,
+        9,
+        1,
+        10,
+        7,
+        10,
+        5,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 42,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 41,
+    "desc_merge": "A satellite in orbit has a limited transmission window 38 to send scientific data packets to a ground station, where each packet type has a data volume [10, 1, 8, 1, 9, 2, 7, 10, 8, 8] and a scientific priority score [19, 7, 15, 16, 14, 20, 16, 11, 16, 19]. Multiple packets of the same type can be transmitted, and the objective is to maximize the total scientific value of the downlinked data without exceeding the transmission capacity.",
+    "data_template": {
+      "item_value": [
+        19,
+        7,
+        15,
+        16,
+        14,
+        20,
+        16,
+        11,
+        16,
+        19
+      ],
+      "item_weight": [
+        10,
+        1,
+        8,
+        1,
+        9,
+        2,
+        7,
+        10,
+        8,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 42,
+    "desc_merge": "A catering company must design a menu for a large event with a strict calorie limit per guest 30, where each food item contributes a certain number of calories [5, 9, 2, 6, 5, 7, 5, 3, 4, 4] and a guest satisfaction score [8, 8, 11, 6, 16, 11, 18, 9, 10, 14]. Items can be served in multiple portions, and the goal is to maximize total guest satisfaction while adhering to the dietary constraint.",
+    "data_template": {
+      "item_value": [
+        8,
+        8,
+        11,
+        6,
+        16,
+        11,
+        18,
+        9,
+        10,
+        14
+      ],
+      "item_weight": [
+        5,
+        9,
+        2,
+        6,
+        5,
+        7,
+        5,
+        3,
+        4,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 43,
+    "desc_merge": "A media company needs to archive digital assets onto backup servers with a fixed total storage quota 36, where each asset collection requires storage space [5, 8, 10, 2, 1, 9, 5, 4, 6, 10] and has a long-term business value [9, 18, 18, 15, 7, 20, 20, 20, 8, 9]. Collections can be archived in their entirety multiple times, aiming to maximize the preserved business value within the storage limit.",
+    "data_template": {
+      "item_value": [
+        9,
+        18,
+        18,
+        15,
+        7,
+        20,
+        20,
+        20,
+        8,
+        9
+      ],
+      "item_weight": [
+        5,
+        8,
+        10,
+        2,
+        1,
+        9,
+        5,
+        4,
+        6,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 44,
+    "desc_merge": "A logistics center must schedule charging for its fleet of autonomous robots during a limited overnight period 31, where each robot model has a charging time requirement [6, 6, 8, 3, 5, 9, 2, 3, 4, 6] and an operational criticality value [10, 2, 8, 20, 2, 5, 4, 18, 5, 12] for the next day. Multiple robots of the same model can be charged, and the aim is to maximize the total operational readiness value without overloading the charging station's time capacity.",
+    "data_template": {
+      "item_value": [
+        10,
+        2,
+        8,
+        20,
+        2,
+        5,
+        4,
+        18,
+        5,
+        12
+      ],
+      "item_weight": [
+        6,
+        6,
+        8,
+        3,
+        5,
+        9,
+        2,
+        3,
+        4,
+        6
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 45,
+    "desc_merge": "A research laboratory has a refrigeration unit with a limited capacity for sample vials 28, where each type of chemical sample occupies a specific volume [2, 7, 7, 2, 8, 5, 2, 9, 3, 3] and has a research importance rating [19, 16, 11, 5, 20, 8, 2, 6, 4, 4]. Multiple vials of the same sample type can be stored, and the challenge is to maximize the total research value of the stored samples while not surpassing the refrigerator's volume limit.",
+    "data_template": {
+      "item_value": [
+        19,
+        16,
+        11,
+        5,
+        20,
+        8,
+        2,
+        6,
+        4,
+        4
+      ],
+      "item_weight": [
+        2,
+        7,
+        7,
+        2,
+        8,
+        5,
+        2,
+        9,
+        3,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 46,
+    "desc_merge": "A marketing team must allocate a fixed budget 37 across various online advertising channels, where each channel requires a cost per impression [8, 7, 2, 7, 1, 9, 10, 7, 4, 8] and provides an estimated customer engagement value [20, 17, 10, 7, 10, 4, 3, 9, 20, 7]. The same channel can be utilized multiple times, and the goal is to maximize the total engagement value without exceeding the campaign budget.",
+    "data_template": {
+      "item_value": [
+        20,
+        17,
+        10,
+        7,
+        10,
+        4,
+        3,
+        9,
+        20,
+        7
+      ],
+      "item_weight": [
+        8,
+        7,
+        2,
+        7,
+        1,
+        9,
+        10,
+        7,
+        4,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 47,
+    "desc_merge": "A warehouse manager needs to replenish stock for a diverse set of products, where each product unit occupies a specific storage volume [1, 5, 3, 3, 3, 1, 9, 7, 2, 7] and contributes a sales profit [8, 20, 15, 15, 1, 10, 4, 11, 10, 17], with the total available storage space being 24. Products can be ordered in any quantity, and the objective is to maximize total profit while staying within the warehouse's volumetric capacity.",
+    "data_template": {
+      "item_value": [
+        8,
+        20,
+        15,
+        15,
+        1,
+        10,
+        4,
+        11,
+        10,
+        17
+      ],
+      "item_weight": [
+        1,
+        5,
+        3,
+        3,
+        3,
+        1,
+        9,
+        7,
+        2,
+        7
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 24,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 48,
+    "desc_merge": "A student must choose courses for a semester with a maximum total credit load 37, where each course has a credit hour requirement [7, 7, 4, 7, 7, 6, 8, 8, 5, 3] and an expected knowledge gain or grade point value [7, 1, 3, 5, 12, 5, 1, 7, 2, 20]. Courses can be repeated for additional credit, and the aim is to maximize the total educational value without surpassing the credit limit.",
+    "data_template": {
+      "item_value": [
+        7,
+        1,
+        3,
+        5,
+        12,
+        5,
+        1,
+        7,
+        2,
+        20
+      ],
+      "item_weight": [
+        7,
+        7,
+        4,
+        7,
+        7,
+        6,
+        8,
+        8,
+        5,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 49,
+    "desc_merge": "A cloud provider needs to schedule computational jobs on a virtual machine with a fixed CPU core-hour capacity 35, where each job type consumes a certain number of core-hours [5, 2, 6, 10, 1, 10, 7, 6, 3, 9] and generates a revenue [3, 10, 9, 20, 3, 3, 6, 18, 5, 10]. Multiple instances of the same job type can be run, and the goal is to maximize total revenue while utilizing the available core-hours.",
+    "data_template": {
+      "item_value": [
+        3,
+        10,
+        9,
+        20,
+        3,
+        3,
+        6,
+        18,
+        5,
+        10
+      ],
+      "item_weight": [
+        5,
+        2,
+        6,
+        10,
+        1,
+        10,
+        7,
+        6,
+        3,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 50,
+    "desc_merge": "A homeowner is planning a renovation with a total budget 23 to buy materials, where each material type has a unit cost [5, 3, 1, 3, 2, 6, 2, 9, 6, 2] and an aesthetic or functional improvement score [20, 9, 1, 18, 6, 17, 11, 2, 14, 13]. Any number of units for each material can be purchased, and the challenge is to maximize the total improvement score without going over the budget.",
+    "data_template": {
+      "item_value": [
+        20,
+        9,
+        1,
+        18,
+        6,
+        17,
+        11,
+        2,
+        14,
+        13
+      ],
+      "item_weight": [
+        5,
+        3,
+        1,
+        3,
+        2,
+        6,
+        2,
+        9,
+        6,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 23,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 51,
+    "desc_merge": "A traveler must pack a suitcase for a trip, where each item type has a weight [6, 3, 1, 6, 7, 2, 4, 8, 3, 1] and a subjective utility value [14, 2, 1, 3, 19, 1, 6, 8, 2, 20], and the suitcase has a strict weight limit 24. Multiple identical items, like socks or shirts, can be packed, and the goal is to maximize the total utility of the packed items without exceeding the weight limit.",
+    "data_template": {
+      "item_value": [
+        14,
+        2,
+        1,
+        3,
+        19,
+        1,
+        6,
+        8,
+        2,
+        20
+      ],
+      "item_weight": [
+        6,
+        3,
+        1,
+        6,
+        7,
+        2,
+        4,
+        8,
+        3,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 24,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 52,
+    "desc_merge": "Conservationists aim to design a wildlife corridor through fragmented habitats, where each potential land parcel has an acquisition cost [6, 3, 6, 6, 5, 8, 5, 5, 3, 1] and an ecological value score [19, 3, 19, 14, 20, 1, 7, 5, 20, 19] based on species connectivity, with a total budget constraint 28. Parcels of the same type can be acquired multiple times, and the objective is to maximize the total ecological value of the connected corridor while staying within the budget.",
+    "data_template": {
+      "item_value": [
+        19,
+        3,
+        19,
+        14,
+        20,
+        1,
+        7,
+        5,
+        20,
+        19
+      ],
+      "item_weight": [
+        6,
+        3,
+        6,
+        6,
+        5,
+        8,
+        5,
+        5,
+        3,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 53,
+    "desc_merge": "A chef is preparing a menu for a large banquet with a limited budget 41, where each bulk ingredient has a cost per unit [7, 9, 7, 9, 4, 9, 9, 3, 4, 8] and contributes a flavor score [2, 20, 1, 11, 20, 13, 13, 10, 3, 2] to the dishes. Ingredients can be purchased in multiple units, and the aim is to maximize the total flavor profile of the menu without overspending the allocated budget.",
+    "data_template": {
+      "item_value": [
+        2,
+        20,
+        1,
+        11,
+        20,
+        13,
+        13,
+        10,
+        3,
+        2
+      ],
+      "item_weight": [
+        7,
+        9,
+        7,
+        9,
+        4,
+        9,
+        9,
+        3,
+        4,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 41,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 54,
+    "desc_merge": "An archivist needs to back up a collection of digital media files onto physical storage servers, where each server model has a storage capacity cost [9, 5, 6, 5, 2, 3, 6, 1, 6, 10] and a reliability rating [4, 4, 7, 12, 15, 17, 6, 10, 8, 14], and the total procurement budget is 31. Multiple servers of the same model can be purchased, and the goal is to maximize the overall reliability of the archival system while adhering to the financial constraint.",
+    "data_template": {
+      "item_value": [
+        4,
+        4,
+        7,
+        12,
+        15,
+        17,
+        6,
+        10,
+        8,
+        14
+      ],
+      "item_weight": [
+        9,
+        5,
+        6,
+        5,
+        2,
+        3,
+        6,
+        1,
+        6,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 55,
+    "desc_merge": "A factory manager must order raw materials for continuous production, where each material type has a cost per ton [10, 1, 3, 6, 10, 3, 2, 6, 10, 7] and a quality rating [6, 1, 13, 4, 7, 8, 19, 5, 13, 19] that affects the final product, with a total procurement fund of 34. Materials can be ordered in multiple tons, and the objective is to maximize the aggregate quality of the procured materials for manufacturing without exceeding the available funds.",
+    "data_template": {
+      "item_value": [
+        6,
+        1,
+        13,
+        4,
+        7,
+        8,
+        19,
+        5,
+        13,
+        19
+      ],
+      "item_weight": [
+        10,
+        1,
+        3,
+        6,
+        10,
+        3,
+        2,
+        6,
+        10,
+        7
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 56,
+    "desc_merge": "A military logistics unit must prepare supply caches for forward operating bases, where each type of supply crate has a weight [8, 6, 4, 9, 8, 5, 2, 3, 6, 2] and a strategic value score [14, 11, 20, 14, 5, 13, 18, 3, 1, 6] based on its contents, and the transport vehicle has a maximum cargo capacity 31. Identical crates can be loaded multiple times, with the objective being to maximize the total strategic value of the cache without exceeding the vehicle's weight limit.",
+    "data_template": {
+      "item_value": [
+        14,
+        11,
+        20,
+        14,
+        5,
+        13,
+        18,
+        3,
+        1,
+        6
+      ],
+      "item_weight": [
+        8,
+        6,
+        4,
+        9,
+        8,
+        5,
+        2,
+        3,
+        6,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 57,
+    "desc_merge": "A museum curator is designing a traveling exhibit and must select artifacts to ship, where each artifact type requires a certain crate volume [2, 9, 7, 4, 6, 4, 6, 6, 3, 3] and has an estimated public appeal value [15, 14, 8, 12, 20, 7, 12, 17, 20, 18], with the total shipping container volume being 30. Multiple copies of the same artifact type can be included, and the goal is to maximize the total exhibit appeal while staying within the container's volume constraints.",
+    "data_template": {
+      "item_value": [
+        15,
+        14,
+        8,
+        12,
+        20,
+        7,
+        12,
+        17,
+        20,
+        18
+      ],
+      "item_weight": [
+        2,
+        9,
+        7,
+        4,
+        6,
+        4,
+        6,
+        6,
+        3,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 58,
+    "desc_merge": "A catering service is planning a menu for a large event where each dish option requires a specific preparation time [7, 8, 7, 5, 10, 3, 4, 8, 1, 8] and has a client satisfaction rating [19, 5, 2, 6, 20, 20, 11, 1, 2, 7], and the total available kitchen preparation time is 36. Dishes can be prepared in multiple batches, aiming to maximize the total satisfaction score for the event menu without surpassing the total preparation time available.",
+    "data_template": {
+      "item_value": [
+        19,
+        5,
+        2,
+        6,
+        20,
+        20,
+        11,
+        1,
+        2,
+        7
+      ],
+      "item_weight": [
+        7,
+        8,
+        7,
+        5,
+        10,
+        3,
+        4,
+        8,
+        1,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 59,
+    "desc_merge": "A software development team must select features for an upcoming sprint, where each feature requires a development effort [3, 10, 1, 2, 10, 9, 2, 1, 10, 3] and provides a user benefit score [20, 12, 1, 3, 20, 3, 12, 2, 18, 6], with the total team capacity for the sprint being 30. Features can be implemented multiple times if they are reusable components, and the objective is to maximize the total user benefit delivered by the end of the sprint.",
+    "data_template": {
+      "item_value": [
+        20,
+        12,
+        1,
+        3,
+        20,
+        3,
+        12,
+        2,
+        18,
+        6
+      ],
+      "item_weight": [
+        3,
+        10,
+        1,
+        2,
+        10,
+        9,
+        2,
+        1,
+        10,
+        3
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 60,
+    "desc_merge": "An individual investor is building a portfolio with a total capital 30, where each investment opportunity requires a capital outlay [3, 6, 1, 4, 9, 1, 6, 1, 10, 10] and has an expected return [18, 20, 17, 19, 17, 16, 3, 2, 9, 1]. The same investment can be made multiple times, and the goal is to maximize the total expected return on the portfolio without exceeding the available capital.",
+    "data_template": {
+      "item_value": [
+        18,
+        20,
+        17,
+        19,
+        17,
+        16,
+        3,
+        2,
+        9,
+        1
+      ],
+      "item_weight": [
+        3,
+        6,
+        1,
+        4,
+        9,
+        1,
+        6,
+        1,
+        10,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 61,
+    "desc_merge": "A software architect must select libraries to include in a project, where each library has a file size [3, 9, 10, 4, 8, 7, 10, 9, 10, 9] and provides a certain functionality benefit [7, 8, 8, 19, 1, 15, 4, 6, 7, 12], with the total allowable project size being 47. Libraries can be included multiple times if needed, and the goal is to maximize the total functionality benefit without exceeding the project's size constraint.",
+    "data_template": {
+      "item_value": [
+        7,
+        8,
+        8,
+        19,
+        1,
+        15,
+        4,
+        6,
+        7,
+        12
+      ],
+      "item_weight": [
+        3,
+        9,
+        10,
+        4,
+        8,
+        7,
+        10,
+        9,
+        10,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 47,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 62,
+    "desc_merge": "A cafeteria manager needs to order ingredients in bulk from a supplier, where each ingredient type has a cost per unit [6, 5, 10, 6, 5, 7, 9, 1, 4, 8] and contributes a nutritional score [1, 15, 14, 2, 3, 8, 8, 4, 17, 20] to the menu, and the total budget for the order is 36. Ingredients can be ordered in any quantity, aiming to maximize the overall nutritional value of the purchased ingredients within the financial limit.",
+    "data_template": {
+      "item_value": [
+        1,
+        15,
+        14,
+        2,
+        3,
+        8,
+        8,
+        4,
+        17,
+        20
+      ],
+      "item_weight": [
+        6,
+        5,
+        10,
+        6,
+        5,
+        7,
+        9,
+        1,
+        4,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 63,
+    "desc_merge": "In a chemical plant, a production engineer must combine raw chemicals to create a final product, where each chemical has a volume [9, 7, 10, 2, 2, 8, 5, 3, 3, 5] and a potency rating [19, 7, 20, 14, 10, 20, 16, 7, 14, 7], and the total reactor vessel capacity is 32. Chemicals can be added in multiple units, with the objective being to maximize the total potency of the mixture while adhering to the vessel's volume limit.",
+    "data_template": {
+      "item_value": [
+        19,
+        7,
+        20,
+        14,
+        10,
+        20,
+        16,
+        7,
+        14,
+        7
+      ],
+      "item_weight": [
+        9,
+        7,
+        10,
+        2,
+        2,
+        8,
+        5,
+        3,
+        3,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 64,
+    "desc_merge": "An event planner is assembling gift bags for attendees, where each type of promotional item has a weight [7, 9, 4, 6, 5, 6, 8, 8, 2, 10] and a perceived value [12, 1, 9, 4, 12, 16, 13, 10, 17, 17], and each bag has a maximum weight capacity 39. Items can be packed in multiple copies, and the planner seeks to maximize the total perceived value of the bag's contents without surpassing the weight limit.",
+    "data_template": {
+      "item_value": [
+        12,
+        1,
+        9,
+        4,
+        12,
+        16,
+        13,
+        10,
+        17,
+        17
+      ],
+      "item_weight": [
+        7,
+        9,
+        4,
+        6,
+        5,
+        6,
+        8,
+        8,
+        2,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 65,
+    "desc_merge": "A animation studio must allocate rendering time to different scene assets, where each asset requires a rendering duration [3, 3, 6, 6, 4, 4, 1, 8, 8, 7] and adds a quality improvement [1, 12, 9, 8, 20, 13, 14, 14, 13, 2] to the final film, and the total rendering time available before the deadline is 30. Assets can be rendered multiple times for higher quality, with the aim being to maximize the total quality improvement within the constrained timeframe.",
+    "data_template": {
+      "item_value": [
+        1,
+        12,
+        9,
+        8,
+        20,
+        13,
+        14,
+        14,
+        13,
+        2
+      ],
+      "item_weight": [
+        3,
+        3,
+        6,
+        6,
+        4,
+        4,
+        1,
+        8,
+        8,
+        7
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 66,
+    "desc_merge": "A student must choose from a library of online learning modules for self-study, where each module requires a certain time commitment [8, 3, 7, 6, 1, 1, 7, 10, 3, 9] and provides an estimated knowledge gain [1, 1, 19, 15, 15, 19, 19, 11, 14, 18], with the total available study time being 33. Modules can be repeated for reinforcement, and the goal is to maximize the total knowledge acquired without exceeding the time budget.",
+    "data_template": {
+      "item_value": [
+        1,
+        1,
+        19,
+        15,
+        15,
+        19,
+        19,
+        11,
+        14,
+        18
+      ],
+      "item_weight": [
+        8,
+        3,
+        7,
+        6,
+        1,
+        1,
+        7,
+        10,
+        3,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 67,
+    "desc_merge": "A restaurant chef needs to stock a pantry with bulk ingredients for the week's menu, where each ingredient type occupies a specific storage volume [4, 9, 10, 1, 6, 3, 4, 9, 4, 8] and contributes a certain profit margin per dish [20, 14, 1, 7, 11, 11, 9, 6, 6, 16], given the total pantry capacity 34. Ingredients can be purchased in multiple units, and the objective is to maximize total profit potential while staying within the storage limit.",
+    "data_template": {
+      "item_value": [
+        20,
+        14,
+        1,
+        7,
+        11,
+        11,
+        9,
+        6,
+        6,
+        16
+      ],
+      "item_weight": [
+        4,
+        9,
+        10,
+        1,
+        6,
+        3,
+        4,
+        9,
+        4,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 68,
+    "desc_merge": "An expedition leader must pack gear from a supplier's catalog for a remote trip, where each piece of gear has a weight [1, 8, 2, 2, 10, 3, 6, 5, 7, 8] and a utility score for survival and task completion [1, 9, 14, 2, 20, 15, 19, 2, 12, 8], with the total backpack weight limit being 31. Multiple identical items can be packed, and the aim is to maximize the total utility of the gear without surpassing the weight capacity.",
+    "data_template": {
+      "item_value": [
+        1,
+        9,
+        14,
+        2,
+        20,
+        15,
+        19,
+        2,
+        12,
+        8
+      ],
+      "item_weight": [
+        1,
+        8,
+        2,
+        2,
+        10,
+        3,
+        6,
+        5,
+        7,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 69,
+    "desc_merge": "A mobile app developer needs to cache frequently used media assets (like emojis or sound clips) on a user's device to improve performance, where each asset consumes storage space [6, 1, 8, 6, 5, 2, 2, 4, 7, 8] and has a frequency-of-use value [14, 13, 16, 16, 19, 5, 5, 7, 18, 7], given the total cache storage limit 29. Assets can be cached in multiple copies, and the goal is to maximize the total performance benefit by minimizing load times within the storage constraint.",
+    "data_template": {
+      "item_value": [
+        14,
+        13,
+        16,
+        16,
+        19,
+        5,
+        5,
+        7,
+        18,
+        7
+      ],
+      "item_weight": [
+        6,
+        1,
+        8,
+        6,
+        5,
+        2,
+        2,
+        4,
+        7,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 70,
+    "desc_merge": "A factory maintenance manager must assemble kits of spare parts for machinery repairs, where each part type has a cost [4, 5, 5, 9, 7, 6, 7, 9, 6, 9] and a criticality rating based on machine downtime impact [11, 17, 1, 1, 2, 9, 9, 2, 11, 14], with a total kit budget of 40. Multiple units of the same part can be included, and the objective is to maximize the total criticality coverage of the kit while adhering to the budget limit.",
+    "data_template": {
+      "item_value": [
+        11,
+        17,
+        1,
+        1,
+        2,
+        9,
+        9,
+        2,
+        11,
+        14
+      ],
+      "item_weight": [
+        4,
+        5,
+        5,
+        9,
+        7,
+        6,
+        7,
+        9,
+        6,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 71,
+    "desc_merge": "A game development studio needs to package downloadable content assets into a single distribution file, where each asset has a file size [1, 3, 3, 6, 3, 8, 9, 4, 9, 8] and contributes to gameplay quality [20, 19, 9, 11, 19, 9, 10, 10, 19, 3], with the total distribution file size limit being 32. Assets can be included multiple times if beneficial, and the aim is to maximize overall gameplay quality without exceeding the file size constraint.",
+    "data_template": {
+      "item_value": [
+        20,
+        19,
+        9,
+        11,
+        19,
+        9,
+        10,
+        10,
+        19,
+        3
+      ],
+      "item_weight": [
+        1,
+        3,
+        3,
+        6,
+        3,
+        8,
+        9,
+        4,
+        9,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 72,
+    "desc_merge": "A chemical plant must fill a storage tank with various liquid chemicals, where each chemical occupies volume [2, 2, 4, 10, 6, 6, 2, 9, 1, 10] and has a market value [7, 8, 4, 4, 7, 17, 17, 1, 16, 1], given the tank's maximum capacity 31. Chemicals can be added in any quantity, and the objective is to maximize the total market value of the stored chemicals while staying within the tank's volume limit.",
+    "data_template": {
+      "item_value": [
+        7,
+        8,
+        4,
+        4,
+        7,
+        17,
+        17,
+        1,
+        16,
+        1
+      ],
+      "item_weight": [
+        2,
+        2,
+        4,
+        10,
+        6,
+        6,
+        2,
+        9,
+        1,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 73,
+    "desc_merge": "A university research office has a fixed grant budget 38 to fund multiple research projects, where each project requires funding [9, 2, 5, 5, 1, 10, 9, 7, 7, 9] and has an expected academic impact [3, 9, 14, 3, 3, 16, 3, 9, 6, 19]. Projects can receive partial or multiple rounds of funding, and the goal is to maximize the total academic impact without overspending the budget.",
+    "data_template": {
+      "item_value": [
+        3,
+        9,
+        14,
+        3,
+        3,
+        16,
+        3,
+        9,
+        6,
+        19
+      ],
+      "item_weight": [
+        9,
+        2,
+        5,
+        5,
+        1,
+        10,
+        9,
+        7,
+        7,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 74,
+    "desc_merge": "An e-commerce company needs to load products into a shipping container for international delivery, where each product type occupies space [4, 1, 4, 6, 2, 5, 2, 6, 5, 8] and has a sales profit [8, 14, 19, 20, 7, 4, 6, 13, 12, 6], with the container's total volume capacity being 25. Multiple units of the same product can be shipped, and the aim is to maximize total profit while not exceeding the container's volume limit.",
+    "data_template": {
+      "item_value": [
+        8,
+        14,
+        19,
+        20,
+        7,
+        4,
+        6,
+        13,
+        12,
+        6
+      ],
+      "item_weight": [
+        4,
+        1,
+        4,
+        6,
+        2,
+        5,
+        2,
+        6,
+        5,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 75,
+    "desc_merge": "An IT department must back up data to a remote server with limited storage 31, where each data set has a size [5, 10, 4, 4, 1, 2, 4, 10, 4, 9] and a business criticality score [10, 3, 9, 14, 6, 6, 13, 5, 20, 20]. Data sets can be backed up in full or in parts, and the objective is to maximize the total criticality of backed-up data within the storage constraint.",
+    "data_template": {
+      "item_value": [
+        10,
+        3,
+        9,
+        14,
+        6,
+        6,
+        13,
+        5,
+        20,
+        20
+      ],
+      "item_weight": [
+        5,
+        10,
+        4,
+        4,
+        1,
+        2,
+        4,
+        10,
+        4,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 76,
+    "desc_merge": "A city council is planning to furnish a new park, where each type of furniture, such as a bench or a picnic table, requires a specific area [4, 4, 1, 6, 1, 9, 2, 7, 4, 1] and provides an estimated public benefit score [1, 8, 19, 10, 4, 16, 20, 8, 5, 18]; the total available area in the park is 23. Identical furniture items can be installed multiple times, and the goal is to maximize the total public benefit without exceeding the park's area limit.",
+    "data_template": {
+      "item_value": [
+        1,
+        8,
+        19,
+        10,
+        4,
+        16,
+        20,
+        8,
+        5,
+        18
+      ],
+      "item_weight": [
+        4,
+        4,
+        1,
+        6,
+        1,
+        9,
+        2,
+        7,
+        4,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 23,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 77,
+    "desc_merge": "The owner of a food truck must stock up on ingredients before a festival, where each ingredient type occupies a certain volume in the cooler [8, 10, 2, 5, 4, 4, 9, 7, 6, 1] and is expected to generate a specific profit per serving [2, 8, 5, 4, 15, 15, 17, 15, 16, 15]; the total cooler capacity is 33. Ingredients can be purchased in any quantity, and the objective is to maximize total profit by selecting ingredient volumes without surpassing the cooler's space.",
+    "data_template": {
+      "item_value": [
+        2,
+        8,
+        5,
+        4,
+        15,
+        15,
+        17,
+        15,
+        16,
+        15
+      ],
+      "item_weight": [
+        8,
+        10,
+        2,
+        5,
+        4,
+        4,
+        9,
+        7,
+        6,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 78,
+    "desc_merge": "A studio manager must allocate rendering jobs to a server farm, where each job type consumes a fixed amount of processing time [2, 6, 3, 5, 2, 8, 4, 10, 9, 4] and contributes a quality value point to the final project [8, 15, 7, 18, 6, 14, 12, 6, 7, 18]; the total available server time before the deadline is 31. Jobs of the same type can be run multiple times, and the aim is to maximize the total quality value of the rendered output within the time constraint.",
+    "data_template": {
+      "item_value": [
+        8,
+        15,
+        7,
+        18,
+        6,
+        14,
+        12,
+        6,
+        7,
+        18
+      ],
+      "item_weight": [
+        2,
+        6,
+        3,
+        5,
+        2,
+        8,
+        4,
+        10,
+        9,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 79,
+    "desc_merge": "A logistics manager for a pharmaceutical company needs to store various vaccines in a refrigerated warehouse, where each vaccine type requires a specific storage volume [3, 3, 3, 2, 6, 9, 5, 6, 1, 1] and has an associated priority value based on demand and shelf-life [15, 5, 9, 12, 19, 8, 4, 4, 3, 15]; the total refrigerated volume available is 23. Vaccines can be stored in multiple units, and the challenge is to maximize the total priority value of the stored vaccines without exceeding the cold storage capacity.",
+    "data_template": {
+      "item_value": [
+        15,
+        5,
+        9,
+        12,
+        19,
+        8,
+        4,
+        4,
+        3,
+        15
+      ],
+      "item_weight": [
+        3,
+        3,
+        3,
+        2,
+        6,
+        9,
+        5,
+        6,
+        1,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 23,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 80,
+    "desc_merge": "A new startup has a fixed budget 45 to equip its office, where each type of equipment, like a monitor or a chair, has a cost [5, 8, 8, 9, 9, 8, 9, 7, 5, 7] and an estimated productivity improvement value [4, 8, 20, 7, 10, 12, 17, 6, 8, 18]. Multiple units of the same equipment can be purchased, and the goal is to maximize the total productivity improvement for the team while staying within the budgetary limit.",
+    "data_template": {
+      "item_value": [
+        4,
+        8,
+        20,
+        7,
+        10,
+        12,
+        17,
+        6,
+        8,
+        18
+      ],
+      "item_weight": [
+        5,
+        8,
+        8,
+        9,
+        9,
+        8,
+        9,
+        7,
+        5,
+        7
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 45,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 81,
+    "desc_merge": "An enterprise needs to allocate its monthly cloud service budget 34 across various scalable computing resources, where each resource type incurs a recurring cost [8, 7, 3, 8, 7, 3, 2, 2, 10, 8] and delivers a quantifiable performance benefit [14, 15, 15, 11, 4, 16, 2, 18, 8, 11]; the goal is to maximize total performance benefit by potentially selecting multiple units of the same resource without exceeding the budget.",
+    "data_template": {
+      "item_value": [
+        14,
+        15,
+        15,
+        11,
+        4,
+        16,
+        2,
+        18,
+        8,
+        11
+      ],
+      "item_weight": [
+        8,
+        7,
+        3,
+        8,
+        7,
+        3,
+        2,
+        2,
+        10,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 82,
+    "desc_merge": "A courier company must load a delivery van with parcels for a daily route, where each parcel type occupies a specific volume [10, 6, 3, 8, 5, 8, 5, 7, 6, 8] and has an associated delivery priority fee [17, 10, 19, 5, 15, 8, 12, 5, 17, 19], and the van's total cargo volume is 39; multiple identical parcels can be loaded, aiming to maximize the total priority fee collected while adhering to the volume constraint.",
+    "data_template": {
+      "item_value": [
+        17,
+        10,
+        19,
+        5,
+        15,
+        8,
+        12,
+        5,
+        17,
+        19
+      ],
+      "item_weight": [
+        10,
+        6,
+        3,
+        8,
+        5,
+        8,
+        5,
+        7,
+        6,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 83,
+    "desc_merge": "A streaming service aims to populate its edge server caches to minimize latency, where each media title requires storage [8, 9, 9, 3, 1, 9, 7, 8, 1, 2] and has an expected viewer engagement score [9, 18, 1, 11, 9, 8, 1, 11, 20, 18], with the total cache storage available being 34; titles can be cached in multiple copies if beneficial, and the objective is to maximize total engagement by utilizing the storage limit effectively.",
+    "data_template": {
+      "item_value": [
+        9,
+        18,
+        1,
+        11,
+        9,
+        8,
+        1,
+        11,
+        20,
+        18
+      ],
+      "item_weight": [
+        8,
+        9,
+        9,
+        3,
+        1,
+        9,
+        7,
+        8,
+        1,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 84,
+    "desc_merge": "A factory must restock its assembly line with components from suppliers, where each component type has a bulk purchase cost [1, 2, 2, 8, 7, 4, 9, 6, 2, 10] and a production line efficiency gain [7, 13, 1, 1, 3, 15, 6, 12, 12, 18], and the total restocking budget is 30; components can be ordered in multiple batches, and the aim is to maximize total efficiency gain without overspending the budget.",
+    "data_template": {
+      "item_value": [
+        7,
+        13,
+        1,
+        1,
+        3,
+        15,
+        6,
+        12,
+        12,
+        18
+      ],
+      "item_weight": [
+        1,
+        2,
+        2,
+        8,
+        7,
+        4,
+        9,
+        6,
+        2,
+        10
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 85,
+    "desc_merge": "Organizers of an academic conference must schedule parallel sessions within a fixed time block 32, where each proposed session has a duration [10, 8, 7, 1, 1, 8, 6, 2, 6, 5] and an attendee interest rating [14, 6, 9, 20, 3, 2, 18, 18, 13, 18]; multiple sessions of the same topic can be scheduled if needed, and the goal is to maximize total attendee interest by filling the time block optimally.",
+    "data_template": {
+      "item_value": [
+        14,
+        6,
+        9,
+        20,
+        3,
+        2,
+        18,
+        18,
+        13,
+        18
+      ],
+      "item_weight": [
+        10,
+        8,
+        7,
+        1,
+        1,
+        8,
+        6,
+        2,
+        6,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 86,
+    "desc_merge": "A game developer is creating a limited-time offer bundle where players can select power-ups, each power-up requiring a certain amount of virtual currency [4, 8, 4, 8, 7, 10, 2, 6, 4, 4] and providing a specific gameplay advantage [19, 4, 9, 12, 19, 10, 16, 12, 5, 2], with the total bundle cost capped at 34. Players can include multiple copies of the same power-up, and the design goal is to maximize the total gameplay advantage offered within the cost constraint.",
+    "data_template": {
+      "item_value": [
+        19,
+        4,
+        9,
+        12,
+        19,
+        10,
+        16,
+        12,
+        5,
+        2
+      ],
+      "item_weight": [
+        4,
+        8,
+        4,
+        8,
+        7,
+        10,
+        2,
+        6,
+        4,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 87,
+    "desc_merge": "A catering company must purchase ingredients for a large event with a fixed budget 34, where each ingredient type has a cost per unit [7, 10, 10, 3, 5, 3, 3, 3, 8, 5] and contributes a estimated number of guest servings [12, 6, 16, 15, 7, 11, 8, 2, 3, 8]. The company can buy multiple units of any ingredient, aiming to maximize the total number of servings prepared without exceeding the budget.",
+    "data_template": {
+      "item_value": [
+        12,
+        6,
+        16,
+        15,
+        7,
+        11,
+        8,
+        2,
+        3,
+        8
+      ],
+      "item_weight": [
+        7,
+        10,
+        10,
+        3,
+        5,
+        3,
+        3,
+        3,
+        8,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 88,
+    "desc_merge": "A construction foreman needs to equip a mobile tool trailer with a maximum weight capacity 27 with tools, where each tool has a weight [6, 4, 1, 4, 5, 4, 7, 2, 4, 9] and a value representing its daily utility for the crew [1, 3, 10, 10, 20, 3, 14, 12, 19, 18]. Multiple identical tools can be loaded, and the objective is to maximize the total daily utility of the trailer's contents while adhering to the weight limit.",
+    "data_template": {
+      "item_value": [
+        1,
+        3,
+        10,
+        10,
+        20,
+        3,
+        14,
+        12,
+        19,
+        18
+      ],
+      "item_weight": [
+        6,
+        4,
+        1,
+        4,
+        5,
+        4,
+        7,
+        2,
+        4,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 89,
+    "desc_merge": "A music streaming service algorithm compiles a playlist for a user with a total time limit 37, where each song has a duration [5, 8, 7, 2, 4, 2, 8, 10, 7, 9] and a user preference score [18, 13, 16, 16, 13, 4, 13, 7, 5, 12]. The algorithm can include multiple plays of the same song, seeking to maximize the total preference score of the playlist without surpassing the time limit.",
+    "data_template": {
+      "item_value": [
+        18,
+        13,
+        16,
+        16,
+        13,
+        4,
+        13,
+        7,
+        5,
+        12
+      ],
+      "item_weight": [
+        5,
+        8,
+        7,
+        2,
+        4,
+        2,
+        8,
+        10,
+        7,
+        9
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 90,
+    "desc_merge": "A laboratory manager must allocate limited refrigeration space 36 for chemical samples, where each sample type occupies a specific volume [3, 6, 6, 7, 2, 9, 8, 4, 8, 8] and has a value based on its rarity and research importance [13, 8, 15, 7, 19, 7, 10, 15, 17, 1]. Multiple vials of the same sample can be stored, and the goal is to maximize the total research value of the refrigerated samples within the space constraint.",
+    "data_template": {
+      "item_value": [
+        13,
+        8,
+        15,
+        7,
+        19,
+        7,
+        10,
+        15,
+        17,
+        1
+      ],
+      "item_weight": [
+        3,
+        6,
+        6,
+        7,
+        2,
+        9,
+        8,
+        4,
+        8,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 91,
+    "desc_merge": "A traveler must pack a suitcase for a trip, where each item category like clothing or toiletries has a weight [3, 4, 3, 6, 8, 2, 2, 1, 5, 4] and a utility value [8, 17, 20, 11, 16, 9, 9, 15, 2, 10] based on necessity and frequency of use, and the suitcase has a strict weight limit 22. Since multiple items of the same type (e.g., several shirts) can be packed, the goal is to maximize the total utility of the luggage while adhering to the airline's weight restriction.",
+    "data_template": {
+      "item_value": [
+        8,
+        17,
+        20,
+        11,
+        16,
+        9,
+        9,
+        15,
+        2,
+        10
+      ],
+      "item_weight": [
+        3,
+        4,
+        3,
+        6,
+        8,
+        2,
+        2,
+        1,
+        5,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 22,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 92,
+    "desc_merge": "A catering company is designing a menu for a large event with a limited budget 40; each menu item has a cost to prepare [7, 4, 4, 10, 8, 8, 9, 7, 3, 8] and a guest satisfaction score [19, 9, 5, 15, 17, 5, 19, 7, 9, 12]. As popular dishes can be offered in unlimited quantities, the objective is to select a combination of dishes that maximizes overall guest satisfaction without exceeding the budgetary constraint.",
+    "data_template": {
+      "item_value": [
+        19,
+        9,
+        5,
+        15,
+        17,
+        5,
+        19,
+        7,
+        9,
+        12
+      ],
+      "item_weight": [
+        7,
+        4,
+        4,
+        10,
+        8,
+        8,
+        9,
+        7,
+        3,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 93,
+    "desc_merge": "A media company needs to archive digital assets onto a set of storage drives with a total capacity 36; each type of asset (e.g., video, audio, document) has a file size [5, 6, 6, 6, 7, 10, 4, 3, 9, 5] and an archival priority value [10, 1, 6, 9, 8, 19, 3, 7, 3, 13]. Because multiple copies of the same asset type can be stored, the challenge is to archive assets to maximize the total priority value while staying within the total storage capacity.",
+    "data_template": {
+      "item_value": [
+        10,
+        1,
+        6,
+        9,
+        8,
+        19,
+        3,
+        7,
+        3,
+        13
+      ],
+      "item_weight": [
+        5,
+        6,
+        6,
+        6,
+        7,
+        10,
+        4,
+        3,
+        9,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 94,
+    "desc_merge": "A factory manager must place a bulk order for raw materials with a fixed storage space 37; each material type occupies a certain storage volume [7, 5, 7, 6, 10, 1, 10, 7, 9, 1] and contributes a production value [6, 13, 13, 17, 3, 11, 20, 2, 2, 11] per unit. Since materials can be ordered in any quantity, the aim is to determine the optimal order that maximizes the total production value without overflowing the warehouse.",
+    "data_template": {
+      "item_value": [
+        6,
+        13,
+        13,
+        17,
+        3,
+        11,
+        20,
+        2,
+        2,
+        11
+      ],
+      "item_weight": [
+        7,
+        5,
+        7,
+        6,
+        10,
+        1,
+        10,
+        7,
+        9,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 95,
+    "desc_merge": "An engineer is designing a microgrid with a maximum power output capacity 28; each type of renewable generator (e.g., solar panel, wind turbine) has a space requirement [9, 3, 2, 8, 4, 4, 9, 3, 4, 2] and an expected energy output value [12, 11, 7, 14, 3, 15, 1, 9, 1, 3]. As multiple units of each generator type can be installed, the goal is to configure the microgrid to maximize total energy production while not surpassing the spatial or output limitations.",
+    "data_template": {
+      "item_value": [
+        12,
+        11,
+        7,
+        14,
+        3,
+        15,
+        1,
+        9,
+        1,
+        3
+      ],
+      "item_weight": [
+        9,
+        3,
+        2,
+        8,
+        4,
+        4,
+        9,
+        3,
+        4,
+        2
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 96,
+    "desc_merge": "A cloud gaming platform needs to assemble subscription bundles for different user tiers, where each game title requires server resources [3, 10, 7, 4, 9, 9, 8, 6, 4, 4] and contributes to user satisfaction [14, 19, 10, 2, 15, 12, 11, 3, 5, 13], with the total computational capacity for a bundle being 38. Since multiple copies of the same game can be included to serve concurrent users, the objective is to maximize the overall satisfaction score of the bundle without surpassing the server's processing limit.",
+    "data_template": {
+      "item_value": [
+        14,
+        19,
+        10,
+        2,
+        15,
+        12,
+        11,
+        3,
+        5,
+        13
+      ],
+      "item_weight": [
+        3,
+        10,
+        7,
+        4,
+        9,
+        9,
+        8,
+        6,
+        4,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 97,
+    "desc_merge": "A recycling facility processes different types of waste materials, where each material type occupies processing time [6, 8, 10, 6, 9, 5, 8, 3, 7, 4] and yields a recycled product value [16, 11, 7, 14, 13, 17, 13, 15, 3, 14], given a total available processing time 39. Materials of the same type can be processed in multiple batches, and the aim is to maximize the total value of recycled output while adhering to the time constraint.",
+    "data_template": {
+      "item_value": [
+        16,
+        11,
+        7,
+        14,
+        13,
+        17,
+        13,
+        15,
+        3,
+        14
+      ],
+      "item_weight": [
+        6,
+        8,
+        10,
+        6,
+        9,
+        5,
+        8,
+        3,
+        7,
+        4
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 98,
+    "desc_merge": "A satellite operator must allocate bandwidth to various communication channels, where each channel type consumes bandwidth [2, 4, 2, 2, 4, 1, 6, 5, 2, 5] and provides a data transmission value [16, 1, 8, 8, 10, 12, 14, 1, 14, 15], with the total available bandwidth being 19. Multiple channels of the same type can be allocated, and the goal is to maximize the total data transmission value without exceeding the bandwidth capacity.",
+    "data_template": {
+      "item_value": [
+        16,
+        1,
+        8,
+        8,
+        10,
+        12,
+        14,
+        1,
+        14,
+        15
+      ],
+      "item_weight": [
+        2,
+        4,
+        2,
+        2,
+        4,
+        1,
+        6,
+        5,
+        2,
+        5
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 19,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 99,
+    "desc_merge": "A pharmaceutical company prepares supply kits for international clinical trial sites, where each medical supply item has a weight and volume [1, 2, 10, 2, 5, 9, 3, 5, 8, 1] and a criticality score for the trial [1, 14, 1, 4, 6, 7, 2, 6, 3, 19], and the total shipping container capacity is 27. Identical supply items can be packed multiple times, and the objective is to maximize the total criticality of the kit contents while staying within the container's weight and volume limits.",
+    "data_template": {
+      "item_value": [
+        1,
+        14,
+        1,
+        4,
+        6,
+        7,
+        2,
+        6,
+        3,
+        19
+      ],
+      "item_weight": [
+        1,
+        2,
+        10,
+        2,
+        5,
+        9,
+        3,
+        5,
+        8,
+        1
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 0
+      }
+    }
+  },
+  {
+    "prompt_index": 100,
+    "desc_merge": "A content delivery network must populate a local server cache with video files, where each video file requires storage space [3, 9, 7, 9, 7, 4, 2, 6, 5, 8] and has an expected viewer demand [7, 2, 13, 6, 6, 5, 5, 14, 19, 20], given the total cache storage capacity 36. Multiple copies of the same popular video can be cached to reduce latency, and the aim is to maximize the total served demand by optimizing the cache contents within the storage limit.",
+    "data_template": {
+      "item_value": [
+        7,
+        2,
+        13,
+        6,
+        6,
+        5,
+        5,
+        14,
+        19,
+        20
+      ],
+      "item_weight": [
+        3,
+        9,
+        7,
+        9,
+        7,
+        4,
+        2,
+        6,
+        5,
+        8
+      ],
+      "item_volume": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 0
+      }
+    }
+  }
+]

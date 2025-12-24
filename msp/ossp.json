@@ -1,0 +1,6308 @@
+[
+  {
+    "prompt_index": 1,
+    "desc_merge": "An auto repair shop must service 5 vehicles, each requiring work on 3 stations such as diagnostics, tire replacement, oil change, and detailing. The order of servicing is flexible, allowing mechanics to optimize workflow based on station availability. Each task has a fixed duration (see {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_2': [5, 'machine_2']}, 'op_2': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [4, 'machine_0']}, 'op_4': {'machine_2': [5, 'machine_2']}, 'op_5': {'machine_1': [3, 'machine_1']}}, 'job_2': {'op_6': {'machine_0': [2, 'machine_0']}, 'op_7': {'machine_2': [2, 'machine_2']}, 'op_8': {'machine_1': [1, 'machine_1']}}, 'job_3': {'op_9': {'machine_2': [1, 'machine_2']}, 'op_10': {'machine_1': [3, 'machine_1']}, 'op_11': {'machine_0': [4, 'machine_0']}}, 'job_4': {'op_12': {'machine_0': [5, 'machine_0']}, 'op_13': {'machine_2': [3, 'machine_2']}, 'op_14': {'machine_1': [4, 'machine_1']}}}), and no station or vehicle can handle multiple tasks simultaneously. The goal is to minimize the makespan—the total time needed to complete all repairs.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_10": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_11": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_13": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_14": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 2,
+    "desc_merge": "A factory assembles 4 PCBs using 2 machines for soldering, component placement, testing, and packaging. The assembly sequence is flexible, as long as all steps are completed for each PCB. Processing times for each stage are given in {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [3, 'machine_1']}, 'op_3': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_4': {'machine_1': [4, 'machine_1']}, 'op_5': {'machine_0': [5, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [1, 'machine_0']}, 'op_7': {'machine_1': [1, 'machine_1']}}}. The scheduler must assign tasks to machines while ensuring no overlaps, aiming to minimize the total production time.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 3,
+    "desc_merge": "A post-production studio processes 2 film projects through 1 workstations for editing, color grading, sound mixing, and VFX. The order of processing is adaptable to resource availability, with each task duration specified in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}}. Only one project can occupy a workstation at a time. The objective is to minimize the makespan—the time until all films are finalized.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 4,
+    "desc_merge": "A bakery must prepare 3 custom cake orders, each requiring 1 steps like mixing, baking, decorating, and packaging. The sequence of steps can vary per order to optimize throughput. Task durations are listed in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [1, 'machine_0']}}}, and no two orders can use the same equipment simultaneously. The goal is to minimize the total time to fulfill all orders.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 5,
+    "desc_merge": "A cloud provider allocates 5 computational jobs (e.g., data analysis, rendering, simulations) across 1 virtual machines (VMs). Each job must use all VMs, but the execution order is flexible. Processing times per VM are defined in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [5, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [3, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [3, 'machine_0']}}, 'job_4': {'op_4': {'machine_0': [3, 'machine_0']}}}, and no VM can handle multiple jobs concurrently. The scheduler aims to minimize the makespan—the time until all jobs are completed.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 6,
+    "desc_merge": "A software development team must test 5 applications across 3 testing environments (e.g., unit testing, integration testing, performance testing). Each application must pass all test suites, but the order of execution is flexible. Test durations vary per application and environment, as specified in {'job_0': {'op_0': {'machine_1': [4, 'machine_1']}, 'op_1': {'machine_2': [1, 'machine_2']}, 'op_2': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [1, 'machine_0']}, 'op_4': {'machine_1': [4, 'machine_1']}, 'op_5': {'machine_2': [1, 'machine_2']}}, 'job_2': {'op_6': {'machine_0': [2, 'machine_0']}, 'op_7': {'machine_1': [5, 'machine_1']}, 'op_8': {'machine_2': [2, 'machine_2']}}, 'job_3': {'op_9': {'machine_1': [3, 'machine_1']}, 'op_10': {'machine_0': [2, 'machine_0']}, 'op_11': {'machine_2': [3, 'machine_2']}}, 'job_4': {'op_12': {'machine_2': [4, 'machine_2']}, 'op_13': {'machine_1': [5, 'machine_1']}, 'op_14': {'machine_0': [4, 'machine_0']}}}. The goal is to minimize the total testing time (makespan) while ensuring no two tests run simultaneously on the same environment or application.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_8": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_10": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 7,
+    "desc_merge": "A humanitarian organization coordinates 2 relief packages to be assembled at 3 stations (sorting, packing, labeling, and quality control). The order of processing each package is adaptable to bottlenecks or volunteer availability. Station-specific durations are listed in {'job_0': {'op_0': {'machine_2': [4, 'machine_2']}, 'op_1': {'machine_0': [3, 'machine_0']}, 'op_2': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_3': {'machine_2': [3, 'machine_2']}, 'op_4': {'machine_1': [2, 'machine_1']}, 'op_5': {'machine_0': [4, 'machine_0']}}}. The objective is to minimize the total time to prepare all packages for delivery, respecting that each station and package can handle only one task at a time.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 8,
+    "desc_merge": "A studio processes 2 event photo albums through 3 editing stages (color correction, retouching, cropping, and watermarking). The workflow order for each album is flexible, and each stage’s time per album is given in {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_2': [5, 'machine_2']}, 'op_2': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_3': {'machine_2': [3, 'machine_2']}, 'op_4': {'machine_0': [5, 'machine_0']}, 'op_5': {'machine_1': [4, 'machine_1']}}}. The studio aims to minimize the total editing time (makespan) while ensuring no two albums are in the same stage simultaneously and no album is processed at multiple stages concurrently.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 9,
+    "desc_merge": "An automotive factory must paint 4 vehicle bodies using 2 stations (primer, base coat, clear coat, and inspection). The sequence of stations is adjustable to optimize throughput. Each painting step’s duration is defined in {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}, 'op_1': {'machine_1': [4, 'machine_1']}}, 'job_1': {'op_2': {'machine_1': [4, 'machine_1']}, 'op_3': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [1, 'machine_0']}, 'op_5': {'machine_1': [2, 'machine_1']}}, 'job_3': {'op_6': {'machine_1': [2, 'machine_1']}, 'op_7': {'machine_0': [4, 'machine_0']}}}, and no station can paint more than one vehicle at a time. The goal is to minimize the total time to complete all paint jobs.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 10,
+    "desc_merge": "A high-end restaurant prepares 2 multi-course meals using 3 kitchen stations (grill, sauté, oven, plating). Each dish requires all stations, but chefs can reorder steps to avoid congestion. Station-specific prep times are in {'job_0': {'op_0': {'machine_2': [4, 'machine_2']}, 'op_1': {'machine_0': [5, 'machine_0']}, 'op_2': {'machine_1': [4, 'machine_1']}}, 'job_1': {'op_3': {'machine_0': [1, 'machine_0']}, 'op_4': {'machine_2': [1, 'machine_2']}, 'op_5': {'machine_1': [4, 'machine_1']}}}. The kitchen must minimize the total service time (makespan) while ensuring no station works on more than one dish simultaneously and no dish is processed at multiple stations at once.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 11,
+    "desc_merge": "A semiconductor plant processes 4 silicon wafers through 2 stages like lithography, etching, doping, and inspection. The order of operations is flexible, allowing wafers to move dynamically between machines to avoid bottlenecks. Each stage has a fixed duration (see {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [2, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [3, 'machine_1']}, 'op_5': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [1, 'machine_0']}, 'op_7': {'machine_1': [2, 'machine_1']}}}), and no machine can handle multiple wafers simultaneously. The goal is to minimize the makespan—the total production time for all wafers—while ensuring high equipment utilization.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 12,
+    "desc_merge": "An automated warehouse processes 4 customer orders using 3 robotic stations for picking, packing, labeling, and quality checks. The sequence of operations is adaptable to avoid congestion, with each task duration specified in {'job_0': {'op_0': {'machine_1': [5, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}, 'op_2': {'machine_2': [1, 'machine_2']}}, 'job_1': {'op_3': {'machine_0': [2, 'machine_0']}, 'op_4': {'machine_1': [4, 'machine_1']}, 'op_5': {'machine_2': [5, 'machine_2']}}, 'job_2': {'op_6': {'machine_2': [3, 'machine_2']}, 'op_7': {'machine_0': [5, 'machine_0']}, 'op_8': {'machine_1': [5, 'machine_1']}}, 'job_3': {'op_9': {'machine_0': [3, 'machine_0']}, 'op_10': {'machine_1': [4, 'machine_1']}, 'op_11': {'machine_2': [1, 'machine_2']}}}. Only one order can occupy a station at a time. The scheduler aims to minimize the total fulfillment time (makespan) while balancing workload across robots.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_10": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 13,
+    "desc_merge": "A museum conservatory handles 4 artworks requiring 1 treatments (e.g., cleaning, stabilization, pigment analysis, varnishing). The order of treatments is flexible, as long as all are completed. Each step’s duration is listed in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [2, 'machine_0']}}}, and only one artwork can be worked on per machine at a time. The objective is to minimize the total project duration while preserving delicate workflows.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 14,
+    "desc_merge": "A prefab housing factory assembles 3 modular units using 3 workstations (e.g., framing, plumbing, electrical, finishing). The assembly sequence is adaptable to worker availability, with task times defined in {'job_0': {'op_0': {'machine_2': [3, 'machine_2']}, 'op_1': {'machine_0': [5, 'machine_0']}, 'op_2': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_3': {'machine_2': [5, 'machine_2']}, 'op_4': {'machine_0': [2, 'machine_0']}, 'op_5': {'machine_1': [3, 'machine_1']}}, 'job_2': {'op_6': {'machine_2': [1, 'machine_2']}, 'op_7': {'machine_0': [2, 'machine_0']}, 'op_8': {'machine_1': [4, 'machine_1']}}}. Each unit must pass through all stations, but no station can process multiple units simultaneously. The goal is to minimize the makespan—the total time to complete all units.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 15,
+    "desc_merge": "A clinical trial center schedules 2 participants through 1 assessments (e.g., blood tests, cognitive exams, imaging). The assessment order is flexible to accommodate patient preferences and machine availability. Each test’s duration is in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [3, 'machine_0']}}}, and no overlapping bookings are allowed per machine. The scheduler optimizes assignments to minimize the total trial duration (makespan).",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 16,
+    "desc_merge": "A pharmaceutical lab conducts 4 drug trials, each requiring processing on 2 specialized machines (e.g., chromatography, spectrometry, and dissolution testers). The order of tests is flexible, but each trial must complete all steps. Processing times vary per test (see {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}, 'op_1': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_2': {'machine_1': [5, 'machine_1']}, 'op_3': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_4': {'machine_1': [2, 'machine_1']}, 'op_5': {'machine_0': [1, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [5, 'machine_0']}, 'op_7': {'machine_1': [2, 'machine_1']}}}), and no machine can handle multiple trials simultaneously. The goal is to minimize the makespan—the total time to complete all trials—while ensuring regulatory compliance and efficient resource use.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 17,
+    "desc_merge": "A factory assembles 2 custom furniture orders using 2 workstations (e.g., cutting, sanding, upholstery, and finishing). Each order must pass through all stations, but the sequence is adaptable to reduce bottlenecks. Task durations are specified in {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [2, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}}, and each station can only handle one order at a time. The scheduler aims to minimize production time while accommodating last-minute design changes.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 18,
+    "desc_merge": "A wind/solar farm must service 5 turbines or solar arrays using 3 crews (e.g., electrical, mechanical, and structural teams). Each unit requires all maintenance tasks, but the order depends on weather and crew availability. Processing times (see {'job_0': {'op_0': {'machine_2': [2, 'machine_2']}, 'op_1': {'machine_0': [2, 'machine_0']}, 'op_2': {'machine_1': [4, 'machine_1']}}, 'job_1': {'op_3': {'machine_2': [4, 'machine_2']}, 'op_4': {'machine_0': [2, 'machine_0']}, 'op_5': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_6': {'machine_0': [3, 'machine_0']}, 'op_7': {'machine_2': [1, 'machine_2']}, 'op_8': {'machine_1': [2, 'machine_1']}}, 'job_3': {'op_9': {'machine_0': [2, 'machine_0']}, 'op_10': {'machine_1': [4, 'machine_1']}, 'op_11': {'machine_2': [4, 'machine_2']}}, 'job_4': {'op_12': {'machine_0': [5, 'machine_0']}, 'op_13': {'machine_1': [2, 'machine_1']}, 'op_14': {'machine_2': [5, 'machine_2']}}}) account for travel and repairs. The objective is to minimize downtime by scheduling tasks to finish all maintenance as quickly as possible.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_10": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 19,
+    "desc_merge": "A boutique coffee roaster processes 2 batches of beans through 1 stages (e.g., sorting, roasting, grinding, and packaging). The sequence can vary to prioritize freshness or equipment availability. Each stage’s duration is listed in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}}, and no two batches can use the same machine simultaneously. The goal is to minimize the makespan while preserving flavor profiles.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 20,
+    "desc_merge": "A studio renders 4 animation scenes across 2 GPU servers, each handling tasks like modeling, texturing, and lighting. The order of tasks is flexible, but all must be completed per scene. Render times (see {'job_0': {'op_0': {'machine_1': [4, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [3, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [4, 'machine_0']}, 'op_7': {'machine_1': [1, 'machine_1']}}}) depend on complexity, and each server can only process one task at a time. The scheduler optimizes assignments to meet tight deadlines.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 21,
+    "desc_merge": "A repair facility handles 2 smartphones, each requiring diagnostics, screen replacement, battery testing, and software calibration across 3 workstations. The order of repairs is flexible, allowing technicians to prioritize tasks based on machine availability. Each repair step has a fixed duration (see {'job_0': {'op_0': {'machine_1': [5, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}, 'op_2': {'machine_2': [1, 'machine_2']}}, 'job_1': {'op_3': {'machine_1': [2, 'machine_1']}, 'op_4': {'machine_2': [3, 'machine_2']}, 'op_5': {'machine_0': [3, 'machine_0']}}}), and no two repairs can occupy the same workstation simultaneously. The goal is to minimize the total time to return all devices to customers.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 22,
+    "desc_merge": "A factory assembles 2 custom robots using 3 modular stations (e.g., motor fitting, sensor integration, programming). The assembly sequence for each robot is adaptable, as long as all stations are visited. Processing times per station are listed in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}, 'op_1': {'machine_2': [3, 'machine_2']}, 'op_2': {'machine_1': [4, 'machine_1']}}, 'job_1': {'op_3': {'machine_1': [3, 'machine_1']}, 'op_4': {'machine_0': [4, 'machine_0']}, 'op_5': {'machine_2': [2, 'machine_2']}}}, and collisions (multiple robots at one station) are prohibited. The scheduler optimizes the order of operations to minimize the total assembly makespan.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 23,
+    "desc_merge": "An event management company must prepare 4 conference rooms for 3 tasks (e.g., audio setup, furniture arrangement, decor, tech checks). The order of tasks is flexible, but each room must complete all steps before the event starts. Task durations are in {'job_0': {'op_0': {'machine_1': [2, 'machine_1']}, 'op_1': {'machine_0': [2, 'machine_0']}, 'op_2': {'machine_2': [3, 'machine_2']}}, 'job_1': {'op_3': {'machine_2': [5, 'machine_2']}, 'op_4': {'machine_1': [5, 'machine_1']}, 'op_5': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_6': {'machine_2': [1, 'machine_2']}, 'op_7': {'machine_0': [4, 'machine_0']}, 'op_8': {'machine_1': [5, 'machine_1']}}, 'job_3': {'op_9': {'machine_1': [1, 'machine_1']}, 'op_10': {'machine_0': [5, 'machine_0']}, 'op_11': {'machine_2': [5, 'machine_2']}}}, and only one team can work on a task at a time. The objective is to minimize the latest completion time across all rooms.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_10": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 24,
+    "desc_merge": "A toy workshop produces 2 custom orders (e.g., stuffed animals, wooden toys) using 3 stations (cutting, sewing, painting, quality control). The production sequence for each toy is open, allowing workers to reorder steps for efficiency. Each station’s processing time is defined in {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}, 'op_2': {'machine_2': [4, 'machine_2']}}, 'job_1': {'op_3': {'machine_1': [1, 'machine_1']}, 'op_4': {'machine_0': [1, 'machine_0']}, 'op_5': {'machine_2': [1, 'machine_2']}}}, and no station can handle multiple toys simultaneously. The goal is to minimize the total production time.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 25,
+    "desc_merge": "A DevOps team manages 5 software releases requiring 1 stages (code review, testing, containerization, deployment). The pipeline allows flexible stage ordering (e.g., testing before or after containerization) to optimize resource usage. Stage durations are in {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [5, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [2, 'machine_0']}}, 'job_4': {'op_4': {'machine_0': [5, 'machine_0']}}}, and concurrent execution is forbidden per stage. The scheduler aims to minimize the total deployment makespan.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 26,
+    "desc_merge": "A space manufacturing plant assembles 4 satellites by processing components across 1 workstations (e.g., propulsion, solar panel integration, payload testing). The assembly sequence is flexible, as subsystems can be installed in any order. Each task duration is specified in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [5, 'machine_0']}}}, and no two tasks can occupy the same workstation or satellite simultaneously. The goal is to minimize the total assembly time (makespan) to meet launch window deadlines.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 27,
+    "desc_merge": "A boutique sneaker workshop handles 4 customer orders, each requiring 3 steps like laser etching, dyeing, sole customization, and quality control. The order of operations is adaptable—e.g., etching can precede or follow dyeing—to balance workload. Task durations vary per design (see {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_2': [1, 'machine_2']}, 'op_2': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_3': {'machine_2': [2, 'machine_2']}, 'op_4': {'machine_1': [2, 'machine_1']}, 'op_5': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_6': {'machine_1': [5, 'machine_1']}, 'op_7': {'machine_2': [4, 'machine_2']}, 'op_8': {'machine_0': [1, 'machine_0']}}, 'job_3': {'op_9': {'machine_0': [2, 'machine_0']}, 'op_10': {'machine_2': [4, 'machine_2']}, 'op_11': {'machine_1': [4, 'machine_1']}}}), and each machine processes one sneaker at a time. The scheduler aims to minimize the total production time while ensuring artisanal quality.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_10": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_11": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 28,
+    "desc_merge": "A research facility tests 3 self-driving car prototypes across 1 environments (e.g., urban simulation, off-road track, sensor calibration lab). Tests can be conducted in any order, but each prototype must complete all scenarios. Testing times per environment are listed in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [5, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [1, 'machine_0']}}}, and no two cars can share a testbed simultaneously. The objective is to minimize the total testing period to accelerate development cycles.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 29,
+    "desc_merge": "A craft brewery manages 3 beer batches through 2 stages (mashing, boiling, fermenting, carbonating). The sequence of stages is flexible—e.g., some batches may ferment before carbonation, while others reverse the order—to optimize tank availability. Each stage’s duration per batch is defined in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}, 'op_1': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_2': {'machine_1': [4, 'machine_1']}, 'op_3': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [3, 'machine_0']}, 'op_5': {'machine_1': [4, 'machine_1']}}}, with tanks reserved for one batch at a time. The goal is to minimize the total production time to meet seasonal demand spikes.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 30,
+    "desc_merge": "A disaster response team must deploy 4 mobile field hospitals, each requiring 1 modular units (triage, surgery, recovery, sterilization). The setup order is adaptable based on terrain and urgency. Unit assembly times vary per hospital (see {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [5, 'machine_0']}}}), and each unit can only handle one hospital at a time. The objective is to minimize the total deployment time to maximize lifesaving capacity.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 31,
+    "desc_merge": "A sports complex must prepare 2 tournament courts (e.g., basketball, volleyball, badminton) by setting up 1 equipment stations (nets, scoreboards, flooring, lighting). Each court requires all setup tasks, but the order is flexible. The duration for each task is listed in {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}}, and only one station can work on one court at a time. The goal is to minimize the total setup time before the tournament begins.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 32,
+    "desc_merge": "A crime lab processes 3 evidence cases (e.g., DNA, fingerprints, toxicology) using 2 specialized analysis machines. Each case must undergo all analyses, but the sequence can vary to expedite results. Processing times per analysis are defined in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}, 'op_1': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [1, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [2, 'machine_1']}, 'op_5': {'machine_0': [5, 'machine_0']}}}, and no machine can handle multiple cases simultaneously. The objective is to minimize the makespan—the time to complete all forensic reports.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 33,
+    "desc_merge": "A theme park schedules 4 rides for daily maintenance across 3 service teams (electrical, mechanical, safety checks). The order of checks is flexible, but each ride must pass all teams before reopening. Task durations are in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}, 'op_1': {'machine_2': [3, 'machine_2']}, 'op_2': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_3': {'machine_1': [4, 'machine_1']}, 'op_4': {'machine_0': [2, 'machine_0']}, 'op_5': {'machine_2': [2, 'machine_2']}}, 'job_2': {'op_6': {'machine_1': [4, 'machine_1']}, 'op_7': {'machine_2': [4, 'machine_2']}, 'op_8': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_9': {'machine_1': [4, 'machine_1']}, 'op_10': {'machine_2': [3, 'machine_2']}, 'op_11': {'machine_0': [1, 'machine_0']}}}, and each team can only service one ride at a time. The scheduler aims to minimize downtime by reducing the total maintenance window.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_10": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_11": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 34,
+    "desc_merge": "A tech factory assembles 5 custom smartphones using 2 modular stations (camera calibration, battery install, software flash). While all stations must process each phone, the sequence is adaptable to bottlenecks. Assembly times per station are in {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [4, 'machine_0']}, 'op_3': {'machine_1': [3, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_0': [5, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [5, 'machine_0']}, 'op_7': {'machine_1': [4, 'machine_1']}}, 'job_4': {'op_8': {'machine_1': [5, 'machine_1']}, 'op_9': {'machine_0': [4, 'machine_0']}}}, and stations can’t multitask. The goal is to minimize the production makespan to meet shipping deadlines.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_4": {
+          "op_8": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_9": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 35,
+    "desc_merge": "A chocolatier crafts 2 specialty batches through 1 stages (tempering, molding, decorating, packaging). The production sequence is flexible to accommodate ingredient readiness or artisan availability. Stage durations are listed in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}}, and each machine handles one batch at a time. The objective is to minimize the total production time while ensuring freshness.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 36,
+    "desc_merge": "A tech manufacturer assembles 4 customized smartphones using 1 workstations (e.g., screen installation, battery fitting, camera calibration, and software flashing). The assembly sequence for each phone is flexible, allowing optimization based on workstation availability. Each operation’s duration is specified in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [1, 'machine_0']}}}, and no workstation can handle more than one phone at a time. The goal is to minimize the makespan—the total time to assemble all phones.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 37,
+    "desc_merge": "A disaster response team must set up 3 temporary field hospitals, each requiring 2 modular units (e.g., triage tents, surgical stations, pharmacy, and recovery beds). The setup order for each hospital is adaptable to logistics constraints. Processing times for assembling each unit are given in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}, 'op_1': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [5, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_0': [1, 'machine_0']}, 'op_5': {'machine_1': [1, 'machine_1']}}}, and only one team can work on a unit at a time. The objective is to minimize the total deployment time to operationalize all hospitals.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 38,
+    "desc_merge": "A sports arena hosts 3 tournaments (e.g., basketball, volleyball, and badminton) that require 2 court configurations (flooring, net setup, lighting, and signage). The order of court conversions is flexible but must avoid overlaps. Conversion times per sport are listed in {'job_0': {'op_0': {'machine_1': [5, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [3, 'machine_1']}, 'op_3': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [4, 'machine_0']}, 'op_5': {'machine_1': [4, 'machine_1']}}}. The scheduler aims to minimize the makespan—the total time to prepare all courts for all tournaments.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 39,
+    "desc_merge": "A crime lab processes 3 cases, each requiring analysis on 3 specialized machines (DNA sequencer, fingerprint scanner, toxicology tester, and ballistics comparator). The analysis sequence per case is flexible, but each machine can handle only one task at a time. Processing durations are defined in {'job_0': {'op_0': {'machine_1': [5, 'machine_1']}, 'op_1': {'machine_0': [3, 'machine_0']}, 'op_2': {'machine_2': [1, 'machine_2']}}, 'job_1': {'op_3': {'machine_2': [4, 'machine_2']}, 'op_4': {'machine_0': [5, 'machine_0']}, 'op_5': {'machine_1': [4, 'machine_1']}}, 'job_2': {'op_6': {'machine_1': [1, 'machine_1']}, 'op_7': {'machine_0': [5, 'machine_0']}, 'op_8': {'machine_2': [4, 'machine_2']}}}. The goal is to minimize the total time to complete all forensic analyses.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 40,
+    "desc_merge": "A theme park schedules 2 rides for maintenance across 1 service teams (mechanical, electrical, safety checks, and cosmetic touch-ups). The order of maintenance tasks per ride is adjustable based on team availability. Task durations are specified in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [3, 'machine_0']}}}, and each team can service only one ride at a time. The objective is to minimize the total downtime for all rides.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 41,
+    "desc_merge": "A smart home company must configure 4 custom installations, each requiring setup across 3 workstations (e.g., lighting, security, HVAC, and automation hubs). The sequence of installations is flexible, but each task has fixed durations ({'job_0': {'op_0': {'machine_2': [4, 'machine_2']}, 'op_1': {'machine_0': [1, 'machine_0']}, 'op_2': {'machine_1': [4, 'machine_1']}}, 'job_1': {'op_3': {'machine_0': [2, 'machine_0']}, 'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_2': [4, 'machine_2']}}, 'job_2': {'op_6': {'machine_2': [1, 'machine_2']}, 'op_7': {'machine_0': [5, 'machine_0']}, 'op_8': {'machine_1': [1, 'machine_1']}}, 'job_3': {'op_9': {'machine_2': [4, 'machine_2']}, 'op_10': {'machine_1': [3, 'machine_1']}, 'op_11': {'machine_0': [1, 'machine_0']}}}). Only one technician can work on a system at a time, and each workstation can handle only one task simultaneously. The goal is to minimize the total project completion time while ensuring efficient resource allocation.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_10": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_11": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 42,
+    "desc_merge": "An art restoration studio processes 3 paintings through 2 specialized stations (e.g., cleaning, varnish removal, retouching, and framing). The order of operations is flexible, allowing conservators to optimize workflow based on equipment availability. Each restoration step has predefined durations ({'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [1, 'machine_0']}, 'op_3': {'machine_1': [2, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_0': [5, 'machine_0']}}}), and no two tasks can occupy the same station simultaneously. The objective is to minimize the makespan—the total time needed to restore all artworks.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 43,
+    "desc_merge": "A logistics company manages 3 drones requiring battery swaps, sensor recalibration, and system diagnostics across 3 service docks. The maintenance sequence is adaptable, with each task duration specified in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}, 'op_1': {'machine_1': [5, 'machine_1']}, 'op_2': {'machine_2': [1, 'machine_2']}}, 'job_1': {'op_3': {'machine_0': [3, 'machine_0']}, 'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_2': [5, 'machine_2']}}, 'job_2': {'op_6': {'machine_0': [1, 'machine_0']}, 'op_7': {'machine_1': [2, 'machine_1']}, 'op_8': {'machine_2': [5, 'machine_2']}}}. Only one drone can be serviced per dock at a time, and each drone can undergo only one procedure at once. The scheduler aims to minimize the total downtime of the fleet.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_8": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 44,
+    "desc_merge": "A convention center must prepare 3 conference rooms for events requiring 2 setup tasks (e.g., audio-visual testing, seating arrangement, signage, and catering). The order of tasks is flexible, but each has fixed times ({'job_0': {'op_0': {'machine_0': [2, 'machine_0']}, 'op_1': {'machine_1': [2, 'machine_1']}}, 'job_1': {'op_2': {'machine_1': [2, 'machine_1']}, 'op_3': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [4, 'machine_0']}, 'op_5': {'machine_1': [3, 'machine_1']}}}). Only one team can work in a room at a time, and each setup task requires dedicated equipment. The goal is to minimize the total setup time before sessions begin.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 45,
+    "desc_merge": "A manufacturing plant handles 4 custom orders, each requiring processing on 3 3D printers, sanding stations, and quality control checks. The operation sequence is open, with durations per step ({'job_0': {'op_0': {'machine_2': [4, 'machine_2']}, 'op_1': {'machine_1': [1, 'machine_1']}, 'op_2': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_3': {'machine_1': [2, 'machine_1']}, 'op_4': {'machine_2': [3, 'machine_2']}, 'op_5': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_6': {'machine_0': [5, 'machine_0']}, 'op_7': {'machine_1': [2, 'machine_1']}, 'op_8': {'machine_2': [2, 'machine_2']}}, 'job_3': {'op_9': {'machine_1': [2, 'machine_1']}, 'op_10': {'machine_0': [1, 'machine_0']}, 'op_11': {'machine_2': [3, 'machine_2']}}}) varying by material and design complexity. Each machine can process only one order at a time, and no order can be split across machines simultaneously. The objective is to minimize the makespan—the time to fulfill all orders.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_8": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_10": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 46,
+    "desc_merge": "A research team deploys 3 sensor arrays across 1 calibration and testing stations (e.g., humidity, temperature, air quality). Each array must pass all tests, but the sequence is flexible to accommodate equipment availability. Processing times for each test are given in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [4, 'machine_0']}}}. The goal is to minimize the makespan—the total time required to calibrate all sensors—while ensuring no station processes multiple arrays simultaneously.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 47,
+    "desc_merge": "A high-end tailor processes 2 custom garments through 1 workstations (measuring, cutting, stitching, fitting). The order of operations is adaptable to artisan availability, with each task duration specified in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}}. Only one garment can occupy a workstation at a time. The scheduler aims to minimize the total production time while maintaining flexibility in workflow sequencing.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 48,
+    "desc_merge": "A space agency tests 3 satellite modules across 3 rigs (thermal vacuum, vibration, electromagnetic). Modules must complete all tests, but the order is configurable to avoid bottlenecks. Test durations are listed in {'job_0': {'op_0': {'machine_2': [3, 'machine_2']}, 'op_1': {'machine_0': [3, 'machine_0']}, 'op_2': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_3': {'machine_1': [5, 'machine_1']}, 'op_4': {'machine_2': [4, 'machine_2']}, 'op_5': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_6': {'machine_2': [1, 'machine_2']}, 'op_7': {'machine_1': [4, 'machine_1']}, 'op_8': {'machine_0': [4, 'machine_0']}}}, and each rig can only handle one module at a time. The objective is to minimize the makespan—the time to certify all modules for launch.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 49,
+    "desc_merge": "A recycling plant services 2 battery packs through 2 stages (disassembly, diagnostics, reconditioning, repackaging). The sequence of stages is flexible to optimize technician workflows. Each stage’s duration is defined in {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}, 'op_1': {'machine_1': [4, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [2, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}}, and no two packs can occupy the same stage simultaneously. The goal is to minimize total refurbishment time across all packs.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 50,
+    "desc_merge": "A museum schedules 3 exhibits for maintenance across 1 teams (electrical, structural, multimedia). Each exhibit requires all services, but the order can vary based on team availability. Task durations are in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [4, 'machine_0']}}}, and each team can only service one exhibit at a time. The scheduler seeks to minimize the total downtime of all exhibits.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 51,
+    "desc_merge": "A logistics hub manages 5 autonomous robots that require periodic charging, diagnostics, and software updates across 3 service bays. Each robot must complete all maintenance tasks, but the sequence is flexible to avoid bottlenecks. Task durations (e.g., charging time, calibration) are specified in {'job_0': {'op_0': {'machine_2': [1, 'machine_2']}, 'op_1': {'machine_1': [2, 'machine_1']}, 'op_2': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [5, 'machine_0']}, 'op_4': {'machine_1': [3, 'machine_1']}, 'op_5': {'machine_2': [2, 'machine_2']}}, 'job_2': {'op_6': {'machine_0': [1, 'machine_0']}, 'op_7': {'machine_2': [3, 'machine_2']}, 'op_8': {'machine_1': [3, 'machine_1']}}, 'job_3': {'op_9': {'machine_2': [5, 'machine_2']}, 'op_10': {'machine_0': [4, 'machine_0']}, 'op_11': {'machine_1': [4, 'machine_1']}}, 'job_4': {'op_12': {'machine_2': [5, 'machine_2']}, 'op_13': {'machine_1': [2, 'machine_1']}, 'op_14': {'machine_0': [4, 'machine_0']}}}. The goal is to minimize the makespan—the total downtime of the fleet—while ensuring no two robots occupy the same bay simultaneously.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_10": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_11": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 52,
+    "desc_merge": "A Swiss watchmaker crafts 5 bespoke timepieces using 1 workstations for movement assembly, casing, dial finishing, and quality control. Artisans can reorder non-critical steps (e.g., polishing before engraving) to optimize workflow. Each operation’s duration is listed in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [1, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [1, 'machine_0']}}, 'job_4': {'op_4': {'machine_0': [2, 'machine_0']}}}. The workshop aims to minimize total production time while adhering to one-job-per-machine constraints.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_4": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 53,
+    "desc_merge": "A scientific team schedules 5 drones to collect atmospheric data across 3 sensor calibration, battery swap, and payload attachment stations. The order of pre-flight checks is adaptable to weather conditions. Task times (from {'job_0': {'op_0': {'machine_1': [4, 'machine_1']}, 'op_1': {'machine_2': [1, 'machine_2']}, 'op_2': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [3, 'machine_0']}, 'op_4': {'machine_2': [3, 'machine_2']}, 'op_5': {'machine_1': [1, 'machine_1']}}, 'job_2': {'op_6': {'machine_0': [1, 'machine_0']}, 'op_7': {'machine_2': [2, 'machine_2']}, 'op_8': {'machine_1': [4, 'machine_1']}}, 'job_3': {'op_9': {'machine_0': [5, 'machine_0']}, 'op_10': {'machine_2': [4, 'machine_2']}, 'op_11': {'machine_1': [3, 'machine_1']}}, 'job_4': {'op_12': {'machine_0': [4, 'machine_0']}, 'op_13': {'machine_1': [5, 'machine_1']}, 'op_14': {'machine_2': [3, 'machine_2']}}}) vary by drone model. The objective is to minimize the makespan—the time until all drones are airborne—while avoiding parallel resource conflicts.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_10": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_11": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 54,
+    "desc_merge": "A gourmet pop-up must prepare 4 multi-course meals using 2 stations (grill, sous-vide, plating, etc.). Courses can be cooked in any order, but each dish requires all stations. {'job_0': {'op_0': {'machine_1': [4, 'machine_1']}, 'op_1': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [1, 'machine_1']}, 'op_3': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [5, 'machine_0']}, 'op_5': {'machine_1': [3, 'machine_1']}}, 'job_3': {'op_6': {'machine_0': [2, 'machine_0']}, 'op_7': {'machine_1': [1, 'machine_1']}}} account for variable cooking durations. The chefs prioritize minimizing the makespan—the time until the last meal is served—while ensuring no station overlaps.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 55,
+    "desc_merge": "A lunar base project assembles 4 habitat modules using 1 robotic arms for welding, insulation, and life-support system installation. The assembly sequence is flexible to accommodate delayed cargo shipments. Task durations (see {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [1, 'machine_0']}}}) depend on module complexity. The goal is to minimize total construction time despite strict single-machine-use constraints.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 56,
+    "desc_merge": "A logistics company manages 2 drone delivery orders, each requiring processing at 3 stations: battery charging, payload loading, navigation calibration, and safety checks. The sequence of operations is flexible, allowing the scheduler to optimize for throughput. Each task’s duration is specified in {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_2': [2, 'machine_2']}, 'op_2': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_3': {'machine_1': [3, 'machine_1']}, 'op_4': {'machine_2': [4, 'machine_2']}, 'op_5': {'machine_0': [3, 'machine_0']}}}, and no station or drone can handle multiple tasks simultaneously. The goal is to minimize the makespan—the total time to prepare all drones for dispatch.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 57,
+    "desc_merge": "A boutique bicycle shop assembles 2 custom orders, each requiring work at 3 specialized stations (frame welding, gear tuning, paint finishing, and quality testing). The order of operations is adaptable to reduce bottlenecks. Task durations are listed in {'job_0': {'op_0': {'machine_2': [1, 'machine_2']}, 'op_1': {'machine_1': [4, 'machine_1']}, 'op_2': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [5, 'machine_0']}, 'op_4': {'machine_2': [1, 'machine_2']}, 'op_5': {'machine_1': [4, 'machine_1']}}}, and each station can only process one bike at a time. The scheduler aims to minimize the total workshop time to fulfill all orders.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 58,
+    "desc_merge": "A humanitarian team operates 2 cooking stations (chopping, boiling, baking, packaging) to prepare 3 batches of meals for disaster survivors. The workflow is flexible—e.g., packaging can occur before baking if resources are available. Each step’s time is defined in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}, 'op_1': {'machine_1': [5, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [5, 'machine_0']}, 'op_3': {'machine_1': [4, 'machine_1']}}, 'job_2': {'op_4': {'machine_0': [4, 'machine_0']}, 'op_5': {'machine_1': [1, 'machine_1']}}}, and stations can handle only one batch at a time. The objective is to minimize the makespan to accelerate meal distribution.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 59,
+    "desc_merge": "An entertainment venue configures 4 VR pods for customers, each requiring 2 setup steps: hardware calibration, software updates, sanitization, and game selection. The sequence is adjustable based on technician availability. Task durations are in {'job_0': {'op_0': {'machine_1': [5, 'machine_1']}, 'op_1': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [3, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [4, 'machine_1']}, 'op_5': {'machine_0': [5, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [4, 'machine_0']}, 'op_7': {'machine_1': [3, 'machine_1']}}}, and no pod or technician can multitask. The goal is to minimize the total setup time before opening hours.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 60,
+    "desc_merge": "A construction firm installs 3 green roofs, each requiring 3 tasks: waterproofing, soil layering, planting, and irrigation setup. The task order is flexible to accommodate weather or crew constraints. Each step’s duration is in {'job_0': {'op_0': {'machine_2': [4, 'machine_2']}, 'op_1': {'machine_0': [3, 'machine_0']}, 'op_2': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_3': {'machine_0': [5, 'machine_0']}, 'op_4': {'machine_2': [2, 'machine_2']}, 'op_5': {'machine_1': [1, 'machine_1']}}, 'job_2': {'op_6': {'machine_1': [2, 'machine_1']}, 'op_7': {'machine_2': [5, 'machine_2']}, 'op_8': {'machine_0': [4, 'machine_0']}}}, and only one task per roof or crew can occur at once. The scheduler minimizes the makespan to meet project deadlines.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 61,
+    "desc_merge": "A logistics company operates 3 delivery drones that require recharging, battery diagnostics, and software updates across 1 service stations. The order of servicing is flexible, but each drone must complete all tasks before redeployment. The processing times for each task (recharging, diagnostics, updates) are specified in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [1, 'machine_0']}}}. The goal is to minimize the makespan—the total time to prepare the entire fleet for the next mission—while ensuring no station or drone is double-booked.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 62,
+    "desc_merge": "A conservation lab handles 5 artworks needing cleaning, structural repair, pigment analysis, and varnishing across 1 specialized workstations. The sequence of treatments is adaptable to prioritize fragile items or resource availability. Each restoration step has fixed durations (see {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [3, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [5, 'machine_0']}}, 'job_4': {'op_4': {'machine_0': [5, 'machine_0']}}}), and only one artwork can occupy a workstation at a time. The objective is to minimize the total project completion time while preserving artistic integrity.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 63,
+    "desc_merge": "A tech firm deploys 5 smart home setups, each requiring installations of security systems, lighting controls, HVAC automation, and audio-visual components across 2 technician teams. The installation order for each home is flexible, but all tasks must be completed. Task durations per home (e.g., 2 hours for lighting, 3 for HVAC) are listed in {'job_0': {'op_0': {'machine_1': [4, 'machine_1']}, 'op_1': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [1, 'machine_1']}, 'op_3': {'machine_0': [5, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [3, 'machine_0']}, 'op_5': {'machine_1': [5, 'machine_1']}}, 'job_3': {'op_6': {'machine_0': [1, 'machine_0']}, 'op_7': {'machine_1': [1, 'machine_1']}}, 'job_4': {'op_8': {'machine_0': [1, 'machine_0']}, 'op_9': {'machine_1': [2, 'machine_1']}}}. The scheduler aims to minimize the makespan—the time until the last home is fully operational.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_4": {
+          "op_8": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_9": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 64,
+    "desc_merge": "An NGO coordinates 5 food batches (meals, snacks, beverages) across 2 cooking stations (grills, stoves, blenders) in a temporary kitchen. While all stations must be used for each batch, the order can vary based on ingredient readiness. Cooking times per station are defined in {'job_0': {'op_0': {'machine_1': [2, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [1, 'machine_0']}, 'op_3': {'machine_1': [3, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [5, 'machine_1']}, 'op_5': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_6': {'machine_1': [3, 'machine_1']}, 'op_7': {'machine_0': [3, 'machine_0']}}, 'job_4': {'op_8': {'machine_0': [2, 'machine_0']}, 'op_9': {'machine_1': [2, 'machine_1']}}}. The goal is to minimize the total time to prepare all batches, ensuring timely delivery to affected communities.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_8": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_9": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 65,
+    "desc_merge": "A boutique workshop customizes 5 bicycles through 3 processes: frame welding, paintwork, gear calibration, and quality testing. The sequence is flexible to accommodate artisan availability or client preferences. Each task’s duration (e.g., 4 hours for paint, 1.5 for testing) is in {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_2': [1, 'machine_2']}, 'op_2': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [1, 'machine_0']}, 'op_4': {'machine_1': [3, 'machine_1']}, 'op_5': {'machine_2': [3, 'machine_2']}}, 'job_2': {'op_6': {'machine_2': [3, 'machine_2']}, 'op_7': {'machine_0': [5, 'machine_0']}, 'op_8': {'machine_1': [1, 'machine_1']}}, 'job_3': {'op_9': {'machine_1': [5, 'machine_1']}, 'op_10': {'machine_2': [4, 'machine_2']}, 'op_11': {'machine_0': [3, 'machine_0']}}, 'job_4': {'op_12': {'machine_0': [2, 'machine_0']}, 'op_13': {'machine_1': [4, 'machine_1']}, 'op_14': {'machine_2': [4, 'machine_2']}}}. The scheduler must minimize the makespan—the time until the last bike is ready—without overloading any station.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_10": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_11": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 66,
+    "desc_merge": "A tech manufacturer assembles 3 customized smartphones using 3 workstations for tasks like screen calibration, battery installation, software flashing, and quality testing. The assembly sequence is flexible, allowing operators to prioritize tasks based on workstation availability. Each task duration is specified in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}, 'op_1': {'machine_1': [5, 'machine_1']}, 'op_2': {'machine_2': [3, 'machine_2']}}, 'job_1': {'op_3': {'machine_0': [1, 'machine_0']}, 'op_4': {'machine_2': [4, 'machine_2']}, 'op_5': {'machine_1': [3, 'machine_1']}}, 'job_2': {'op_6': {'machine_2': [3, 'machine_2']}, 'op_7': {'machine_0': [1, 'machine_0']}, 'op_8': {'machine_1': [1, 'machine_1']}}}, and no two jobs can occupy the same machine simultaneously. The goal is to minimize the total production time (makespan) while ensuring all devices meet delivery deadlines.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 67,
+    "desc_merge": "A logistics company manages 2 drones requiring battery swaps, sensor recalibration, and payload checks across 2 service docks. The maintenance steps can be performed in any order, but each drone must complete all tasks before returning to service. Processing times vary by task (see {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [3, 'machine_0']}, 'op_3': {'machine_1': [4, 'machine_1']}}}), and docks can handle only one drone at a time. The scheduler aims to minimize downtime by optimizing the sequence of operations.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 68,
+    "desc_merge": "A conservation lab restores 4 historical artifacts using 2 specialized stations (e.g., cleaning, structural repair, pigment matching). The workflow is non-linear—restorers can choose the order of treatments based on artifact condition and resource availability. Each treatment’s duration is listed in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}, 'op_1': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_2': {'machine_1': [5, 'machine_1']}, 'op_3': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [1, 'machine_0']}, 'op_5': {'machine_1': [5, 'machine_1']}}, 'job_3': {'op_6': {'machine_0': [2, 'machine_0']}, 'op_7': {'machine_1': [3, 'machine_1']}}}, and concurrent work is prohibited per station. The objective is to minimize the total restoration timeline.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 69,
+    "desc_merge": "An NGO coordinates 3 meal batches for disaster survivors, prepared across 3 stations (chopping, cooking, packaging). The order of stations is adaptable to ingredient readiness and volunteer availability. Each batch’s processing time per station is defined in {'job_0': {'op_0': {'machine_1': [4, 'machine_1']}, 'op_1': {'machine_2': [4, 'machine_2']}, 'op_2': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_3': {'machine_2': [5, 'machine_2']}, 'op_4': {'machine_1': [3, 'machine_1']}, 'op_5': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_6': {'machine_1': [5, 'machine_1']}, 'op_7': {'machine_2': [4, 'machine_2']}, 'op_8': {'machine_0': [1, 'machine_0']}}}, with stations handling one batch at a time. The goal is to minimize the makespan to accelerate food distribution.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 70,
+    "desc_merge": "A boutique workshop builds 5 bespoke bicycles, with 1 stations for frame welding, paint curing, gear tuning, and safety checks. The assembly sequence is flexible to accommodate artisan preferences and machine bottlenecks. Task durations (see {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [1, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [1, 'machine_0']}}, 'job_4': {'op_4': {'machine_0': [3, 'machine_0']}}}) are fixed, and stations cannot process multiple jobs concurrently. The scheduler optimizes the workflow to reduce total completion time.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 71,
+    "desc_merge": "A logistics company operates 4 delivery drones that require recharging, battery diagnostics, and software updates across 1 service stations. The sequence of maintenance tasks is flexible, allowing the scheduler to optimize for minimal downtime. Each task duration is specified in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [3, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [1, 'machine_0']}}}, and no station can service more than one drone simultaneously. The goal is to minimize the makespan—the total time needed to prepare the entire fleet for redeployment.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 72,
+    "desc_merge": "A tech firm deploys 3 smart home setups, each requiring installations of security systems, lighting controls, and HVAC automation across 2 technician teams. The order of installations is adaptable based on technician availability and client preferences. Task durations (see {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}, 'op_1': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [5, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_0': [3, 'machine_0']}, 'op_5': {'machine_1': [2, 'machine_1']}}}) vary by system complexity. The objective is to minimize the total project completion time while ensuring no team works on multiple homes concurrently.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 73,
+    "desc_merge": "A conservation lab handles 4 artworks needing cleaning, structural repair, and pigment analysis across 1 specialized workstations. The workflow sequence is artistically flexible, as some stages (e.g., cleaning) may precede or follow others. Each restoration phase has fixed durations ({'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [5, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [5, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [5, 'machine_0']}}}), and only one artwork can occupy a workstation at a time. The studio aims to minimize the makespan to meet exhibition deadlines.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 74,
+    "desc_merge": "An NGO coordinates 3 meal batches for disaster survivors, requiring cooking, packaging, and quality checks across 2 portable stations. The order of stages can vary (e.g., packaging may occur before final heating). Each step’s duration is listed in {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [5, 'machine_1']}, 'op_3': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_4': {'machine_1': [2, 'machine_1']}, 'op_5': {'machine_0': [4, 'machine_0']}}}, with constraints on parallel processing. The goal is to minimize the total time to deliver all meals amid urgent demand.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 75,
+    "desc_merge": "A boutique workshop customizes 3 bicycles through 1 stages like frame welding, paintwork, and component assembly. The operation sequence is flexible to accommodate artisan workflows and material availability. Task times (see {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [3, 'machine_0']}}}) depend on design complexity, and each machine handles one bike at a time. The objective is to minimize the makespan while ensuring premium craftsmanship.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 76,
+    "desc_merge": "A precision farming company deploys 5 autonomous drones to perform tasks like soil sampling, crop spraying, and thermal imaging across 3 charging/processing stations. Each drone must complete all tasks, but the sequence is flexible to account for weather or battery constraints. Task durations (e.g., refueling, data upload) are specified in {'job_0': {'op_0': {'machine_1': [5, 'machine_1']}, 'op_1': {'machine_2': [3, 'machine_2']}, 'op_2': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_3': {'machine_2': [4, 'machine_2']}, 'op_4': {'machine_1': [5, 'machine_1']}, 'op_5': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_6': {'machine_1': [1, 'machine_1']}, 'op_7': {'machine_2': [3, 'machine_2']}, 'op_8': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_9': {'machine_2': [3, 'machine_2']}, 'op_10': {'machine_1': [2, 'machine_1']}, 'op_11': {'machine_0': [2, 'machine_0']}}, 'job_4': {'op_12': {'machine_2': [5, 'machine_2']}, 'op_13': {'machine_1': [5, 'machine_1']}, 'op_14': {'machine_0': [3, 'machine_0']}}}. The goal is to minimize the makespan—the total time to complete all missions while ensuring no station or drone is double-booked.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_10": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_11": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 77,
+    "desc_merge": "A pharmaceutical plant produces 4 vaccine batches using 2 modular stations (mixing, purification, vial filling, labeling). Regulations require all steps per batch, but the order can adapt to equipment availability or priority shifts. Each step’s duration is listed in {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [1, 'machine_0']}, 'op_3': {'machine_1': [5, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_6': {'machine_1': [2, 'machine_1']}, 'op_7': {'machine_0': [4, 'machine_0']}}}. The scheduler must minimize production time, avoiding overlaps where one machine handles multiple batches simultaneously.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 78,
+    "desc_merge": "A traveling film festival must prepare 3 screening venues by configuring 1 equipment sets (projectors, sound systems, seating). Each venue requires all setups, but the sequence depends on crew availability and venue access. Setup times per task (e.g., calibrating audio) are in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [5, 'machine_0']}}}. The objective is to minimize the total setup time before the festival opens.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 79,
+    "desc_merge": "A rescue team coordinates 3 robotic units to clear debris from a disaster zone using 3 specialized tools (crushers, sorters, transporters). Each robot must use all tools, but the order depends on real-time obstacle discovery. Task durations (e.g., crushing concrete) are in {'job_0': {'op_0': {'machine_1': [3, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}, 'op_2': {'machine_2': [3, 'machine_2']}}, 'job_1': {'op_3': {'machine_0': [2, 'machine_0']}, 'op_4': {'machine_2': [1, 'machine_2']}, 'op_5': {'machine_1': [2, 'machine_1']}}, 'job_2': {'op_6': {'machine_1': [4, 'machine_1']}, 'op_7': {'machine_2': [3, 'machine_2']}, 'op_8': {'machine_0': [1, 'machine_0']}}}. The goal is to minimize the total operation time, ensuring no tool or robot is idle.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 80,
+    "desc_merge": "A luxury perfumery processes 3 custom fragrance orders through 1 stations (essential oil extraction, blending, aging, bottling). Clients choose ingredients, but the workflow order is flexible to balance artisan availability. Step durations (e.g., aging time) are in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [1, 'machine_0']}}}. The scheduler aims to minimize the makespan—the time to fulfill all orders without overlapping station usage.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 81,
+    "desc_merge": "An EV battery factory assembles 4 custom battery packs using 1 workstations for cell sorting, welding, cooling system integration, and quality testing. The assembly sequence is flexible, allowing parallelization to reduce bottlenecks. Each operation’s duration is specified in {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [1, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [5, 'machine_0']}}}, and no workstation can handle multiple packs simultaneously. The goal is to minimize the makespan—the total time to deliver all orders.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 82,
+    "desc_merge": "A traveling film festival must configure 5 screening venues with 2 resources (projectors, sound systems, seating, and lighting rigs). The setup order for each venue is adaptable based on crew availability. Task durations (e.g., calibrating projectors) are listed in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}, 'op_1': {'machine_1': [5, 'machine_1']}}, 'job_1': {'op_2': {'machine_1': [1, 'machine_1']}, 'op_3': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_4': {'machine_0': [3, 'machine_0']}, 'op_5': {'machine_1': [4, 'machine_1']}}, 'job_3': {'op_6': {'machine_0': [5, 'machine_0']}, 'op_7': {'machine_1': [4, 'machine_1']}}, 'job_4': {'op_8': {'machine_0': [1, 'machine_0']}, 'op_9': {'machine_1': [1, 'machine_1']}}}. Since teams and equipment are shared, the schedule must avoid overlaps while minimizing the total setup time across all venues.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_4": {
+          "op_8": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_9": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 83,
+    "desc_merge": "A farm deploys 2 drones to perform 3 tasks (soil scanning, pesticide spraying, crop health imaging) across fields. The operation order is flexible, but each drone must complete all tasks without interruption. Task durations (from {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}, 'op_1': {'machine_1': [3, 'machine_1']}, 'op_2': {'machine_2': [4, 'machine_2']}}, 'job_1': {'op_3': {'machine_2': [1, 'machine_2']}, 'op_4': {'machine_0': [5, 'machine_0']}, 'op_5': {'machine_1': [2, 'machine_1']}}}) vary by field size. The objective is to minimize the makespan—the time until the last drone finishes—while ensuring no two drones use the same equipment simultaneously.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 84,
+    "desc_merge": "A luxury perfumery processes 3 custom fragrance orders through 1 stages (essential oil mixing, alcohol infusion, aging, and bottling). The order of stages is flexible to accommodate ingredient prep times. Each stage’s duration is defined in {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [2, 'machine_0']}}}, and only one batch can occupy a workstation at a time. The goal is to minimize the total production time for all orders.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 85,
+    "desc_merge": "A pharmaceutical plant manufactures 2 vaccine batches using 1 modular units (mRNA synthesis, lipid encapsulation, purification, and vial filling). Regulatory constraints allow flexible stage sequencing but require exclusive machine access. Processing times (from {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [5, 'machine_0']}}}) depend on batch size. The scheduler aims to minimize the makespan to accelerate vaccine distribution.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 86,
+    "desc_merge": "A logistics company manages 2 delivery robots that require periodic charging, battery checks, and software updates across 2 service stations. The order of maintenance tasks is flexible, but each robot must complete all procedures before returning to service. Processing times for charging, diagnostics, and updates are specified in {'job_0': {'op_0': {'machine_1': [2, 'machine_1']}, 'op_1': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [4, 'machine_1']}, 'op_3': {'machine_0': [4, 'machine_0']}}}. The goal is to minimize the total downtime of the fleet by optimizing the sequence of operations.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 87,
+    "desc_merge": "A space agency must assemble 4 satellite payloads using 2 workstations for tasks like sensor calibration, structural assembly, and thermal testing. The integration sequence is adaptable to avoid bottlenecks, with each payload requiring all steps but in no fixed order. Task durations are given in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}, 'op_1': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [4, 'machine_0']}, 'op_3': {'machine_1': [4, 'machine_1']}}, 'job_2': {'op_4': {'machine_1': [4, 'machine_1']}, 'op_5': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_6': {'machine_0': [3, 'machine_0']}, 'op_7': {'machine_1': [4, 'machine_1']}}}, and no two payloads can occupy the same workstation simultaneously. The objective is to minimize the makespan to meet launch window deadlines.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 88,
+    "desc_merge": "A mobile clinic administers vaccines to 4 patients through 3 stations: registration, medical screening, injection, and post-vaccination monitoring. Patients can traverse stations in any order (e.g., screening before or after registration) to reduce queueing. Each station’s service time is defined in {'job_0': {'op_0': {'machine_2': [3, 'machine_2']}, 'op_1': {'machine_0': [2, 'machine_0']}, 'op_2': {'machine_1': [2, 'machine_1']}}, 'job_1': {'op_3': {'machine_2': [1, 'machine_2']}, 'op_4': {'machine_0': [3, 'machine_0']}, 'op_5': {'machine_1': [1, 'machine_1']}}, 'job_2': {'op_6': {'machine_1': [4, 'machine_1']}, 'op_7': {'machine_0': [1, 'machine_0']}, 'op_8': {'machine_2': [5, 'machine_2']}}, 'job_3': {'op_9': {'machine_1': [3, 'machine_1']}, 'op_10': {'machine_0': [2, 'machine_0']}, 'op_11': {'machine_2': [3, 'machine_2']}}}. The clinic aims to minimize total operational time while ensuring no patient or station handles multiple tasks concurrently.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_8": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_10": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 89,
+    "desc_merge": "A tech company processes 2 datasets across 2 servers for tasks like cleaning, labeling, encryption, and compression. The pipeline order is flexible to balance server loads, with each dataset requiring all steps but no predefined sequence. Processing times per task are listed in {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [5, 'machine_1']}, 'op_3': {'machine_0': [1, 'machine_0']}}}. The scheduler must minimize the makespan to accelerate model training cycles.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 90,
+    "desc_merge": "A shipyard customizes 5 yachts using 3 specialized docks for hull polishing, interior furnishing, engine tuning, and navigation system installation. The workflow is open-shop: tasks can be reordered based on crew availability. Each task’s duration is provided in {'job_0': {'op_0': {'machine_2': [2, 'machine_2']}, 'op_1': {'machine_0': [3, 'machine_0']}, 'op_2': {'machine_1': [3, 'machine_1']}}, 'job_1': {'op_3': {'machine_0': [2, 'machine_0']}, 'op_4': {'machine_1': [1, 'machine_1']}, 'op_5': {'machine_2': [3, 'machine_2']}}, 'job_2': {'op_6': {'machine_1': [5, 'machine_1']}, 'op_7': {'machine_2': [5, 'machine_2']}, 'op_8': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_9': {'machine_0': [3, 'machine_0']}, 'op_10': {'machine_1': [3, 'machine_1']}, 'op_11': {'machine_2': [3, 'machine_2']}}, 'job_4': {'op_12': {'machine_0': [5, 'machine_0']}, 'op_13': {'machine_1': [3, 'machine_1']}, 'op_14': {'machine_2': [4, 'machine_2']}}}, and no dock or yacht can multitask. The goal is to minimize total project completion time for client deliveries.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_10": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_11": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_13": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_14": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 91,
+    "desc_merge": "A logistics company operates 5 delivery drones requiring battery swaps, sensor recalibration, and payload checks across 2 service bays. The sequence of maintenance tasks is flexible, but each drone must complete all procedures before redeployment. Task durations vary (see {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [1, 'machine_0']}, 'op_3': {'machine_1': [2, 'machine_1']}}, 'job_2': {'op_4': {'machine_0': [2, 'machine_0']}, 'op_5': {'machine_1': [4, 'machine_1']}}, 'job_3': {'op_6': {'machine_1': [5, 'machine_1']}, 'op_7': {'machine_0': [3, 'machine_0']}}, 'job_4': {'op_8': {'machine_1': [1, 'machine_1']}, 'op_9': {'machine_0': [3, 'machine_0']}}}), and no bay can service multiple drones simultaneously. The goal is to minimize the makespan—the total downtime of the fleet.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_8": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_9": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 92,
+    "desc_merge": "A pharmaceutical plant produces 3 vaccine batches using 1 stations for mixing, filtration, vial filling, and quality control. The production sequence can be dynamically adjusted to avoid bottlenecks. Each batch must pass through all stations (duration in {'job_0': {'op_0': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [5, 'machine_0']}}}), with no parallel processing per station. The scheduler aims to minimize the total production time to meet urgent demand.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 93,
+    "desc_merge": "A traveling film festival must prepare 5 screening venues by setting up projectors, sound systems, and seating across 2 technician teams. The setup tasks can be reordered based on team availability, but each venue requires all steps (times in {'job_0': {'op_0': {'machine_1': [2, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_2': {'machine_0': [4, 'machine_0']}, 'op_3': {'machine_1': [1, 'machine_1']}}, 'job_2': {'op_4': {'machine_0': [1, 'machine_0']}, 'op_5': {'machine_1': [5, 'machine_1']}}, 'job_3': {'op_6': {'machine_1': [4, 'machine_1']}, 'op_7': {'machine_0': [4, 'machine_0']}}, 'job_4': {'op_8': {'machine_0': [5, 'machine_0']}, 'op_9': {'machine_1': [4, 'machine_1']}}}). Only one task per team or venue can occur at once. The objective is to minimize the time until all venues are ready.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_8": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_9": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 94,
+    "desc_merge": "A luxury perfumery crafts 2 custom fragrances using 2 stations for oil extraction, blending, aging, and bottling. The artisans can reorder steps to optimize workflow, with each fragrance requiring all stages (durations in {'job_0': {'op_0': {'machine_1': [1, 'machine_1']}, 'op_1': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_2': {'machine_1': [1, 'machine_1']}, 'op_3': {'machine_0': [1, 'machine_0']}}}). No station can handle multiple fragrances concurrently. The goal is to minimize the total production time.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          },
+          "op_3": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 95,
+    "desc_merge": "A farm deploys 4 crop-monitoring drones daily, requiring 2 pre-flight steps: battery charging, sensor calibration, and payload attachment. The order of steps is flexible, but each drone must complete all tasks (see {'job_0': {'op_0': {'machine_0': [2, 'machine_0']}, 'op_1': {'machine_1': [1, 'machine_1']}}, 'job_1': {'op_2': {'machine_0': [4, 'machine_0']}, 'op_3': {'machine_1': [4, 'machine_1']}}, 'job_2': {'op_4': {'machine_0': [1, 'machine_0']}, 'op_5': {'machine_1': [3, 'machine_1']}}, 'job_3': {'op_6': {'machine_0': [4, 'machine_0']}, 'op_7': {'machine_1': [3, 'machine_1']}}}) before takeoff. Only one drone can use a charging pad or calibration tool at a time. The scheduler minimizes the makespan to ensure early-morning deployment.",
+    "data_template": {
+      "num_jobs": 4,
+      "num_machines": 2,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              1,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_3": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_4": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_3": {
+          "op_6": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 96,
+    "desc_merge": "A logistics company manages 5 delivery robots that require periodic charging, battery checks, and software updates across 1 service stations. The sequence of maintenance tasks is flexible, but each robot must complete all procedures before returning to service. Processing times for charging, diagnostics, and updates are specified in {'job_0': {'op_0': {'machine_0': [5, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [4, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [2, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [3, 'machine_0']}}, 'job_4': {'op_4': {'machine_0': [5, 'machine_0']}}}. The goal is to minimize the total downtime of the fleet by optimizing the scheduling of these tasks.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 1,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_1": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_2": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_3": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_4": {
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 97,
+    "desc_merge": "A high-end shipyard handles 3 yachts undergoing bespoke modifications like hull polishing, interior upholstery, and engine tuning across 3 specialized workstations. The order of operations is adaptable to resource availability, with each task duration defined in {'job_0': {'op_0': {'machine_0': [3, 'machine_0']}, 'op_1': {'machine_1': [2, 'machine_1']}, 'op_2': {'machine_2': [4, 'machine_2']}}, 'job_1': {'op_3': {'machine_0': [4, 'machine_0']}, 'op_4': {'machine_1': [5, 'machine_1']}, 'op_5': {'machine_2': [4, 'machine_2']}}, 'job_2': {'op_6': {'machine_1': [3, 'machine_1']}, 'op_7': {'machine_2': [1, 'machine_2']}, 'op_8': {'machine_0': [2, 'machine_0']}}}. Only one yacht can occupy a workstation at a time. The objective is to minimize the makespan—the total time to complete all customizations—while ensuring no workstation conflicts.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_5": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 98,
+    "desc_merge": "A tech company processes 5 datasets through 3 stages like data cleaning, annotation, and model validation. The workflow is non-sequential: tasks can be reordered to balance server loads. Each stage’s runtime is listed in {'job_0': {'op_0': {'machine_2': [4, 'machine_2']}, 'op_1': {'machine_0': [3, 'machine_0']}, 'op_2': {'machine_1': [2, 'machine_1']}}, 'job_1': {'op_3': {'machine_1': [5, 'machine_1']}, 'op_4': {'machine_2': [3, 'machine_2']}, 'op_5': {'machine_0': [3, 'machine_0']}}, 'job_2': {'op_6': {'machine_2': [1, 'machine_2']}, 'op_7': {'machine_1': [4, 'machine_1']}, 'op_8': {'machine_0': [4, 'machine_0']}}, 'job_3': {'op_9': {'machine_0': [4, 'machine_0']}, 'op_10': {'machine_2': [2, 'machine_2']}, 'op_11': {'machine_1': [3, 'machine_1']}}, 'job_4': {'op_12': {'machine_2': [1, 'machine_2']}, 'op_13': {'machine_0': [2, 'machine_0']}, 'op_14': {'machine_1': [4, 'machine_1']}}}, and no two tasks can use the same machine simultaneously. The scheduler aims to minimize the total processing time for all datasets to accelerate AI deployment.",
+    "data_template": {
+      "num_jobs": 5,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          },
+          "op_2": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_1": [
+              5,
+              "machine_1"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              3,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_0": [
+              3,
+              "machine_0"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_7": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          },
+          "op_8": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_3": {
+          "op_9": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_10": {
+            "machine_2": [
+              2,
+              "machine_2"
+            ]
+          },
+          "op_11": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_4": {
+          "op_12": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_13": {
+            "machine_0": [
+              2,
+              "machine_0"
+            ]
+          },
+          "op_14": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 99,
+    "desc_merge": "A space agency assembles 2 satellite payloads using 3 integration bays for tasks like sensor calibration, structural testing, and software uploads. The operation sequence is flexible to accommodate delays or priority changes. Task durations are in {'job_0': {'op_0': {'machine_1': [2, 'machine_1']}, 'op_1': {'machine_2': [1, 'machine_2']}, 'op_2': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_3': {'machine_0': [4, 'machine_0']}, 'op_4': {'machine_2': [4, 'machine_2']}, 'op_5': {'machine_1': [3, 'machine_1']}}}, and each bay can handle only one payload at a time. The goal is to minimize the makespan to meet tight launch windows.",
+    "data_template": {
+      "num_jobs": 2,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_1": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              1,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_4": {
+            "machine_2": [
+              4,
+              "machine_2"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  },
+  {
+    "prompt_index": 100,
+    "desc_merge": "A temporary clinic administers vaccines to 3 patients through 3 stations: registration, medical screening, injection, and post-vaccination monitoring. The order of stations can vary (e.g., screening before or after registration) to reduce bottlenecks. Each station’s service time is in {'job_0': {'op_0': {'machine_2': [1, 'machine_2']}, 'op_1': {'machine_1': [2, 'machine_1']}, 'op_2': {'machine_0': [4, 'machine_0']}}, 'job_1': {'op_3': {'machine_2': [5, 'machine_2']}, 'op_4': {'machine_0': [5, 'machine_0']}, 'op_5': {'machine_1': [3, 'machine_1']}}, 'job_2': {'op_6': {'machine_0': [4, 'machine_0']}, 'op_7': {'machine_2': [5, 'machine_2']}, 'op_8': {'machine_1': [4, 'machine_1']}}}, with no parallel processing per station. The objective is to minimize total clinic operation time while serving all patients.",
+    "data_template": {
+      "num_jobs": 3,
+      "num_machines": 3,
+      "machines_per_stage": {},
+      "precedence_relations": [],
+      "is_open": true,
+      "is_flow": false,
+      "processing_times": {
+        "job_0": {
+          "op_0": {
+            "machine_2": [
+              1,
+              "machine_2"
+            ]
+          },
+          "op_1": {
+            "machine_1": [
+              2,
+              "machine_1"
+            ]
+          },
+          "op_2": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          }
+        },
+        "job_1": {
+          "op_3": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_4": {
+            "machine_0": [
+              5,
+              "machine_0"
+            ]
+          },
+          "op_5": {
+            "machine_1": [
+              3,
+              "machine_1"
+            ]
+          }
+        },
+        "job_2": {
+          "op_6": {
+            "machine_0": [
+              4,
+              "machine_0"
+            ]
+          },
+          "op_7": {
+            "machine_2": [
+              5,
+              "machine_2"
+            ]
+          },
+          "op_8": {
+            "machine_1": [
+              4,
+              "machine_1"
+            ]
+          }
+        }
+      }
+    }
+  }
+]

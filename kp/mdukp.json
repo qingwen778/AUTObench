@@ -1,0 +1,5802 @@
+[
+  {
+    "prompt_index": 1,
+    "desc_merge": "A logistics firm must select quantities of various cargo types for shipping, where each cargo type has a weight [10, 3, 1, 5, 8, 9, 9, 10, 1, 2], a volume [4, 1, 2, 5, 5, 4, 4, 5, 4, 4], and a revenue [11, 16, 15, 16, 6, 17, 8, 10, 8, 17], with unlimited units available per type. The cargo plane has a maximum payload of 34 and a maximum cargo hold volume of 22. The objective is to maximize total revenue by choosing how many units of each cargo to load without exceeding the plane's dual constraints, which is crucial for operational profitability.",
+    "data_template": {
+      "item_value": [
+        11,
+        16,
+        15,
+        16,
+        6,
+        17,
+        8,
+        10,
+        8,
+        17
+      ],
+      "item_weight": [
+        10,
+        3,
+        1,
+        5,
+        8,
+        9,
+        9,
+        10,
+        1,
+        2
+      ],
+      "item_volume": [
+        4,
+        1,
+        2,
+        5,
+        5,
+        4,
+        4,
+        5,
+        4,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 2,
+    "desc_merge": "An investor decides on the number of shares to purchase for various assets, where each asset share has an associated risk weight [2, 5, 6, 2, 9, 9, 9, 6, 6, 1], a liquidity measure [2, 5, 1, 2, 5, 2, 5, 4, 3, 5], and an expected return [14, 15, 20, 11, 4, 14, 11, 19, 3, 2], with no purchase limit per asset. The investor's portfolio has a maximum risk tolerance 33 and a maximum liquidity constraint 20. The goal is to determine the optimal number of shares for each asset to maximize total expected return while adhering to both risk and liquidity limits, thereby optimizing the investment strategy.",
+    "data_template": {
+      "item_value": [
+        14,
+        15,
+        20,
+        11,
+        4,
+        14,
+        11,
+        19,
+        3,
+        2
+      ],
+      "item_weight": [
+        2,
+        5,
+        6,
+        2,
+        9,
+        9,
+        9,
+        6,
+        6,
+        1
+      ],
+      "item_volume": [
+        2,
+        5,
+        1,
+        2,
+        5,
+        2,
+        5,
+        4,
+        3,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 3,
+    "desc_merge": "A cloud provider allocates virtual machine instances from different categories to a server cluster, where each instance type consumes a certain CPU allocation [6, 10, 5, 6, 2, 10, 8, 10, 2, 9], a memory allocation [1, 3, 1, 2, 2, 4, 3, 3, 1, 4], and generates a profit [10, 11, 17, 14, 18, 2, 9, 1, 5, 7], with an unlimited number of each type available. The physical server hardware has a total CPU capacity 40 and a total memory capacity 14. The challenge is to select the quantity of each instance type to deploy to maximize total profit without surpassing the server's computational and memory capacities, ensuring efficient infrastructure utilization.",
+    "data_template": {
+      "item_value": [
+        10,
+        11,
+        17,
+        14,
+        18,
+        2,
+        9,
+        1,
+        5,
+        7
+      ],
+      "item_weight": [
+        6,
+        10,
+        5,
+        6,
+        2,
+        10,
+        8,
+        10,
+        2,
+        9
+      ],
+      "item_volume": [
+        1,
+        3,
+        1,
+        2,
+        2,
+        4,
+        3,
+        3,
+        1,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 4,
+    "desc_merge": "A manufacturing plant sources raw materials in bulk, where each material type has a cost weight [3, 4, 1, 1, 6, 6, 10, 10, 4, 2], a storage space requirement [4, 3, 5, 5, 2, 3, 5, 4, 4, 2], and a production value [12, 3, 10, 11, 2, 15, 14, 12, 6, 13], and can be procured in any quantity. The procurement budget imposes a cost limit 28 and the warehouse has a fixed storage volume 22. The aim is to determine the optimal procurement quantity for each material to maximize the total production value generated while staying within the budget and storage space constraints, which is vital for cost-effective manufacturing.",
+    "data_template": {
+      "item_value": [
+        12,
+        3,
+        10,
+        11,
+        2,
+        15,
+        14,
+        12,
+        6,
+        13
+      ],
+      "item_weight": [
+        3,
+        4,
+        1,
+        1,
+        6,
+        6,
+        10,
+        10,
+        4,
+        2
+      ],
+      "item_volume": [
+        4,
+        3,
+        5,
+        5,
+        2,
+        3,
+        5,
+        4,
+        4,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 5,
+    "desc_merge": "A catering company designs a menu for a large event by selecting dishes, where each dish option requires an ingredient cost [7, 8, 1, 4, 1, 2, 10, 2, 7, 7], a preparation space [4, 3, 5, 1, 5, 1, 5, 4, 5, 5], and has a customer satisfaction score [14, 14, 16, 12, 1, 2, 17, 7, 3, 4], with each dish being producible in unlimited quantities. The event has a total food budget 29 and a kitchen preparation area with a maximum space 22. The objective is to choose the number of portions for each dish to maximize the total satisfaction score for attendees without exceeding the budget or kitchen space, ensuring a successful event.",
+    "data_template": {
+      "item_value": [
+        14,
+        14,
+        16,
+        12,
+        1,
+        2,
+        17,
+        7,
+        3,
+        4
+      ],
+      "item_weight": [
+        7,
+        8,
+        1,
+        4,
+        1,
+        2,
+        10,
+        2,
+        7,
+        7
+      ],
+      "item_volume": [
+        4,
+        3,
+        5,
+        1,
+        5,
+        1,
+        5,
+        4,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 6,
+    "desc_merge": "An airline needs to determine the optimal quantity of various cargo types to load onto a freighter aircraft, where each cargo type has a specific weight [5, 7, 7, 8, 9, 4, 7, 4, 8, 6], a space requirement [5, 1, 3, 1, 2, 5, 2, 4, 1, 4], and a revenue generated [11, 5, 16, 17, 10, 12, 11, 17, 9, 2], with an unlimited supply of each cargo type available for loading; the aircraft's cargo hold has strict maximum takeoff weight 39 and total volumetric space 16 limitations, and the objective is to maximize the total revenue from the transported cargo without violating either physical constraint, which is critical for operational profitability and safety compliance.",
+    "data_template": {
+      "item_value": [
+        11,
+        5,
+        16,
+        17,
+        10,
+        12,
+        11,
+        17,
+        9,
+        2
+      ],
+      "item_weight": [
+        5,
+        7,
+        7,
+        8,
+        9,
+        4,
+        7,
+        4,
+        8,
+        6
+      ],
+      "item_volume": [
+        5,
+        1,
+        3,
+        1,
+        2,
+        5,
+        2,
+        4,
+        1,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 7,
+    "desc_merge": "An e-commerce fulfillment center must decide how many of each product to pack into shipping containers for international shipment, where each product has a physical weight [5, 1, 4, 10, 6, 7, 8, 6, 7, 9], a packaging size [1, 1, 1, 3, 4, 1, 5, 3, 2, 5], and an associated sales value [18, 15, 4, 16, 14, 8, 15, 18, 4, 2], and items can be selected any number of times from inventory; the standard shipping containers impose a maximum allowable weight 37 and a fixed internal volume 15, and the goal is to maximize the total value of goods shipped per container while adhering to these dual restrictions, thereby optimizing logistics costs and delivery efficiency.",
+    "data_template": {
+      "item_value": [
+        18,
+        15,
+        4,
+        16,
+        14,
+        8,
+        15,
+        18,
+        4,
+        2
+      ],
+      "item_weight": [
+        5,
+        1,
+        4,
+        10,
+        6,
+        7,
+        8,
+        6,
+        7,
+        9
+      ],
+      "item_volume": [
+        1,
+        1,
+        1,
+        3,
+        4,
+        1,
+        5,
+        3,
+        2,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 8,
+    "desc_merge": "A farming cooperative plans the transport of harvested crops from fields to market, where each crop type has a bulk weight [4, 5, 9, 8, 4, 8, 7, 7, 7, 4], a storage bin volume [4, 5, 1, 4, 5, 2, 5, 1, 1, 5], and a market price per unit [17, 1, 12, 16, 9, 15, 13, 16, 7, 4], and crops are available in continuous quantities; the transport vehicles have a maximum load-bearing capacity 37 and a finite cargo area volume 19, requiring the selection of crop quantities to maximize the total market value of the load without exceeding the vehicle's structural or spatial limits, which directly impacts profitability and reduces spoilage.",
+    "data_template": {
+      "item_value": [
+        17,
+        1,
+        12,
+        16,
+        9,
+        15,
+        13,
+        16,
+        7,
+        4
+      ],
+      "item_weight": [
+        4,
+        5,
+        9,
+        8,
+        4,
+        8,
+        7,
+        7,
+        7,
+        4
+      ],
+      "item_volume": [
+        4,
+        5,
+        1,
+        4,
+        5,
+        2,
+        5,
+        1,
+        1,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 9,
+    "desc_merge": "A military logistics unit is tasked with loading supply pallets for an airdrop mission, where each supply type (like ammunition, medical kits, rations) has a weight [3, 6, 5, 1, 6, 10, 8, 6, 1, 4], a pallet footprint [1, 5, 3, 4, 2, 2, 3, 4, 1, 5], and a strategic value score [2, 5, 18, 7, 9, 7, 4, 11, 16, 13], and supplies can be included in any quantity; the cargo plane used for the drop has a critical maximum payload weight 30 and a limited bay volume 18, and the objective is to maximize the total strategic value of the delivered supplies while strictly respecting both aircraft performance constraints, ensuring mission success and troop support.",
+    "data_template": {
+      "item_value": [
+        2,
+        5,
+        18,
+        7,
+        9,
+        7,
+        4,
+        11,
+        16,
+        13
+      ],
+      "item_weight": [
+        3,
+        6,
+        5,
+        1,
+        6,
+        10,
+        8,
+        6,
+        1,
+        4
+      ],
+      "item_volume": [
+        1,
+        5,
+        3,
+        4,
+        2,
+        2,
+        3,
+        4,
+        1,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 10,
+    "desc_merge": "An aid organization assembles relief kits for disaster zones, where each resource item (such as water bottles, blankets, food packets) has a weight [4, 4, 1, 5, 3, 7, 2, 3, 10, 7], a packed size [5, 5, 4, 4, 3, 4, 5, 2, 2, 5], and a utility value [12, 8, 10, 9, 17, 19, 8, 11, 19, 16] reflecting its critical need, and items are available without quantity limits; the transportation method, often a helicopter or truck, has a strict maximum weight limit 27 and a cargo space limit 23, and the challenge is to determine the quantity of each resource to include to maximize the overall utility or aid effectiveness of the shipment, ensuring the most efficient use of limited transport capacity to help the maximum number of people.",
+    "data_template": {
+      "item_value": [
+        12,
+        8,
+        10,
+        9,
+        17,
+        19,
+        8,
+        11,
+        19,
+        16
+      ],
+      "item_weight": [
+        4,
+        4,
+        1,
+        5,
+        3,
+        7,
+        2,
+        3,
+        10,
+        7
+      ],
+      "item_volume": [
+        5,
+        5,
+        4,
+        4,
+        3,
+        4,
+        5,
+        2,
+        2,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 23
+      }
+    }
+  },
+  {
+    "prompt_index": 11,
+    "desc_merge": "A shipping company must determine how many containers of each cargo type to load onto a vessel, where each cargo type has a weight [4, 5, 1, 4, 2, 3, 9, 2, 3, 10], a volume [4, 5, 2, 3, 5, 3, 3, 3, 2, 2], and a shipping freight value [20, 6, 20, 12, 18, 18, 2, 19, 7, 13], and any cargo type can be loaded in multiple units. The vessel has strict stability and space restrictions defined by a maximum weight capacity 25 and a maximum volume capacity 19. The objective is to select the quantity of each cargo type to maximize the total freight revenue for the voyage without exceeding the ship's structural and spatial limits, which is vital for operational profitability and safety.",
+    "data_template": {
+      "item_value": [
+        20,
+        6,
+        20,
+        12,
+        18,
+        18,
+        2,
+        19,
+        7,
+        13
+      ],
+      "item_weight": [
+        4,
+        5,
+        1,
+        4,
+        2,
+        3,
+        9,
+        2,
+        3,
+        10
+      ],
+      "item_volume": [
+        4,
+        5,
+        2,
+        3,
+        5,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 12,
+    "desc_merge": "A construction firm needs to plan the delivery of bulk materials to a remote site, where each material type, like sand or gravel, has a per-unit weight [5, 10, 6, 1, 9, 3, 8, 10, 1, 5], a per-unit volume [3, 1, 4, 1, 1, 2, 5, 2, 5, 5], and a value [18, 9, 10, 12, 3, 16, 2, 20, 17, 4] based on its contribution to project progress, and materials can be ordered in any quantity. The transport vehicle has a maximum load weight 34 and a cargo hold volume 17. The aim is to calculate the optimal amount of each material to ship per trip to maximize the overall site productivity value while adhering to the vehicle's physical constraints, ensuring efficient use of each delivery run.",
+    "data_template": {
+      "item_value": [
+        18,
+        9,
+        10,
+        12,
+        3,
+        16,
+        2,
+        20,
+        17,
+        4
+      ],
+      "item_weight": [
+        5,
+        10,
+        6,
+        1,
+        9,
+        3,
+        8,
+        10,
+        1,
+        5
+      ],
+      "item_volume": [
+        3,
+        1,
+        4,
+        1,
+        1,
+        2,
+        5,
+        2,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 13,
+    "desc_merge": "A content streaming service must decide how many copies of each movie or show to cache on a local server, where each title has a data size [3, 2, 8, 7, 1, 1, 10, 3, 7, 5], a processing memory footprint [5, 1, 5, 1, 3, 4, 2, 1, 5, 4], and an expected viewer engagement value [10, 19, 17, 2, 7, 3, 16, 12, 17, 19], and titles can be replicated without restriction. The server has a maximum storage capacity 28 and a RAM limit 18 for concurrent streaming. The goal is to choose the number of copies for each title to maximize the total user satisfaction value derived from fast access, without surpassing the server's storage and memory capacities, which optimizes streaming quality and service reliability.",
+    "data_template": {
+      "item_value": [
+        10,
+        19,
+        17,
+        2,
+        7,
+        3,
+        16,
+        12,
+        17,
+        19
+      ],
+      "item_weight": [
+        3,
+        2,
+        8,
+        7,
+        1,
+        1,
+        10,
+        3,
+        7,
+        5
+      ],
+      "item_volume": [
+        5,
+        1,
+        5,
+        1,
+        3,
+        4,
+        2,
+        1,
+        5,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 14,
+    "desc_merge": "A supermarket manager must allocate shelf space to various products, where each product has a weight [1, 5, 2, 2, 3, 4, 6, 10, 6, 10] representing handling cost, a volume [3, 4, 3, 1, 5, 3, 5, 4, 4, 5] for the space it occupies, and a profit margin [3, 3, 13, 14, 8, 4, 12, 13, 15, 15], and products can be restocked in unlimited quantities. The shelf unit has a maximum weight limit 29 for safety and a total available volume 22. The problem is to determine the quantity of each product to display to maximize total profit while respecting the shelf's weight-bearing capacity and spatial volume, directly influencing sales and inventory turnover.",
+    "data_template": {
+      "item_value": [
+        3,
+        3,
+        13,
+        14,
+        8,
+        4,
+        12,
+        13,
+        15,
+        15
+      ],
+      "item_weight": [
+        1,
+        5,
+        2,
+        2,
+        3,
+        4,
+        6,
+        10,
+        6,
+        10
+      ],
+      "item_volume": [
+        3,
+        4,
+        3,
+        1,
+        5,
+        3,
+        5,
+        4,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 15,
+    "desc_merge": "A recycling facility processes different types of scrap materials, where each material type has a weight [7, 2, 4, 7, 9, 7, 4, 6, 7, 4], a bulk volume [4, 2, 1, 5, 3, 4, 5, 4, 5, 1], and a resale value [4, 9, 1, 1, 6, 15, 10, 3, 8, 19], and each type can be accepted in any quantity. The processing machinery has a maximum hourly throughput weight 34 and a maximum input hopper volume 20. The objective is to decide the quantity of each material type to process in a shift to maximize total resale value without exceeding the equipment's weight and volume processing limits, which is crucial for operational efficiency and profitability.",
+    "data_template": {
+      "item_value": [
+        4,
+        9,
+        1,
+        1,
+        6,
+        15,
+        10,
+        3,
+        8,
+        19
+      ],
+      "item_weight": [
+        7,
+        2,
+        4,
+        7,
+        9,
+        7,
+        4,
+        6,
+        7,
+        4
+      ],
+      "item_volume": [
+        4,
+        2,
+        1,
+        5,
+        3,
+        4,
+        5,
+        4,
+        5,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 16,
+    "desc_merge": "A streaming service must optimize its edge server content caching strategy, where each media file has a storage size [5, 5, 5, 4, 3, 5, 4, 3, 3, 2], a bandwidth consumption cost [4, 6, 9, 1, 1, 5, 3, 4, 6, 5], and a user demand-driven value [19, 10, 16, 15, 15, 18, 20, 17, 12, 3], with each file type being replicable without limit. The edge server infrastructure imposes a total storage capacity 23 and a maximum bandwidth threshold 26. The objective is to determine the optimal number of copies of each file to cache to maximize total user satisfaction and engagement metrics without exceeding the server's technical constraints, thereby ensuring low-latency streaming and efficient network utilization.",
+    "data_template": {
+      "item_value": [
+        19,
+        10,
+        16,
+        15,
+        15,
+        18,
+        20,
+        17,
+        12,
+        3
+      ],
+      "item_weight": [
+        4,
+        6,
+        9,
+        1,
+        1,
+        5,
+        3,
+        4,
+        6,
+        5
+      ],
+      "item_volume": [
+        5,
+        5,
+        5,
+        4,
+        3,
+        5,
+        4,
+        3,
+        3,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 26,
+        "volume": 23
+      }
+    }
+  },
+  {
+    "prompt_index": 17,
+    "desc_merge": "An automotive plant needs to plan its production of various car parts, where each part type has a raw material cost weight [2, 5, 8, 1, 7, 3, 1, 9, 2, 10], a required storage space [5, 4, 2, 1, 5, 3, 5, 1, 4, 5], and a profit contribution [20, 10, 3, 15, 8, 1, 9, 15, 2, 1], and any part can be manufactured in unlimited quantities. The factory's warehouse and budget for a production cycle have a maximum allowable total material cost 28 and a total physical storage limit 21. The goal is to select the quantity of each part to produce to maximize overall profit while adhering to both financial and spatial limitations, optimizing manufacturing throughput and inventory management.",
+    "data_template": {
+      "item_value": [
+        20,
+        10,
+        3,
+        15,
+        8,
+        1,
+        9,
+        15,
+        2,
+        1
+      ],
+      "item_weight": [
+        2,
+        5,
+        8,
+        1,
+        7,
+        3,
+        1,
+        9,
+        2,
+        10
+      ],
+      "item_volume": [
+        5,
+        4,
+        2,
+        1,
+        5,
+        3,
+        5,
+        1,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 18,
+    "desc_merge": "An event organizer is allocating resources for different types of promotional booths at a trade show, where each booth design has a setup material weight [10, 6, 8, 8, 9, 10, 8, 5, 7, 7], a footprint area [5, 2, 5, 3, 5, 2, 4, 4, 5, 5], and an expected visitor engagement value [6, 8, 6, 10, 17, 5, 14, 4, 9, 17], with each design being available for unlimited deployment. The exhibition hall has a maximum floor load capacity 46 and a total available floor area 24. The problem is to decide how many units of each booth type to install to maximize total visitor engagement across the event without surpassing the hall's structural and spatial constraints, enhancing the overall exhibitor and attendee experience.",
+    "data_template": {
+      "item_value": [
+        6,
+        8,
+        6,
+        10,
+        17,
+        5,
+        14,
+        4,
+        9,
+        17
+      ],
+      "item_weight": [
+        10,
+        6,
+        8,
+        8,
+        9,
+        10,
+        8,
+        5,
+        7,
+        7
+      ],
+      "item_volume": [
+        5,
+        2,
+        5,
+        3,
+        5,
+        2,
+        4,
+        4,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 46,
+        "volume": 24
+      }
+    }
+  },
+  {
+    "prompt_index": 19,
+    "desc_merge": "A university department is constructing a set of course modules for an online program, where each module has a student workload estimate [10, 6, 10, 9, 3, 9, 6, 3, 3, 7], a digital asset storage requirement [4, 4, 3, 4, 2, 4, 4, 2, 1, 3], and an educational value score [10, 16, 18, 9, 5, 12, 13, 4, 16, 16], and modules can be selected any number of times. The program must adhere to a maximum acceptable total student workload 39 and a server storage limit for course materials 18. The objective is to choose the number of instances for each module to include in the curriculum to maximize the total educational value delivered, while ensuring the program remains manageable for students and technically feasible to host.",
+    "data_template": {
+      "item_value": [
+        10,
+        16,
+        18,
+        9,
+        5,
+        12,
+        13,
+        4,
+        16,
+        16
+      ],
+      "item_weight": [
+        10,
+        6,
+        10,
+        9,
+        3,
+        9,
+        6,
+        3,
+        3,
+        7
+      ],
+      "item_volume": [
+        4,
+        4,
+        3,
+        4,
+        2,
+        4,
+        4,
+        2,
+        1,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 20,
+    "desc_merge": "A space agency is planning the instrumentation for a satellite mission, where each scientific instrument has a mass [1, 8, 1, 8, 2, 6, 1, 4, 3, 10], a physical volume [2, 3, 3, 2, 4, 3, 4, 1, 2, 4], and a scientific data return value [13, 8, 14, 7, 11, 6, 14, 13, 7, 2], with each instrument type being available for inclusion in multiple copies. The satellite bus has a strict launch mass limit 26 and a fixed payload bay volume 16. The goal is to determine the optimal quantity of each instrument to include to maximize the total scientific return of the mission, while complying with the stringent launch vehicle and spacecraft design constraints.",
+    "data_template": {
+      "item_value": [
+        13,
+        8,
+        14,
+        7,
+        11,
+        6,
+        14,
+        13,
+        7,
+        2
+      ],
+      "item_weight": [
+        1,
+        8,
+        1,
+        8,
+        2,
+        6,
+        1,
+        4,
+        3,
+        10
+      ],
+      "item_volume": [
+        2,
+        3,
+        3,
+        2,
+        4,
+        3,
+        4,
+        1,
+        2,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 26,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 21,
+    "desc_merge": "An automotive manufacturer needs to optimize continuous parts delivery to assembly stations where each component type has a handling weight [2, 3, 9, 1, 6, 7, 6, 2, 4, 6], storage space requirement [3, 5, 4, 1, 5, 2, 2, 5, 4, 5], and production line value [2, 14, 11, 10, 16, 12, 7, 12, 13, 14] per unit, with unlimited availability of each part. The automated delivery system has maximum load capacity 27 and spatial limits 21. The objective is to determine optimal part quantities for maximum assembly efficiency without exceeding physical constraints, ensuring uninterrupted production flow.",
+    "data_template": {
+      "item_value": [
+        2,
+        14,
+        11,
+        10,
+        16,
+        12,
+        7,
+        12,
+        13,
+        14
+      ],
+      "item_weight": [
+        2,
+        3,
+        9,
+        1,
+        6,
+        7,
+        6,
+        2,
+        4,
+        6
+      ],
+      "item_volume": [
+        3,
+        5,
+        4,
+        1,
+        5,
+        2,
+        2,
+        5,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 22,
+    "desc_merge": "Cultural institutions must select artifacts for touring exhibitions where each piece has fragility-adjusted weight [5, 9, 9, 3, 5, 7, 8, 9, 3, 4], crating volume [4, 4, 4, 2, 1, 4, 1, 1, 3, 5], and cultural significance score [14, 2, 12, 10, 8, 14, 10, 15, 18, 14], with multiple identical artifacts available. Transport vehicles have strict weight 37 and space 17 restrictions. The challenge involves maximizing total cultural impact through artifact selection while preserving structural and spatial safety margins during transit.",
+    "data_template": {
+      "item_value": [
+        14,
+        2,
+        12,
+        10,
+        8,
+        14,
+        10,
+        15,
+        18,
+        14
+      ],
+      "item_weight": [
+        5,
+        9,
+        9,
+        3,
+        5,
+        7,
+        8,
+        9,
+        3,
+        4
+      ],
+      "item_volume": [
+        4,
+        4,
+        4,
+        2,
+        1,
+        4,
+        1,
+        1,
+        3,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 23,
+    "desc_merge": "Movie producers must allocate filming equipment where each gear type has transport weight [1, 4, 2, 5, 4, 6, 9, 5, 7, 2], storage bulk [1, 5, 3, 2, 3, 1, 3, 4, 1, 5], and creative utility value [18, 1, 7, 12, 17, 9, 8, 13, 4, 5], with unlimited rental availability. Production trucks impose weight 27 and volume 16 ceilings. The aim is to maximize on-set capability through optimal equipment combinations while maintaining mobility between shooting locations.",
+    "data_template": {
+      "item_value": [
+        18,
+        1,
+        7,
+        12,
+        17,
+        9,
+        8,
+        13,
+        4,
+        5
+      ],
+      "item_weight": [
+        1,
+        4,
+        2,
+        5,
+        4,
+        6,
+        9,
+        5,
+        7,
+        2
+      ],
+      "item_volume": [
+        1,
+        5,
+        3,
+        2,
+        3,
+        1,
+        3,
+        4,
+        1,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 24,
+    "desc_merge": "Chefs must source ingredients where each food item has shipping weight [5, 1, 2, 10, 6, 4, 5, 3, 10, 5], refrigeration volume [1, 3, 4, 4, 1, 1, 5, 1, 5, 5], and menu profitability [13, 1, 14, 16, 9, 13, 12, 6, 12, 6], with continuous supplier availability. Kitchen infrastructure limits include maximum cold storage weight 30 and spatial capacity 18. The optimization seeks to maximize culinary revenue through ingredient quantity selection while respecting preservation and space constraints.",
+    "data_template": {
+      "item_value": [
+        13,
+        1,
+        14,
+        16,
+        9,
+        13,
+        12,
+        6,
+        12,
+        6
+      ],
+      "item_weight": [
+        5,
+        1,
+        2,
+        10,
+        6,
+        4,
+        5,
+        3,
+        10,
+        5
+      ],
+      "item_volume": [
+        1,
+        3,
+        4,
+        4,
+        1,
+        1,
+        5,
+        1,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 25,
+    "desc_merge": "Space agencies select experimental instruments where each device has launch mass [1, 8, 10, 8, 9, 3, 3, 4, 10, 1], payload bay volume [3, 1, 1, 4, 5, 2, 5, 4, 1, 2], and research value [5, 3, 13, 13, 6, 10, 4, 15, 14, 20], with multiple identical units available. Rocket configurations enforce strict mass 34 and volumetric 16 limits. The problem requires maximizing scientific return through instrument multiplicity decisions while adhering to launch vehicle physical specifications.",
+    "data_template": {
+      "item_value": [
+        5,
+        3,
+        13,
+        13,
+        6,
+        10,
+        4,
+        15,
+        14,
+        20
+      ],
+      "item_weight": [
+        1,
+        8,
+        10,
+        8,
+        9,
+        3,
+        3,
+        4,
+        10,
+        1
+      ],
+      "item_volume": [
+        3,
+        1,
+        1,
+        4,
+        5,
+        2,
+        5,
+        4,
+        1,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 26,
+    "desc_merge": "A city's sanitation department must determine the optimal number of vehicles to deploy for collecting different types of recyclable materials, where each vehicle type assigned to a material has a specific operational cost weight [2, 7, 10, 9, 2, 10, 5, 6, 6, 10], a spatial footprint [3, 1, 5, 3, 2, 4, 4, 2, 1, 1], and an environmental benefit score [11, 1, 20, 18, 9, 13, 9, 4, 1, 18], with each type being available for unlimited deployment. The municipal budget imposes a maximum total cost 40 and the available depot space sets a maximum total footprint 15. The objective is to select the quantity of each vehicle type to deploy to maximize the total environmental benefit without surpassing the financial and spatial limits, thereby enhancing the city's sustainability efforts.",
+    "data_template": {
+      "item_value": [
+        11,
+        1,
+        20,
+        18,
+        9,
+        13,
+        9,
+        4,
+        1,
+        18
+      ],
+      "item_weight": [
+        2,
+        7,
+        10,
+        9,
+        2,
+        10,
+        5,
+        6,
+        6,
+        10
+      ],
+      "item_volume": [
+        3,
+        1,
+        5,
+        3,
+        2,
+        4,
+        4,
+        2,
+        1,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 27,
+    "desc_merge": "A cinema chain needs to decide on the quantity of each snack and drink item to stock for a major premiere, where each product has a shipping weight [6, 2, 2, 7, 4, 5, 10, 6, 6, 2], a shelf space requirement [3, 4, 1, 5, 3, 3, 1, 4, 5, 3], and a projected profit margin [11, 3, 4, 7, 11, 18, 9, 17, 15, 2], and items can be ordered in unlimited quantities. The concession stand's storage area has a maximum weight capacity 30 for shelving and a total volume limit 19. The goal is to choose the number of units for each product to maximize total profit while adhering to the physical storage constraints, ensuring optimal sales potential.",
+    "data_template": {
+      "item_value": [
+        11,
+        3,
+        4,
+        7,
+        11,
+        18,
+        9,
+        17,
+        15,
+        2
+      ],
+      "item_weight": [
+        6,
+        2,
+        2,
+        7,
+        4,
+        5,
+        10,
+        6,
+        6,
+        2
+      ],
+      "item_volume": [
+        3,
+        4,
+        1,
+        5,
+        3,
+        3,
+        1,
+        4,
+        5,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 28,
+    "desc_merge": "A publishing company must decide the print run size for each title in its upcoming catalogue, where each book title has a paper weight [8, 5, 6, 3, 8, 4, 7, 1, 4, 8], a storage space requirement [3, 1, 1, 5, 4, 4, 1, 5, 5, 3], and an expected royalty value [19, 1, 17, 9, 10, 14, 20, 19, 11, 17], and any title can be printed in unlimited quantities. The warehouse facilities have a maximum supported weight limit 32 and a maximum cubic volume 19. The aim is to determine the number of copies to print for each title to maximize total royalty earnings without exceeding the warehouse's weight and volume capacities, optimizing inventory for demand.",
+    "data_template": {
+      "item_value": [
+        19,
+        1,
+        17,
+        9,
+        10,
+        14,
+        20,
+        19,
+        11,
+        17
+      ],
+      "item_weight": [
+        8,
+        5,
+        6,
+        3,
+        8,
+        4,
+        7,
+        1,
+        4,
+        8
+      ],
+      "item_volume": [
+        3,
+        1,
+        1,
+        5,
+        4,
+        4,
+        1,
+        5,
+        5,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 29,
+    "desc_merge": "An outdoor recreation company must select how many units of each type of gear (e.g., kayaks, tents) to include in its rental fleet, where each gear type has a transport weight [10, 4, 10, 7, 5, 5, 9, 8, 8, 7], a storage size [5, 3, 3, 3, 3, 5, 5, 4, 2, 2], and a rental income potential [19, 18, 1, 16, 13, 3, 9, 2, 10, 7], and any gear can be acquired without limit. The company's transport vehicle has a maximum payload 43 and the gear storage locker has a maximum volume 21. The objective is to choose the quantity of each gear type to maximize total rental income while complying with the vehicle and locker constraints, ensuring a profitable and versatile fleet.",
+    "data_template": {
+      "item_value": [
+        19,
+        18,
+        1,
+        16,
+        13,
+        3,
+        9,
+        2,
+        10,
+        7
+      ],
+      "item_weight": [
+        10,
+        4,
+        10,
+        7,
+        5,
+        5,
+        9,
+        8,
+        8,
+        7
+      ],
+      "item_volume": [
+        5,
+        3,
+        3,
+        3,
+        3,
+        5,
+        5,
+        4,
+        2,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 43,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 30,
+    "desc_merge": "A sports team manager needs to pack training and game equipment for an away fixture, where each type of equipment, such as balls, weights, or medical kits, has a physical weight [10, 7, 9, 6, 3, 6, 7, 6, 1, 9], a storage volume [13, 15, 14, 12, 3, 10, 7, 17, 8, 6], and an importance score [1, 2, 2, 2, 5, 2, 3, 3, 5, 4] reflecting its necessity for team performance. The team's transport vehicle has strict limits on total payload 38 and cargo space 17. The objective is to determine the optimal quantity of each equipment type to pack, as items can be taken in multiples, to maximize the total preparedness value without exceeding the vehicle's constraints, ensuring the team has all necessary resources for peak performance.",
+    "data_template": {
+      "item_value": [
+        13,
+        15,
+        14,
+        12,
+        3,
+        10,
+        7,
+        17,
+        8,
+        6
+      ],
+      "item_weight": [
+        10,
+        7,
+        9,
+        6,
+        3,
+        6,
+        7,
+        6,
+        1,
+        9
+      ],
+      "item_volume": [
+        1,
+        2,
+        2,
+        2,
+        5,
+        2,
+        3,
+        3,
+        5,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 31,
+    "desc_merge": "A logistics coordinator for a multi-day music festival must manage the supply of various vendor goods, where each good, like beverages, souvenirs, or food ingredients, has a per-unit weight [4, 7, 3, 6, 1, 9, 8, 1, 5, 10], a bulk volume [3, 1, 5, 2, 1, 2, 1, 4, 2, 4], and a profit contribution [11, 17, 10, 13, 20, 8, 10, 8, 4, 2]. Each good can be supplied in unlimited quantities from central warehouses. The delivery trucks servicing the festival grounds have maximum weight 32 and volume 15 restrictions. The goal is to calculate the number of units of each good to load per shipment to maximize total profit from vendor sales while adhering to the transportation limits, optimizing inventory flow and revenue generation.",
+    "data_template": {
+      "item_value": [
+        11,
+        17,
+        10,
+        13,
+        20,
+        8,
+        10,
+        8,
+        4,
+        2
+      ],
+      "item_weight": [
+        4,
+        7,
+        3,
+        6,
+        1,
+        9,
+        8,
+        1,
+        5,
+        10
+      ],
+      "item_volume": [
+        3,
+        1,
+        5,
+        2,
+        1,
+        2,
+        1,
+        4,
+        2,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 32,
+    "desc_merge": "A research team preparing for a remote wildlife conservation expedition must select scientific supplies, where each supply item, such as sensor traps, camera equipment, or sample containers, has a weight [4, 5, 4, 7, 1, 10, 10, 2, 7, 10], a packed volume [3, 5, 2, 5, 4, 1, 2, 2, 3, 2], and a research value [12, 12, 10, 8, 13, 3, 16, 19, 19, 10] based on its data yield potential. Supplies can be acquired in any quantity. The expedition's aircraft and ground transport have strict maximum weight 36 and storage volume 17 capacities. The aim is to choose the quantities of each supply item to maximize the total scientific value of the mission without surpassing the logistical capacities, ensuring comprehensive data collection.",
+    "data_template": {
+      "item_value": [
+        12,
+        12,
+        10,
+        8,
+        13,
+        3,
+        16,
+        19,
+        19,
+        10
+      ],
+      "item_weight": [
+        4,
+        5,
+        4,
+        7,
+        1,
+        10,
+        10,
+        2,
+        7,
+        10
+      ],
+      "item_volume": [
+        3,
+        5,
+        2,
+        5,
+        4,
+        1,
+        2,
+        2,
+        3,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 33,
+    "desc_merge": "A production manager for a touring theatrical company must plan the shipment of costume pieces and props, where each item category has a weight [5, 6, 8, 9, 6, 5, 5, 2, 10, 1], a packing volume [2, 2, 2, 3, 3, 5, 2, 5, 3, 3], and an artistic value [18, 6, 4, 17, 19, 5, 20, 12, 20, 5] critical to the show's integrity. Items within a category are identical and can be packed in any number. The touring trucks have fixed maximum weight 34 and cubic volume 18 limits. The challenge is to decide how many units of each costume or prop type to load to maximize the total production value delivered to each venue while complying with the transport constraints, guaranteeing a flawless performance.",
+    "data_template": {
+      "item_value": [
+        18,
+        6,
+        4,
+        17,
+        19,
+        5,
+        20,
+        12,
+        20,
+        5
+      ],
+      "item_weight": [
+        5,
+        6,
+        8,
+        9,
+        6,
+        5,
+        5,
+        2,
+        10,
+        1
+      ],
+      "item_volume": [
+        2,
+        2,
+        2,
+        3,
+        3,
+        5,
+        2,
+        5,
+        3,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 34,
+    "desc_merge": "An e-commerce fulfillment center must decide how many copies of each product to include in a shipment batch, where each product has a weight [1, 2, 3, 2, 2, 10, 10, 7, 10, 9], a storage volume [1, 4, 3, 3, 2, 5, 3, 1, 2, 4], and a sales value [12, 15, 1, 17, 20, 6, 18, 20, 19, 12], with each product type available in unlimited quantity from inventory. The shipping containers used for dispatch have a strict maximum weight limit of 33 and a maximum volume limit of 16. The objective is to determine the optimal quantity of each product to pack in order to maximize the total sales value of the shipment while ensuring the container's weight and volume capacities are not exceeded, thereby optimizing logistics efficiency and profitability per shipment.",
+    "data_template": {
+      "item_value": [
+        12,
+        15,
+        1,
+        17,
+        20,
+        6,
+        18,
+        20,
+        19,
+        12
+      ],
+      "item_weight": [
+        1,
+        2,
+        3,
+        2,
+        2,
+        10,
+        10,
+        7,
+        10,
+        9
+      ],
+      "item_volume": [
+        1,
+        4,
+        3,
+        3,
+        2,
+        5,
+        3,
+        1,
+        2,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 35,
+    "desc_merge": "A chemical plant needs to determine the number of batches for each chemical compound to process in a single production run, where each compound requires a raw material weight [3, 3, 5, 7, 1, 9, 8, 8, 10, 1], occupies a reactor vessel volume [4, 2, 4, 4, 1, 1, 1, 2, 5, 4], and has a market value [18, 10, 12, 9, 11, 18, 17, 3, 9, 7], and any compound can be scheduled for multiple batches. The production facility is constrained by a maximum allowable total weight 33 for raw material handling and a maximum total volume 16 that the reactor system can accommodate. The goal is to select the number of batches for each compound to maximize the total value of the output while adhering to the plant's safety and operational limits, ensuring optimal throughput.",
+    "data_template": {
+      "item_value": [
+        18,
+        10,
+        12,
+        9,
+        11,
+        18,
+        17,
+        3,
+        9,
+        7
+      ],
+      "item_weight": [
+        3,
+        3,
+        5,
+        7,
+        1,
+        9,
+        8,
+        8,
+        10,
+        1
+      ],
+      "item_volume": [
+        4,
+        2,
+        4,
+        4,
+        1,
+        1,
+        1,
+        2,
+        5,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 36,
+    "desc_merge": "A renewable energy company is installing components for a new farm, where each type of component (like a solar panel or wind turbine part) has a physical weight [8, 4, 5, 9, 1, 6, 3, 6, 2, 10], a spatial volume [1, 4, 1, 4, 3, 1, 5, 1, 2, 5], and an energy generation value [4, 1, 18, 20, 18, 20, 1, 19, 4, 3], with an unlimited supply of each component type available. The installation vehicle and the foundation have maximum load-bearing weight 32 and spatial volume 16 constraints. The problem is to choose how many units of each component to install in a single phase to maximize the total energy generation value without surpassing the structural and spatial limitations, thus optimizing the farm's initial output.",
+    "data_template": {
+      "item_value": [
+        4,
+        1,
+        18,
+        20,
+        18,
+        20,
+        1,
+        19,
+        4,
+        3
+      ],
+      "item_weight": [
+        8,
+        4,
+        5,
+        9,
+        1,
+        6,
+        3,
+        6,
+        2,
+        10
+      ],
+      "item_volume": [
+        1,
+        4,
+        1,
+        4,
+        3,
+        1,
+        5,
+        1,
+        2,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 37,
+    "desc_merge": "A moving company must decide how many items of each type (e.g., boxes, furniture) to load onto a truck for a client's move, where each item type has a weight [5, 3, 10, 7, 2, 1, 10, 7, 5, 10], a volume [4, 3, 1, 4, 3, 2, 2, 1, 3, 1], and a value [11, 9, 19, 14, 7, 14, 13, 1, 12, 15] based on the service fee, and multiple identical items can be loaded. The moving truck has a maximum payload capacity of 36 and a maximum cargo space volume of 14. The objective is to select the quantities of each item type to load to maximize the total service value for the trip while ensuring the truck's weight and volume limits are respected, leading to efficient and profitable job planning.",
+    "data_template": {
+      "item_value": [
+        11,
+        9,
+        19,
+        14,
+        7,
+        14,
+        13,
+        1,
+        12,
+        15
+      ],
+      "item_weight": [
+        5,
+        3,
+        10,
+        7,
+        2,
+        1,
+        10,
+        7,
+        5,
+        10
+      ],
+      "item_volume": [
+        4,
+        3,
+        1,
+        4,
+        3,
+        2,
+        2,
+        1,
+        3,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 38,
+    "desc_merge": "A library is allocating space on its high-performance servers for digitalizing collections, where each collection type (e.g., book scans, audio recordings) has a file size equivalent to weight [7, 6, 10, 6, 5, 2, 8, 9, 10, 1], a required processing memory footprint equivalent to volume [5, 2, 2, 3, 4, 3, 5, 2, 5, 2], and a research value [1, 4, 19, 9, 15, 7, 19, 20, 9, 3], and each collection can be digitized in multiple units. The server cluster has a maximum storage capacity 38 and a maximum simultaneous processing memory limit 19. The aim is to determine how many units of each collection type to process and store to maximize the total research value accessible, while staying within the hardware's storage and processing constraints.",
+    "data_template": {
+      "item_value": [
+        1,
+        4,
+        19,
+        9,
+        15,
+        7,
+        19,
+        20,
+        9,
+        3
+      ],
+      "item_weight": [
+        7,
+        6,
+        10,
+        6,
+        5,
+        2,
+        8,
+        9,
+        10,
+        1
+      ],
+      "item_volume": [
+        5,
+        2,
+        2,
+        3,
+        4,
+        3,
+        5,
+        2,
+        5,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 39,
+    "desc_merge": "In a role-playing game, players collect various types of loot items, where each item type has a weight [2, 8, 5, 4, 4, 9, 5, 4, 6, 4], an inventory slot size [5, 2, 2, 5, 2, 1, 3, 3, 2, 5], and a gold value [14, 14, 9, 6, 16, 3, 9, 1, 10, 16], and any item type can be collected an unlimited number of times. The player's character has a maximum carrying capacity of 30 for weight and an inventory grid with a total slot limit of 18. The challenge is to select the optimal combination of loot quantities to maximize total gold value without exceeding either the weight or slot constraints, thereby enhancing in-game wealth accumulation and resource management efficiency.",
+    "data_template": {
+      "item_value": [
+        14,
+        14,
+        9,
+        6,
+        16,
+        3,
+        9,
+        1,
+        10,
+        16
+      ],
+      "item_weight": [
+        2,
+        8,
+        5,
+        4,
+        4,
+        9,
+        5,
+        4,
+        6,
+        4
+      ],
+      "item_volume": [
+        5,
+        2,
+        2,
+        5,
+        2,
+        1,
+        3,
+        3,
+        2,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 40,
+    "desc_merge": "A regional food bank receives bulk donations of various food categories, where each category has a perishability weight [1, 8, 4, 7, 9, 10, 3, 4, 4, 7], a storage space requirement [2, 5, 1, 1, 1, 2, 1, 4, 3, 1], and a nutritional benefit score [12, 15, 12, 3, 20, 12, 3, 10, 1, 6], and each category can be accepted in unlimited quantities. The food bank's warehouse has a maximum weight handling limit of 34 and a total storage volume of 12. The objective is to determine the optimal acceptance quantities for each food category to maximize total nutritional benefit for the community while adhering to both weight and volume restrictions, ensuring effective hunger relief operations.",
+    "data_template": {
+      "item_value": [
+        12,
+        15,
+        12,
+        3,
+        20,
+        12,
+        3,
+        10,
+        1,
+        6
+      ],
+      "item_weight": [
+        1,
+        8,
+        4,
+        7,
+        9,
+        10,
+        3,
+        4,
+        4,
+        7
+      ],
+      "item_volume": [
+        2,
+        5,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        3,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 12
+      }
+    }
+  },
+  {
+    "prompt_index": 41,
+    "desc_merge": "A film studio must stock its prop warehouse with various prop types for upcoming productions, where each prop type has a handling weight [9, 2, 5, 10, 3, 4, 4, 5, 4, 8], a shelf space occupancy [5, 3, 2, 5, 4, 1, 5, 2, 5, 5], and a reusable rental value [9, 13, 15, 19, 11, 7, 17, 8, 1, 13], and any prop type can be acquired in unlimited amounts. The warehouse infrastructure supports a maximum load capacity of 32 and a total storage volume of 22. The goal is to choose the quantity of each prop type to store to maximize total rental value across film projects without surpassing structural weight or spatial limits, optimizing asset utilization and cost-effectiveness.",
+    "data_template": {
+      "item_value": [
+        9,
+        13,
+        15,
+        19,
+        11,
+        7,
+        17,
+        8,
+        1,
+        13
+      ],
+      "item_weight": [
+        9,
+        2,
+        5,
+        10,
+        3,
+        4,
+        4,
+        5,
+        4,
+        8
+      ],
+      "item_volume": [
+        5,
+        3,
+        2,
+        5,
+        4,
+        1,
+        5,
+        2,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 42,
+    "desc_merge": "A commercial nursery grows multiple plant species for sale, where each species has a soil weight [7, 7, 1, 5, 8, 3, 6, 3, 4, 2], a greenhouse space requirement [1, 1, 5, 3, 1, 4, 5, 5, 1, 5], and a market price [12, 5, 6, 1, 20, 14, 15, 9, 5, 7], and each species can be cultivated without quantity restrictions. The nursery's transportation vehicle has a maximum load weight of 27 and a cargo area volume of 18. The problem involves selecting the number of plants per species to transport to market to maximize total sales revenue while complying with both vehicle weight and space capacities, improving logistical efficiency and profitability.",
+    "data_template": {
+      "item_value": [
+        12,
+        5,
+        6,
+        1,
+        20,
+        14,
+        15,
+        9,
+        5,
+        7
+      ],
+      "item_weight": [
+        7,
+        7,
+        1,
+        5,
+        8,
+        3,
+        6,
+        3,
+        4,
+        2
+      ],
+      "item_volume": [
+        1,
+        1,
+        5,
+        3,
+        1,
+        4,
+        5,
+        5,
+        1,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 43,
+    "desc_merge": "A hospital's central storage must stockpile various medical supplies for emergency readiness, where each supply type has a weight [2, 3, 1, 9, 8, 3, 7, 9, 8, 5], a storage volume [1, 3, 4, 4, 5, 1, 5, 5, 1, 1], and a criticality value [2, 9, 20, 10, 5, 18, 13, 14, 7, 10] reflecting its importance in crisis response, and any supply can be requisitioned in unlimited quantities. The storage room has a maximum weight capacity 33 and a maximum volume capacity 18. The objective is to determine how many units of each supply to stock to maximize the total preparedness value without surpassing the room's structural and spatial limits, ensuring optimal readiness for patient care.",
+    "data_template": {
+      "item_value": [
+        2,
+        9,
+        20,
+        10,
+        5,
+        18,
+        13,
+        14,
+        7,
+        10
+      ],
+      "item_weight": [
+        2,
+        3,
+        1,
+        9,
+        8,
+        3,
+        7,
+        9,
+        8,
+        5
+      ],
+      "item_volume": [
+        1,
+        3,
+        4,
+        4,
+        5,
+        1,
+        5,
+        5,
+        1,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 44,
+    "desc_merge": "A humanitarian organization assembles nutritional parcels for distribution, where each food item has a weight [6, 4, 9, 4, 1, 7, 3, 6, 4, 7], a packed volume [5, 5, 5, 2, 5, 4, 1, 5, 4, 2], and a nutritional value score [4, 20, 8, 20, 7, 6, 10, 18, 6, 10], and items can be included in parcels without restriction. Each parcel container has a maximum allowable weight 30 and a fixed internal volume 22. The goal is to select the quantity of each food item per parcel to maximize the total nutritional benefit delivered, while adhering to the parcel's weight and size constraints for practical handling and shipping.",
+    "data_template": {
+      "item_value": [
+        4,
+        20,
+        8,
+        20,
+        7,
+        6,
+        10,
+        18,
+        6,
+        10
+      ],
+      "item_weight": [
+        6,
+        4,
+        9,
+        4,
+        1,
+        7,
+        3,
+        6,
+        4,
+        7
+      ],
+      "item_volume": [
+        5,
+        5,
+        5,
+        2,
+        5,
+        4,
+        1,
+        5,
+        4,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 45,
+    "desc_merge": "A film studio's property department must optimally store a vast collection of reusable props, where each prop category has a handling weight [9, 1, 10, 2, 2, 7, 3, 2, 8, 5], a storage footprint [2, 4, 1, 5, 4, 5, 4, 3, 4, 1], and a frequency-of-use value [13, 13, 6, 10, 9, 20, 5, 16, 6, 12], and any number of units from each category can be stored. The warehouse has a maximum floor load capacity 29 and a total cubic storage volume 19. The aim is to decide on the quantity of each prop type to store to maximize the overall utility for future productions, without exceeding the warehouse's physical limitations.",
+    "data_template": {
+      "item_value": [
+        13,
+        13,
+        6,
+        10,
+        9,
+        20,
+        5,
+        16,
+        6,
+        12
+      ],
+      "item_weight": [
+        9,
+        1,
+        10,
+        2,
+        2,
+        7,
+        3,
+        2,
+        8,
+        5
+      ],
+      "item_volume": [
+        2,
+        4,
+        1,
+        5,
+        4,
+        5,
+        4,
+        3,
+        4,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 46,
+    "desc_merge": "An engineer is designing a microgrid using various renewable energy components, where each component type has an installation weight [2, 5, 3, 4, 5, 7, 1, 7, 7, 7], a spatial requirement [4, 5, 4, 4, 4, 3, 4, 5, 4, 5], and an energy output value [12, 20, 3, 3, 10, 6, 20, 7, 7, 7], and components can be installed in unlimited numbers. The installation site has a maximum load-bearing capacity 28 and a limited area with a volume constraint 25. The challenge is to determine the number of each component to install to maximize total energy generation capacity while respecting the site's weight and space restrictions.",
+    "data_template": {
+      "item_value": [
+        12,
+        20,
+        3,
+        3,
+        10,
+        6,
+        20,
+        7,
+        7,
+        7
+      ],
+      "item_weight": [
+        2,
+        5,
+        3,
+        4,
+        5,
+        7,
+        1,
+        7,
+        7,
+        7
+      ],
+      "item_volume": [
+        4,
+        5,
+        4,
+        4,
+        4,
+        3,
+        4,
+        5,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 25
+      }
+    }
+  },
+  {
+    "prompt_index": 47,
+    "desc_merge": "In textile manufacturing, a factory must choose how many rolls of each fabric type to process, where each fabric roll has a weight [8, 1, 9, 10, 1, 2, 10, 6, 10, 1], a storage volume [2, 1, 2, 2, 5, 4, 3, 4, 1, 3], and a profit contribution [19, 10, 15, 10, 9, 15, 3, 15, 1, 14] per roll, with an unlimited supply of each fabric type available. The factory's dyeing vats and storage area have a maximum weight capacity 34 and a maximum volume capacity 16. The objective is to determine the optimal quantity of each fabric roll to process to maximize total profit without surpassing the weight and volume constraints, thereby optimizing production throughput and material utilization.",
+    "data_template": {
+      "item_value": [
+        19,
+        10,
+        15,
+        10,
+        9,
+        15,
+        3,
+        15,
+        1,
+        14
+      ],
+      "item_weight": [
+        8,
+        1,
+        9,
+        10,
+        1,
+        2,
+        10,
+        6,
+        10,
+        1
+      ],
+      "item_volume": [
+        2,
+        1,
+        2,
+        2,
+        5,
+        4,
+        3,
+        4,
+        1,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 48,
+    "desc_merge": "A large-scale catering service must decide on the quantity of each beverage type to supply for an event, where each beverage case has a weight [2, 4, 2, 6, 8, 3, 8, 10, 7, 5], a physical volume [3, 2, 4, 5, 3, 2, 2, 1, 1, 3], and an estimated profit [11, 20, 8, 2, 19, 15, 7, 16, 4, 15] per case, and any beverage can be ordered in unlimited quantities. The service vehicle has a maximum payload 33 and a maximum storage volume 15. The aim is to select the number of cases for each beverage to maximize overall profit while ensuring the total load stays within the vehicle's weight and space limits, crucial for logistical efficiency and customer satisfaction.",
+    "data_template": {
+      "item_value": [
+        11,
+        20,
+        8,
+        2,
+        19,
+        15,
+        7,
+        16,
+        4,
+        15
+      ],
+      "item_weight": [
+        2,
+        4,
+        2,
+        6,
+        8,
+        3,
+        8,
+        10,
+        7,
+        5
+      ],
+      "item_volume": [
+        3,
+        2,
+        4,
+        5,
+        3,
+        2,
+        2,
+        1,
+        1,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 49,
+    "desc_merge": "A mining company needs to transport multiple types of modular equipment to a remote site, where each equipment unit has a weight [8, 7, 2, 7, 5, 8, 3, 7, 5, 6], a volume [1, 2, 2, 5, 1, 4, 2, 5, 3, 4], and an operational value [5, 11, 14, 8, 5, 12, 9, 6, 13, 4] representing its importance to initial production, and each type can be included multiple times. The transport aircraft has strict maximum weight 34 and cargo hold volume 17 restrictions. The problem is to determine how many units of each equipment type to load to maximize the total operational value delivered, without exceeding the aircraft's capacities, which is vital for the project's timely and effective start-up.",
+    "data_template": {
+      "item_value": [
+        5,
+        11,
+        14,
+        8,
+        5,
+        12,
+        9,
+        6,
+        13,
+        4
+      ],
+      "item_weight": [
+        8,
+        7,
+        2,
+        7,
+        5,
+        8,
+        3,
+        7,
+        5,
+        6
+      ],
+      "item_volume": [
+        1,
+        2,
+        2,
+        5,
+        1,
+        4,
+        2,
+        5,
+        3,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 34,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 50,
+    "desc_merge": "A furniture retailer must plan the loading of a delivery truck with various products, where each product item has a weight [4, 10, 6, 4, 2, 9, 7, 8, 7, 10], a packaging volume [3, 4, 2, 3, 2, 3, 5, 1, 4, 5], and a sales profit [20, 8, 16, 16, 20, 2, 3, 18, 16, 8], and multiple identical items can be loaded. The delivery truck has a maximum weight limit 40 and a maximum cargo volume 19. The goal is to choose the quantity of each product to load to maximize the total profit from the delivery run while adhering to both the weight and volume constraints of the vehicle, optimizing delivery efficiency and profitability per trip.",
+    "data_template": {
+      "item_value": [
+        20,
+        8,
+        16,
+        16,
+        20,
+        2,
+        3,
+        18,
+        16,
+        8
+      ],
+      "item_weight": [
+        4,
+        10,
+        6,
+        4,
+        2,
+        9,
+        7,
+        8,
+        7,
+        10
+      ],
+      "item_volume": [
+        3,
+        4,
+        2,
+        3,
+        2,
+        3,
+        5,
+        1,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 51,
+    "desc_merge": "An electronics manufacturer assembles kits from various components, where each component type has a weight [6, 9, 6, 4, 10, 2, 4, 7, 1, 7], a storage volume [5, 5, 3, 3, 2, 1, 2, 2, 4, 1], and a value [1, 6, 7, 14, 9, 9, 12, 8, 16, 14] based on its contribution to the final product's market price, and components are available in unlimited quantities. The kit assembly station has a maximum permissible weight 33 and a bin volume limit 16. The objective is to determine the number of each component to include in a kit to maximize the total kit value without exceeding the station's weight and volume limits, ensuring high-value product assembly within physical constraints.",
+    "data_template": {
+      "item_value": [
+        1,
+        6,
+        7,
+        14,
+        9,
+        9,
+        12,
+        8,
+        16,
+        14
+      ],
+      "item_weight": [
+        6,
+        9,
+        6,
+        4,
+        10,
+        2,
+        4,
+        7,
+        1,
+        7
+      ],
+      "item_volume": [
+        5,
+        5,
+        3,
+        3,
+        2,
+        1,
+        2,
+        2,
+        4,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 52,
+    "desc_merge": "A railway operator needs to determine how many units of each type of commodity to load onto a freight train, where each commodity has a specific weight [5, 7, 3, 9, 6, 9, 9, 4, 3, 9], a storage volume [5, 4, 1, 3, 5, 1, 1, 1, 4, 1], and a transport revenue [17, 7, 15, 9, 5, 2, 16, 4, 17, 10], with any commodity available in unlimited quantities. The train's physical constraints are a maximum gross weight 38 and a total wagon volume 15. The objective is to maximize the total revenue from the transported goods by selecting the optimal quantity of each commodity, ensuring the train is loaded to its full operational capacity without exceeding its structural limits, which is vital for profitable rail operations.",
+    "data_template": {
+      "item_value": [
+        17,
+        7,
+        15,
+        9,
+        5,
+        2,
+        16,
+        4,
+        17,
+        10
+      ],
+      "item_weight": [
+        5,
+        7,
+        3,
+        9,
+        6,
+        9,
+        9,
+        4,
+        3,
+        9
+      ],
+      "item_volume": [
+        5,
+        4,
+        1,
+        3,
+        5,
+        1,
+        1,
+        1,
+        4,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 53,
+    "desc_merge": "An advertising agency must allocate its budget across various online ad formats, where each ad type consumes a monetary cost [7, 9, 1, 10, 6, 9, 6, 10, 5, 1], requires a data bandwidth allocation [1, 3, 1, 1, 3, 3, 3, 2, 3, 1], and generates an estimated customer engagement value [7, 3, 12, 14, 17, 16, 13, 5, 13, 10], and each ad type can be run an unlimited number of times. The campaign has a total budget ceiling 38 and a maximum allowable data usage 12. The goal is to determine the optimal frequency for each ad format to maximize total engagement without overspending the budget or exceeding data caps, thereby ensuring a high-impact marketing campaign.",
+    "data_template": {
+      "item_value": [
+        7,
+        3,
+        12,
+        14,
+        17,
+        16,
+        13,
+        5,
+        13,
+        10
+      ],
+      "item_weight": [
+        7,
+        9,
+        1,
+        10,
+        6,
+        9,
+        6,
+        10,
+        5,
+        1
+      ],
+      "item_volume": [
+        1,
+        3,
+        1,
+        1,
+        3,
+        3,
+        3,
+        2,
+        3,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 12
+      }
+    }
+  },
+  {
+    "prompt_index": 54,
+    "desc_merge": "A humanitarian organization is procuring supplies for a refugee camp, where each supply item, like blankets or food packs, has a procurement cost [8, 5, 3, 10, 2, 1, 6, 3, 10, 3], a storage space requirement [5, 3, 4, 1, 3, 5, 3, 5, 5, 5], and a utility score [2, 6, 16, 15, 10, 5, 6, 7, 4, 12] reflecting its importance, and any item can be acquired in unlimited quantities. The mission faces a total budget constraint 30 and a limited warehouse storage volume 23. The challenge is to select the quantities of each supply item to procure to maximize the total utility for the displaced population while adhering to the financial and spatial restrictions, which is critical for effective aid delivery.",
+    "data_template": {
+      "item_value": [
+        2,
+        6,
+        16,
+        15,
+        10,
+        5,
+        6,
+        7,
+        4,
+        12
+      ],
+      "item_weight": [
+        8,
+        5,
+        3,
+        10,
+        2,
+        1,
+        6,
+        3,
+        10,
+        3
+      ],
+      "item_volume": [
+        5,
+        3,
+        4,
+        1,
+        3,
+        5,
+        3,
+        5,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 23
+      }
+    }
+  },
+  {
+    "prompt_index": 55,
+    "desc_merge": "A fish farm needs to formulate an optimal feed mix from various nutrient sources, where each ingredient has a cost per kilogram [10, 4, 2, 10, 6, 4, 5, 8, 4, 10], a bulk density [2, 2, 2, 4, 2, 5, 1, 3, 3, 4], and a nutritional value score [8, 18, 1, 14, 14, 15, 10, 8, 18, 20] for fish growth, and each ingredient can be used without restriction. The feed preparation is constrained by a total cost budget 37 and a maximum silo storage volume 16. The aim is to determine the proportion of each ingredient to use to maximize the overall nutritional value of the feed while staying within the cost and storage limits, ensuring healthy and cost-effective aquaculture production.",
+    "data_template": {
+      "item_value": [
+        8,
+        18,
+        1,
+        14,
+        14,
+        15,
+        10,
+        8,
+        18,
+        20
+      ],
+      "item_weight": [
+        10,
+        4,
+        2,
+        10,
+        6,
+        4,
+        5,
+        8,
+        4,
+        10
+      ],
+      "item_volume": [
+        2,
+        2,
+        2,
+        4,
+        2,
+        5,
+        1,
+        3,
+        3,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 56,
+    "desc_merge": "In textile manufacturing, a factory must select fabric rolls of various types for production, where each roll type has a specific weight [8, 6, 5, 9, 9, 1, 5, 8, 7, 9], a volume [2, 2, 5, 1, 2, 5, 4, 2, 5, 4] when stored, and a value [14, 10, 8, 20, 13, 3, 20, 4, 16, 13] representing its contribution to finished goods. Since rolls of the same type are identical and available in unlimited quantity, the problem involves determining how many rolls of each type to use. The factory's storage area and the capacity of the looms impose a combined maximum weight limit of 40 and a maximum volume limit of 19. The objective is to maximize the total value of fabric utilized for production without surpassing these physical constraints, thereby optimizing material usage and operational throughput.",
+    "data_template": {
+      "item_value": [
+        14,
+        10,
+        8,
+        20,
+        13,
+        3,
+        20,
+        4,
+        16,
+        13
+      ],
+      "item_weight": [
+        8,
+        6,
+        5,
+        9,
+        9,
+        1,
+        5,
+        8,
+        7,
+        9
+      ],
+      "item_volume": [
+        2,
+        2,
+        5,
+        1,
+        2,
+        5,
+        4,
+        2,
+        5,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 57,
+    "desc_merge": "A chemical plant schedules production batches where each batch type requires raw chemicals with a combined weight [2, 8, 1, 7, 9, 2, 6, 4, 1, 8], occupies a reactor volume [4, 5, 1, 2, 2, 4, 4, 4, 1, 2], and yields a profit [11, 13, 11, 1, 17, 2, 8, 3, 15, 11]. Each batch type can be processed repeatedly without limit. The plant's reactor vessels have a maximum safe operating weight 28 and a fixed volume capacity 17. The challenge is to determine the optimal number of batches of each type to schedule to maximize total profit while ensuring the combined weight and volume of the batches do not exceed the reactor's safety and capacity limits, which is vital for efficient and safe plant operation.",
+    "data_template": {
+      "item_value": [
+        11,
+        13,
+        11,
+        1,
+        17,
+        2,
+        8,
+        3,
+        15,
+        11
+      ],
+      "item_weight": [
+        2,
+        8,
+        1,
+        7,
+        9,
+        2,
+        6,
+        4,
+        1,
+        8
+      ],
+      "item_volume": [
+        4,
+        5,
+        1,
+        2,
+        2,
+        4,
+        4,
+        4,
+        1,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 58,
+    "desc_merge": "An aquaculture farm formulates feed for fish by combining different feed components, each with a nutritional weight [1, 4, 8, 5, 4, 7, 6, 4, 4, 9], a bulk volume [5, 2, 4, 1, 5, 5, 3, 2, 2, 2], and a nutritional value [6, 18, 20, 6, 6, 17, 20, 19, 2, 14] for fish growth. Each component can be used in any quantity. The mixing machinery and storage silos have constraints on the total weight 31 and total volume 18 of the final feed mix. The goal is to select the quantity of each feed component to create a mix that maximizes the overall nutritional value for the fish while adhering to the equipment's weight and volume limitations, ensuring optimal growth and health.",
+    "data_template": {
+      "item_value": [
+        6,
+        18,
+        20,
+        6,
+        6,
+        17,
+        20,
+        19,
+        2,
+        14
+      ],
+      "item_weight": [
+        1,
+        4,
+        8,
+        5,
+        4,
+        7,
+        6,
+        4,
+        4,
+        9
+      ],
+      "item_volume": [
+        5,
+        2,
+        4,
+        1,
+        5,
+        5,
+        3,
+        2,
+        2,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 59,
+    "desc_merge": "When designing a renewable energy microgrid, an engineer selects from various component types like solar panels or batteries, where each component has a physical weight [7, 10, 6, 1, 10, 2, 8, 9, 9, 9], a spatial volume [2, 4, 5, 4, 5, 5, 1, 4, 4, 2], and an energy output or storage value [6, 9, 14, 11, 14, 20, 7, 12, 13, 4]. Components of the same type are available in unlimited quantities. The installation site has structural weight limits 42 and spatial volume limits 21. The objective is to determine how many units of each component type to install to maximize the total energy value of the system without exceeding the site's weight and volume capacities, which is crucial for building an efficient and feasible microgrid.",
+    "data_template": {
+      "item_value": [
+        6,
+        9,
+        14,
+        11,
+        14,
+        20,
+        7,
+        12,
+        13,
+        4
+      ],
+      "item_weight": [
+        7,
+        10,
+        6,
+        1,
+        10,
+        2,
+        8,
+        9,
+        9,
+        9
+      ],
+      "item_volume": [
+        2,
+        4,
+        5,
+        4,
+        5,
+        5,
+        1,
+        4,
+        4,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 42,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 60,
+    "desc_merge": "A publishing house decides on the print run for various book titles, where each printed book has a weight [10, 6, 6, 5, 10, 9, 6, 4, 4, 5], a shelf space volume [5, 3, 4, 3, 4, 3, 3, 5, 2, 1], and a projected profit [6, 8, 12, 14, 10, 7, 17, 17, 20, 8]. The number of copies for any title is unlimited for this planning purpose. The warehouse and distribution channels have a maximum allowable total weight 39 and a total volume 19 for storage and shipping. The aim is to calculate the optimal number of copies to print for each title to maximize total profit while ensuring the collective weight and volume of the print run do not surpass the logistical constraints, thereby optimizing inventory and revenue.",
+    "data_template": {
+      "item_value": [
+        6,
+        8,
+        12,
+        14,
+        10,
+        7,
+        17,
+        17,
+        20,
+        8
+      ],
+      "item_weight": [
+        10,
+        6,
+        6,
+        5,
+        10,
+        9,
+        6,
+        4,
+        4,
+        5
+      ],
+      "item_volume": [
+        5,
+        3,
+        4,
+        3,
+        4,
+        3,
+        3,
+        5,
+        2,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 39,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 61,
+    "desc_merge": "In a cloud service provider's data center, administrators must allocate computational instances to a physical server, where each instance type has a resource footprint defined by its CPU consumption [7, 1, 1, 2, 4, 8, 7, 9, 10, 4], its memory usage [8, 5, 20, 4, 9, 18, 7, 14, 6, 13], and its rental revenue [5, 4, 3, 1, 5, 2, 4, 2, 3, 1]; instances of any type can be provisioned in unlimited quantities. The host server has strict hardware limits for total CPU 31 and total memory 18. The objective is to determine the optimal number of each instance type to deploy to maximize total revenue without exceeding the server's resource constraints, thereby ensuring high infrastructure utilization and profitability.",
+    "data_template": {
+      "item_value": [
+        8,
+        5,
+        20,
+        4,
+        9,
+        18,
+        7,
+        14,
+        6,
+        13
+      ],
+      "item_weight": [
+        7,
+        1,
+        1,
+        2,
+        4,
+        8,
+        7,
+        9,
+        10,
+        4
+      ],
+      "item_volume": [
+        5,
+        4,
+        3,
+        1,
+        5,
+        2,
+        4,
+        2,
+        3,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 62,
+    "desc_merge": "A pharmaceutical company must decide how many units of each type of medicine to produce, where each medicine has a weight [10, 1, 1, 2, 1, 1, 8, 10, 8, 4], a volume [1, 1, 2, 2, 2, 5, 5, 5, 4, 3], and a market value [11, 1, 11, 17, 2, 20, 16, 19, 6, 2]. Each type of medicine can be produced in unlimited quantity. The storage facility and transport logistics impose maximum weight 27 and maximum volume 18 constraints. The objective is to determine the optimal number of units of each medicine to maximize total revenue without exceeding capacity limits, ensuring efficient resource utilization and timely delivery.",
+    "data_template": {
+      "item_value": [
+        11,
+        1,
+        11,
+        17,
+        2,
+        20,
+        16,
+        19,
+        6,
+        2
+      ],
+      "item_weight": [
+        10,
+        1,
+        1,
+        2,
+        1,
+        1,
+        8,
+        10,
+        8,
+        4
+      ],
+      "item_volume": [
+        1,
+        1,
+        2,
+        2,
+        2,
+        5,
+        5,
+        5,
+        4,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 27,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 63,
+    "desc_merge": "A bakery wants to determine the quantity of each ingredient to use in baking, where each ingredient has a weight [1, 3, 2, 3, 7, 3, 3, 2, 8, 9], a volume [20, 11, 11, 3, 9, 4, 20, 20, 10, 2], and a contribution to product profit [4, 4, 4, 4, 3, 1, 1, 2, 3, 4]. Each ingredient can be used in unlimited quantity. The mixing and storage equipment have limits of 24 for weight and 18 for volume. The goal is to select the number of units of each ingredient to maximize overall profit while staying within operational constraints, enhancing production efficiency and output quality.",
+    "data_template": {
+      "item_value": [
+        20,
+        11,
+        11,
+        3,
+        9,
+        4,
+        20,
+        20,
+        10,
+        2
+      ],
+      "item_weight": [
+        1,
+        3,
+        2,
+        3,
+        7,
+        3,
+        3,
+        2,
+        8,
+        9
+      ],
+      "item_volume": [
+        4,
+        4,
+        4,
+        4,
+        3,
+        1,
+        1,
+        2,
+        3,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 24,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 64,
+    "desc_merge": "An energy company distributes multiple types of fuel, each with a weight [7, 7, 9, 1, 10, 2, 1, 9, 1, 4], a volume [5, 5, 3, 4, 5, 2, 2, 2, 1, 4], and a profit margin [16, 1, 6, 9, 8, 3, 17, 13, 8, 10]. Each fuel type can be loaded in unlimited quantity. Delivery trucks have maximum weight 30 and volume 19. The problem is to determine the number of units of each fuel type to load on trucks to maximize total profit while respecting weight and volume constraints, optimizing transportation and revenue.",
+    "data_template": {
+      "item_value": [
+        16,
+        1,
+        6,
+        9,
+        8,
+        3,
+        17,
+        13,
+        8,
+        10
+      ],
+      "item_weight": [
+        7,
+        7,
+        9,
+        1,
+        10,
+        2,
+        1,
+        9,
+        1,
+        4
+      ],
+      "item_volume": [
+        5,
+        5,
+        3,
+        4,
+        5,
+        2,
+        2,
+        2,
+        1,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 65,
+    "desc_merge": "A catering service is designing a menu for a large event, where each potential dish has a preparation time [3, 7, 4, 3, 1, 3, 5, 9, 6, 7], a required refrigerator space [3, 1, 5, 3, 4, 3, 2, 1, 4, 1], and an estimated profit per serving [13, 6, 9, 10, 1, 6, 14, 1, 18, 8], with any dish being producible in unlimited quantities. The kitchen operations are constrained by total available preparation time 28 and total cold storage capacity 16. The aim is to select the quantity of each dish to prepare to maximize total profit for the event without surpassing the kitchen's operational limits, guaranteeing guest satisfaction and cost-effectiveness.",
+    "data_template": {
+      "item_value": [
+        13,
+        6,
+        9,
+        10,
+        1,
+        6,
+        14,
+        1,
+        18,
+        8
+      ],
+      "item_weight": [
+        3,
+        7,
+        4,
+        3,
+        1,
+        3,
+        5,
+        9,
+        6,
+        7
+      ],
+      "item_volume": [
+        3,
+        1,
+        5,
+        3,
+        4,
+        3,
+        2,
+        1,
+        4,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 66,
+    "desc_merge": "A military logistics unit must plan the deployment of equipment types to a forward operating base, where each equipment type has a weight [9, 6, 3, 8, 4, 5, 1, 1, 10, 2], a storage volume [3, 1, 2, 5, 5, 1, 4, 1, 2, 3], and an operational value [8, 11, 5, 18, 16, 19, 13, 20, 9, 19] representing its strategic importance; any equipment type can be deployed in unlimited quantities. The transport aircraft and base storage bunkers have strict maximum weight 29 and volume 16 limitations. The objective is to determine the optimal quantity of each equipment type to deploy to maximize the total operational capability of the base without breaching the logistical constraints, which is critical for mission success and soldier safety.",
+    "data_template": {
+      "item_value": [
+        8,
+        11,
+        5,
+        18,
+        16,
+        19,
+        13,
+        20,
+        9,
+        19
+      ],
+      "item_weight": [
+        9,
+        6,
+        3,
+        8,
+        4,
+        5,
+        1,
+        1,
+        10,
+        2
+      ],
+      "item_volume": [
+        3,
+        1,
+        2,
+        5,
+        5,
+        1,
+        4,
+        1,
+        2,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 67,
+    "desc_merge": "A manufacturing plant needs to determine the optimal mix of raw materials for a continuous production process, where each material has a weight [1, 3, 9, 3, 4, 7, 10, 5, 10, 7], a bulk volume [4, 3, 2, 1, 3, 3, 5, 5, 2, 2] it occupies in silos, and a value [18, 7, 12, 8, 9, 12, 6, 13, 1, 18] based on its contribution to the final product's quality. Materials can be used in any quantity continuously. The plant's processing hoppers have a maximum weight capacity 35 and a maximum volume capacity 18. The goal is to select the quantities of each material to blend to maximize the overall product value while adhering to the hopper's physical constraints, ensuring efficient and high-quality output.",
+    "data_template": {
+      "item_value": [
+        18,
+        7,
+        12,
+        8,
+        9,
+        12,
+        6,
+        13,
+        1,
+        18
+      ],
+      "item_weight": [
+        1,
+        3,
+        9,
+        3,
+        4,
+        7,
+        10,
+        5,
+        10,
+        7
+      ],
+      "item_volume": [
+        4,
+        3,
+        2,
+        1,
+        3,
+        3,
+        5,
+        5,
+        2,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 68,
+    "desc_merge": "A large retailer's distribution center must decide how many units of each product to pack onto standardized pallets for store shipment, where each product has a weight [6, 6, 3, 7, 5, 5, 2, 9, 8, 4], a cubic volume [2, 3, 3, 1, 3, 5, 1, 3, 2, 1], and a profit margin [17, 6, 12, 12, 16, 17, 12, 14, 14, 7]. Products can be selected repeatedly with no quantity restrictions. Each pallet has a maximum allowable weight 33 and a fixed volume 14. The problem is to find the optimal assortment and quantity of products per pallet to maximize the total profit delivered per shipment, directly impacting logistics cost efficiency and store inventory turnover.",
+    "data_template": {
+      "item_value": [
+        17,
+        6,
+        12,
+        12,
+        16,
+        17,
+        12,
+        14,
+        14,
+        7
+      ],
+      "item_weight": [
+        6,
+        6,
+        3,
+        7,
+        5,
+        5,
+        2,
+        9,
+        8,
+        4
+      ],
+      "item_volume": [
+        2,
+        3,
+        3,
+        1,
+        3,
+        5,
+        1,
+        3,
+        2,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 69,
+    "desc_merge": "A semiconductor foundry schedules lots of wafers for processing, where each lot type has a weight [3, 8, 4, 8, 1, 3, 7, 7, 7, 8] from the carrier, a footprint [3, 5, 2, 1, 2, 5, 1, 2, 4, 5] in the cleanroom, and a revenue value [12, 12, 18, 8, 14, 13, 12, 16, 10, 7]. Lot types can be processed in any quantity. The processing tool's load port has a maximum weight limit 33 and the cleanroom area has a maximum space limit 18. The objective is to select the number of lots of each type to schedule for processing to maximize total revenue while respecting the equipment's weight and the facility's spatial constraints, optimizing fab throughput and profitability.",
+    "data_template": {
+      "item_value": [
+        12,
+        12,
+        18,
+        8,
+        14,
+        13,
+        12,
+        16,
+        10,
+        7
+      ],
+      "item_weight": [
+        3,
+        8,
+        4,
+        8,
+        1,
+        3,
+        7,
+        7,
+        7,
+        8
+      ],
+      "item_volume": [
+        3,
+        5,
+        2,
+        1,
+        2,
+        5,
+        1,
+        2,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 70,
+    "desc_merge": "An offshore drilling operation requires optimizing helicopter deliveries to a remote oil rig, where each supply item (like drilling parts or crew provisions) has a critical weight [3, 2, 9, 3, 9, 6, 10, 9, 10, 3], a storage volume [13, 4, 2, 15, 19, 19, 20, 11, 6, 16], and an operational priority value [2, 4, 2, 1, 2, 5, 2, 3, 1, 3]; items can be selected multiple times. The helicopter has strict maximum payload 38 and cargo hold capacity 15 limits. The challenge is to load the helicopter with the optimal combination of item quantities to maximize the total priority value delivered, ensuring the rig's continuous operation without violating the aircraft's physical constraints.",
+    "data_template": {
+      "item_value": [
+        13,
+        4,
+        2,
+        15,
+        19,
+        19,
+        20,
+        11,
+        6,
+        16
+      ],
+      "item_weight": [
+        3,
+        2,
+        9,
+        3,
+        9,
+        6,
+        10,
+        9,
+        10,
+        3
+      ],
+      "item_volume": [
+        2,
+        4,
+        2,
+        1,
+        2,
+        5,
+        2,
+        3,
+        1,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 71,
+    "desc_merge": "A television network is migrating its digital archive to a new server farm, where each media file type (e.g., news clips, documentaries) has a file size [3, 2, 3, 8, 2, 3, 1, 7, 9, 6], a processing time cost [4, 4, 4, 2, 5, 4, 3, 2, 5, 1], and a viewer access frequency value [18, 14, 17, 14, 13, 12, 15, 9, 15, 7], with unlimited instances of each file type permissible. The new storage system has a total capacity 26 and a maximum processing bandwidth 20. The objective is to select how many instances of each file type to transfer to maximize the total access value for viewers, while adhering to the storage and processing limits of the new infrastructure.",
+    "data_template": {
+      "item_value": [
+        18,
+        14,
+        17,
+        14,
+        13,
+        12,
+        15,
+        9,
+        15,
+        7
+      ],
+      "item_weight": [
+        3,
+        2,
+        3,
+        8,
+        2,
+        3,
+        1,
+        7,
+        9,
+        6
+      ],
+      "item_volume": [
+        4,
+        4,
+        4,
+        2,
+        5,
+        4,
+        3,
+        2,
+        5,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 26,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 72,
+    "desc_merge": "A game development studio is creating downloadable content bundles, where each in-game asset (like a character skin or weapon) has a download size [5, 10, 4, 7, 3, 5, 7, 7, 1, 2], a memory usage footprint [1, 1, 1, 1, 2, 1, 4, 3, 5, 5], and a perceived player value [13, 16, 3, 15, 6, 11, 14, 10, 6, 5], and any asset can be included multiple times in a bundle. The bundle must conform to platform constraints for maximum total download size 30 and maximum memory allocation 14. The aim is to determine the quantity of each asset to include to maximize the bundle's overall attractiveness and value to players without exceeding the technical limitations.",
+    "data_template": {
+      "item_value": [
+        13,
+        16,
+        3,
+        15,
+        6,
+        11,
+        14,
+        10,
+        6,
+        5
+      ],
+      "item_weight": [
+        5,
+        10,
+        4,
+        7,
+        3,
+        5,
+        7,
+        7,
+        1,
+        2
+      ],
+      "item_volume": [
+        1,
+        1,
+        1,
+        1,
+        2,
+        1,
+        4,
+        3,
+        5,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 14
+      }
+    }
+  },
+  {
+    "prompt_index": 73,
+    "desc_merge": "A cosmetics company is planning a production batch for its factory, where each product (like lipstick or foundation) has a weight of raw materials used [7, 7, 2, 10, 2, 5, 4, 3, 1, 6], a storage space requirement [2, 3, 2, 4, 3, 5, 2, 1, 4, 2], and a profit margin [20, 7, 8, 9, 19, 4, 9, 2, 17, 15], and production runs for each product can be repeated without restriction. The manufacturing line has a maximum raw material input weight 28 per batch and a finite finished product storage volume 16. The goal is to decide the production quantity for each product to maximize total batch profit, while ensuring the batch does not surpass the input weight and output storage constraints.",
+    "data_template": {
+      "item_value": [
+        20,
+        7,
+        8,
+        9,
+        19,
+        4,
+        9,
+        2,
+        17,
+        15
+      ],
+      "item_weight": [
+        7,
+        7,
+        2,
+        10,
+        2,
+        5,
+        4,
+        3,
+        1,
+        6
+      ],
+      "item_volume": [
+        2,
+        3,
+        2,
+        4,
+        3,
+        5,
+        2,
+        1,
+        4,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 74,
+    "desc_merge": "A government agency is selecting materials for upgrading facilities across a national park, where each material type (like gravel for paths or lumber for shelters) has a transport weight [5, 4, 6, 7, 1, 8, 4, 4, 6, 3], a bulk volume [1, 2, 3, 1, 1, 1, 2, 2, 3, 1], and a durability benefit score [18, 18, 19, 20, 20, 2, 13, 13, 13, 6], with each material available in unlimited quantities. The transport vehicles for the remote site have a total weight limit 28 and a cargo space limit 10. The problem is to choose the amounts of each material to ship that will maximize the overall durability benefit for the park's infrastructure, while complying with the vehicle's load and space restrictions.",
+    "data_template": {
+      "item_value": [
+        18,
+        18,
+        19,
+        20,
+        20,
+        2,
+        13,
+        13,
+        13,
+        6
+      ],
+      "item_weight": [
+        5,
+        4,
+        6,
+        7,
+        1,
+        8,
+        4,
+        4,
+        6,
+        3
+      ],
+      "item_volume": [
+        1,
+        2,
+        3,
+        1,
+        1,
+        1,
+        2,
+        2,
+        3,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 10
+      }
+    }
+  },
+  {
+    "prompt_index": 75,
+    "desc_merge": "Humanitarian organizations must allocate unlimited quantities of essential supplies like food packets, medical kits, and tents to refugee camps, where each item type has a weight [6, 10, 9, 10, 1, 9, 1, 10, 7, 8], storage volume [3, 2, 3, 4, 3, 2, 2, 2, 1, 5], and humanitarian impact score [16, 7, 13, 4, 3, 6, 1, 20, 16, 1], with transport vehicles constrained by maximum weight 42 and cargo space 16 to maximize total aid effectiveness while adhering to logistical limits.",
+    "data_template": {
+      "item_value": [
+        16,
+        7,
+        13,
+        4,
+        3,
+        6,
+        1,
+        20,
+        16,
+        1
+      ],
+      "item_weight": [
+        6,
+        10,
+        9,
+        10,
+        1,
+        9,
+        1,
+        10,
+        7,
+        8
+      ],
+      "item_volume": [
+        3,
+        2,
+        3,
+        4,
+        3,
+        2,
+        2,
+        2,
+        1,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 42,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 76,
+    "desc_merge": "NASA engineers plan cargo manifests for orbital resupply missions where unlimited copies of scientific instruments, life support systems, and spare parts—each with mass [4, 7, 2, 6, 2, 8, 5, 3, 1, 10], stowage volume [2, 3, 4, 3, 2, 3, 5, 5, 2, 5], and mission criticality value [2, 9, 17, 12, 14, 6, 17, 16, 4, 14]—must be selected under rocket payload capacity 28 and capsule volume 20 to optimize mission success.",
+    "data_template": {
+      "item_value": [
+        2,
+        9,
+        17,
+        12,
+        14,
+        6,
+        17,
+        16,
+        4,
+        14
+      ],
+      "item_weight": [
+        4,
+        7,
+        2,
+        6,
+        2,
+        8,
+        5,
+        3,
+        1,
+        10
+      ],
+      "item_volume": [
+        2,
+        3,
+        4,
+        3,
+        2,
+        3,
+        5,
+        5,
+        2,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 77,
+    "desc_merge": "Movie studios coordinate equipment rentals for filming locations where unlimited quantities of cameras, lighting rigs, and sound gear—each with transport weight [4, 10, 5, 2, 6, 9, 7, 10, 2, 6], storage bulk [3, 4, 4, 2, 4, 5, 3, 4, 4, 4], and production value [14, 19, 11, 18, 10, 17, 17, 5, 17, 6]—are chosen within truck weight limit 36 and trailer volume 22 to maximize cinematic quality.",
+    "data_template": {
+      "item_value": [
+        14,
+        19,
+        11,
+        18,
+        10,
+        17,
+        17,
+        5,
+        17,
+        6
+      ],
+      "item_weight": [
+        4,
+        10,
+        5,
+        2,
+        6,
+        9,
+        7,
+        10,
+        2,
+        6
+      ],
+      "item_volume": [
+        3,
+        4,
+        4,
+        2,
+        4,
+        5,
+        3,
+        4,
+        4,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 22
+      }
+    }
+  },
+  {
+    "prompt_index": 78,
+    "desc_merge": "Curators plan international art exhibitions where unlimited crates of paintings, sculptures, and artifacts—each with handling weight [6, 2, 4, 8, 5, 4, 2, 2, 7, 1], crate volume [5, 4, 3, 4, 4, 4, 1, 1, 5, 4], and cultural value [15, 16, 19, 2, 16, 9, 20, 5, 14, 5]—are selected under aircraft cargo weight limit 24 and hold volume 21 to create impactful displays.",
+    "data_template": {
+      "item_value": [
+        15,
+        16,
+        19,
+        2,
+        16,
+        9,
+        20,
+        5,
+        14,
+        5
+      ],
+      "item_weight": [
+        6,
+        2,
+        4,
+        8,
+        5,
+        4,
+        2,
+        2,
+        7,
+        1
+      ],
+      "item_volume": [
+        5,
+        4,
+        3,
+        4,
+        4,
+        4,
+        1,
+        1,
+        5,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 24,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 79,
+    "desc_merge": "Green energy companies install components for wind/solar farms where unlimited turbine blades, solar panels, and converters—each with installation weight [9, 2, 9, 4, 5, 4, 7, 8, 10, 5], storage volume [4, 3, 5, 1, 5, 1, 1, 2, 3, 2], and energy output value [13, 7, 19, 12, 8, 2, 16, 3, 3, 3]—are deployed within crane lift capacity 37 and site storage volume 16 to maximize power generation.",
+    "data_template": {
+      "item_value": [
+        13,
+        7,
+        19,
+        12,
+        8,
+        2,
+        16,
+        3,
+        3,
+        3
+      ],
+      "item_weight": [
+        9,
+        2,
+        9,
+        4,
+        5,
+        4,
+        7,
+        8,
+        10,
+        5
+      ],
+      "item_volume": [
+        4,
+        3,
+        5,
+        1,
+        5,
+        1,
+        1,
+        2,
+        3,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 80,
+    "desc_merge": "A venture capital firm evaluates multiple startup investment opportunities, where each startup requires a capital investment [3, 7, 6, 1, 6, 9, 7, 10, 8, 10], occupies management bandwidth [1, 1, 3, 4, 5, 5, 2, 5, 1, 5], and offers an expected return [17, 9, 2, 6, 10, 9, 4, 12, 14, 13]; the firm can invest in any startup an unlimited number of rounds. The fund has total capital 40 and a management capacity 19. The objective is to determine the optimal number of investment rounds in each startup to maximize total expected returns without surpassing financial and managerial limits, thereby enhancing portfolio performance.",
+    "data_template": {
+      "item_value": [
+        17,
+        9,
+        2,
+        6,
+        10,
+        9,
+        4,
+        12,
+        14,
+        13
+      ],
+      "item_weight": [
+        3,
+        7,
+        6,
+        1,
+        6,
+        9,
+        7,
+        10,
+        8,
+        10
+      ],
+      "item_volume": [
+        1,
+        1,
+        3,
+        4,
+        5,
+        5,
+        2,
+        5,
+        1,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 81,
+    "desc_merge": "A university library must select digital resources to license, where each resource has an access fee [5, 9, 8, 5, 1, 3, 4, 8, 8, 2], server storage demand [1, 4, 4, 2, 3, 2, 4, 4, 4, 3], and an educational value score [4, 11, 6, 16, 7, 5, 7, 1, 9, 15]; the library can acquire unlimited simultaneous licenses per resource. The budget caps fees at 31 and server capacity restricts storage to 18. The aim is to choose license quantities to maximize total educational value within financial and technical constraints, supporting academic excellence.",
+    "data_template": {
+      "item_value": [
+        4,
+        11,
+        6,
+        16,
+        7,
+        5,
+        7,
+        1,
+        9,
+        15
+      ],
+      "item_weight": [
+        5,
+        9,
+        8,
+        5,
+        1,
+        3,
+        4,
+        8,
+        8,
+        2
+      ],
+      "item_volume": [
+        1,
+        4,
+        4,
+        2,
+        3,
+        2,
+        4,
+        4,
+        4,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 31,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 82,
+    "desc_merge": "A humanitarian organization prepares emergency shelters by stocking supplies, where each supply type has a cost [6, 1, 5, 7, 5, 9, 2, 4, 8, 1], a storage space requirement [5, 5, 1, 1, 3, 1, 4, 2, 3, 2], and a utility score [6, 14, 13, 2, 9, 3, 19, 18, 19, 4]; supplies can be procured in unlimited quantities. The organization faces a budget limit 28 and a warehouse space limit 16. The challenge is to decide how many units of each supply to stockpile to maximize overall utility for disaster victims without exceeding budgetary and spatial capacities, ensuring rapid response efficacy.",
+    "data_template": {
+      "item_value": [
+        6,
+        14,
+        13,
+        2,
+        9,
+        3,
+        19,
+        18,
+        19,
+        4
+      ],
+      "item_weight": [
+        6,
+        1,
+        5,
+        7,
+        5,
+        9,
+        2,
+        4,
+        8,
+        1
+      ],
+      "item_volume": [
+        5,
+        5,
+        1,
+        1,
+        3,
+        1,
+        4,
+        2,
+        3,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 16
+      }
+    }
+  },
+  {
+    "prompt_index": 83,
+    "desc_merge": "A film studio plans prop rentals for productions, where each prop has a rental cost [7, 6, 4, 4, 4, 3, 2, 5, 5, 8], a storage footprint [5, 1, 5, 4, 3, 2, 1, 3, 4, 4], and a production enhancement value [2, 20, 15, 20, 2, 12, 16, 5, 17, 3]; props can be rented multiple times without restriction. The studio’s rental budget is 28 and storage facility volume is 19. The goal is to determine rental frequencies for each prop to maximize total production value while adhering to cost and space limitations, optimizing creative resource allocation.",
+    "data_template": {
+      "item_value": [
+        2,
+        20,
+        15,
+        20,
+        2,
+        12,
+        16,
+        5,
+        17,
+        3
+      ],
+      "item_weight": [
+        7,
+        6,
+        4,
+        4,
+        4,
+        3,
+        2,
+        5,
+        5,
+        8
+      ],
+      "item_volume": [
+        5,
+        1,
+        5,
+        4,
+        3,
+        2,
+        1,
+        3,
+        4,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 84,
+    "desc_merge": "A renewable energy company deploys components for solar farms, where each component type has a manufacturing cost [2, 7, 5, 9, 4, 2, 6, 5, 5, 5], a spatial installation requirement [5, 3, 1, 5, 2, 1, 2, 3, 4, 5], and an energy output benefit [7, 17, 8, 7, 3, 4, 3, 14, 8, 12]; components can be installed in unlimited numbers. The project has a total cost ceiling 30 and a land area limit 18. The objective is to select installation quantities for each component to maximize total energy benefit within financial and spatial constraints, promoting sustainable energy expansion.",
+    "data_template": {
+      "item_value": [
+        7,
+        17,
+        8,
+        7,
+        3,
+        4,
+        3,
+        14,
+        8,
+        12
+      ],
+      "item_weight": [
+        2,
+        7,
+        5,
+        9,
+        4,
+        2,
+        6,
+        5,
+        5,
+        5
+      ],
+      "item_volume": [
+        5,
+        3,
+        1,
+        5,
+        2,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 85,
+    "desc_merge": "In disaster response scenarios, organizations must assemble medical kits where each medical supply item has a weight [6, 5, 7, 8, 1, 7, 10, 7, 10, 2], a storage volume [2, 2, 2, 2, 5, 5, 2, 3, 1, 2], and a lifesaving priority score [18, 13, 1, 3, 9, 3, 18, 9, 14, 17], with unlimited quantities available for selection; the emergency transport containers impose strict limits of 37 for total weight and 15 for total volume, requiring optimization of item combinations to maximize cumulative lifesaving potential while adhering to logistical constraints for rapid deployment.",
+    "data_template": {
+      "item_value": [
+        18,
+        13,
+        1,
+        3,
+        9,
+        3,
+        18,
+        9,
+        14,
+        17
+      ],
+      "item_weight": [
+        6,
+        5,
+        7,
+        8,
+        1,
+        7,
+        10,
+        7,
+        10,
+        2
+      ],
+      "item_volume": [
+        2,
+        2,
+        2,
+        2,
+        5,
+        5,
+        2,
+        3,
+        1,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 15
+      }
+    }
+  },
+  {
+    "prompt_index": 86,
+    "desc_merge": "Telecommunications companies face the challenge of caching popular media files on edge servers, where each file type has a storage requirement [1, 8, 5, 5, 2, 6, 10, 6, 6, 10], a bandwidth consumption rate [5, 12, 20, 18, 10, 3, 13, 17, 9, 15], and a physical server space occupancy [4, 5, 1, 2, 1, 4, 4, 1, 4, 3], with unlimited replication allowed; the network nodes have hardware limitations of 35 for total storage and 17 for physical space, aiming to maximize total bandwidth efficiency by selecting optimal file distributions without exceeding infrastructure capacities.",
+    "data_template": {
+      "item_value": [
+        5,
+        12,
+        20,
+        18,
+        10,
+        3,
+        13,
+        17,
+        9,
+        15
+      ],
+      "item_weight": [
+        1,
+        8,
+        5,
+        5,
+        2,
+        6,
+        10,
+        6,
+        6,
+        10
+      ],
+      "item_volume": [
+        4,
+        5,
+        1,
+        2,
+        1,
+        4,
+        4,
+        1,
+        4,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 17
+      }
+    }
+  },
+  {
+    "prompt_index": 87,
+    "desc_merge": "Farming cooperatives optimize seed package deliveries where each seed variety has a weight [5, 6, 8, 5, 7, 9, 6, 4, 3, 7], a bulk volume [1, 3, 5, 1, 2, 4, 2, 4, 3, 5], and a crop yield potential value [1, 18, 9, 12, 19, 1, 7, 3, 10, 3], available in unlimited quantities; distribution vehicles have maximum load limits of 36 for weight and 18 for cargo space, requiring strategic selection of seed quantities to maximize projected agricultural output while respecting transportation constraints during planting seasons.",
+    "data_template": {
+      "item_value": [
+        1,
+        18,
+        9,
+        12,
+        19,
+        1,
+        7,
+        3,
+        10,
+        3
+      ],
+      "item_weight": [
+        5,
+        6,
+        8,
+        5,
+        7,
+        9,
+        6,
+        4,
+        3,
+        7
+      ],
+      "item_volume": [
+        1,
+        3,
+        5,
+        1,
+        2,
+        4,
+        2,
+        4,
+        3,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 88,
+    "desc_merge": "Solar farm developers select photovoltaic panels where each panel model has a structural weight [1, 7, 6, 5, 6, 10, 5, 8, 6, 10], a surface area requirement [2, 5, 3, 5, 3, 2, 5, 4, 3, 3], and an energy generation capacity [14, 15, 2, 16, 2, 13, 12, 1, 19, 4], with no quantity restrictions; installation sites have maximum structural load capacity 38 and available area 21, necessitating optimal panel combination choices to maximize total energy production while complying with site limitations and engineering specifications.",
+    "data_template": {
+      "item_value": [
+        14,
+        15,
+        2,
+        16,
+        2,
+        13,
+        12,
+        1,
+        19,
+        4
+      ],
+      "item_weight": [
+        1,
+        7,
+        6,
+        5,
+        6,
+        10,
+        5,
+        8,
+        6,
+        10
+      ],
+      "item_volume": [
+        2,
+        5,
+        3,
+        5,
+        3,
+        2,
+        5,
+        4,
+        3,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 38,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 89,
+    "desc_merge": "School districts distribute learning materials where each resource type (e.g., textbook sets, lab kits) has a shipping weight [7, 2, 10, 8, 4, 6, 4, 4, 5, 5], a storage space requirement [3, 1, 5, 1, 1, 3, 5, 5, 5, 2], and an educational impact score [8, 4, 14, 6, 3, 5, 14, 3, 1, 3], with unlimited acquisition possible; school warehouses have maximum weight capacity 33 and storage volume 18, requiring careful selection of resource quantities to maximize overall educational benefits while maintaining physical infrastructure constraints across the district.",
+    "data_template": {
+      "item_value": [
+        8,
+        4,
+        14,
+        6,
+        3,
+        5,
+        14,
+        3,
+        1,
+        3
+      ],
+      "item_weight": [
+        7,
+        2,
+        10,
+        8,
+        4,
+        6,
+        4,
+        4,
+        5,
+        5
+      ],
+      "item_volume": [
+        3,
+        1,
+        5,
+        1,
+        1,
+        3,
+        5,
+        5,
+        5,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 90,
+    "desc_merge": "A film studio needs to procure props for multiple productions, where each prop type has a shipping cost [5, 7, 1, 4, 1, 5, 4, 8, 2, 10], a storage space requirement [1, 2, 5, 5, 5, 3, 1, 4, 3, 5], and an artistic value contribution [2, 1, 12, 7, 7, 7, 14, 20, 19, 1], with unlimited quantities available per prop type; the studio's budget imposes a maximum cost 28 and warehouse space sets a maximum storage 20, aiming to select optimal quantities of each prop to maximize total artistic value while adhering to financial and spatial constraints for efficient filmmaking.",
+    "data_template": {
+      "item_value": [
+        2,
+        1,
+        12,
+        7,
+        7,
+        7,
+        14,
+        20,
+        19,
+        1
+      ],
+      "item_weight": [
+        5,
+        7,
+        1,
+        4,
+        1,
+        5,
+        4,
+        8,
+        2,
+        10
+      ],
+      "item_volume": [
+        1,
+        2,
+        5,
+        5,
+        5,
+        3,
+        1,
+        4,
+        3,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 28,
+        "volume": 20
+      }
+    }
+  },
+  {
+    "prompt_index": 91,
+    "desc_merge": "A disaster relief organization must stockpile supplies for emergency shelters, where each supply item has a handling weight [5, 10, 7, 1, 10, 5, 3, 1, 10, 7], a storage volume [5, 4, 1, 3, 1, 1, 1, 1, 3, 2], and a utility score [3, 14, 15, 3, 8, 18, 11, 8, 18, 4], with no restrictions on how many units of each item can be stored; the shelter's structural limits impose a maximum weight capacity 35 and a maximum storage volume 13, requiring the determination of optimal item quantities to maximize overall utility without exceeding these limits for effective disaster preparedness.",
+    "data_template": {
+      "item_value": [
+        3,
+        14,
+        15,
+        3,
+        8,
+        18,
+        11,
+        8,
+        18,
+        4
+      ],
+      "item_weight": [
+        5,
+        10,
+        7,
+        1,
+        10,
+        5,
+        3,
+        1,
+        10,
+        7
+      ],
+      "item_volume": [
+        5,
+        4,
+        1,
+        3,
+        1,
+        1,
+        1,
+        1,
+        3,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 92,
+    "desc_merge": "An advertising agency plans a digital campaign where each ad format has a data cost [2, 5, 7, 1, 7, 10, 9, 10, 6, 3], a bandwidth consumption [4, 2, 3, 4, 4, 5, 4, 5, 3, 1], and an engagement value [18, 12, 9, 7, 14, 16, 1, 16, 3, 3], with unlimited impressions available per format; the campaign's total budget sets a maximum cost 36 and network capacity imposes a maximum bandwidth 21, targeting the selection of impression quantities to maximize total engagement while respecting both financial and technical constraints.",
+    "data_template": {
+      "item_value": [
+        18,
+        12,
+        9,
+        7,
+        14,
+        16,
+        1,
+        16,
+        3,
+        3
+      ],
+      "item_weight": [
+        2,
+        5,
+        7,
+        1,
+        7,
+        10,
+        9,
+        10,
+        6,
+        3
+      ],
+      "item_volume": [
+        4,
+        2,
+        3,
+        4,
+        4,
+        5,
+        4,
+        5,
+        3,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 36,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 93,
+    "desc_merge": "A renewable energy company constructs a farm where each component type has an installation weight [1, 4, 4, 2, 3, 3, 4, 4, 9, 8], a land footprint [5, 4, 5, 2, 5, 1, 5, 3, 5, 1], and an energy output value [14, 11, 16, 12, 13, 7, 15, 14, 12, 14], with components available in unlimited quantities; the site's foundation strength limits total weight to 25 and available land area restricts total footprint to 21, seeking to install optimal component quantities to maximize total energy output within these physical constraints.",
+    "data_template": {
+      "item_value": [
+        14,
+        11,
+        16,
+        12,
+        13,
+        7,
+        15,
+        14,
+        12,
+        14
+      ],
+      "item_weight": [
+        1,
+        4,
+        4,
+        2,
+        3,
+        3,
+        4,
+        4,
+        9,
+        8
+      ],
+      "item_volume": [
+        5,
+        4,
+        5,
+        2,
+        5,
+        1,
+        5,
+        3,
+        5,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 25,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 94,
+    "desc_merge": "A library acquires digital resources where each resource type has a licensing fee [6, 3, 10, 3, 2, 8, 9, 9, 3, 9], a server storage space [1, 3, 4, 3, 5, 2, 1, 1, 2, 1], and a patron usage value [12, 18, 5, 14, 14, 16, 15, 10, 15, 2], with unlimited access licenses available per resource; the annual budget caps total fees at 37 and server infrastructure limits total storage to 13, aiming to purchase optimal resource quantities to maximize total patron value without exceeding financial or technical limits.",
+    "data_template": {
+      "item_value": [
+        12,
+        18,
+        5,
+        14,
+        14,
+        16,
+        15,
+        10,
+        15,
+        2
+      ],
+      "item_weight": [
+        6,
+        3,
+        10,
+        3,
+        2,
+        8,
+        9,
+        9,
+        3,
+        9
+      ],
+      "item_volume": [
+        1,
+        3,
+        4,
+        3,
+        5,
+        2,
+        1,
+        1,
+        2,
+        1
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 37,
+        "volume": 13
+      }
+    }
+  },
+  {
+    "prompt_index": 95,
+    "desc_merge": "An exhibition organizer needs to select decorative items and promotional materials for a trade show booth, where each item type has a weight [4, 3, 5, 7, 6, 10, 7, 8, 3, 1], a packing volume [4, 3, 5, 5, 5, 5, 4, 5, 4, 5], and an estimated promotional impact score [3, 8, 13, 9, 8, 20, 6, 15, 5, 17], with each item type available in unlimited quantities. The booth's structural integrity and allocated floor space impose maximum weight 32 and maximum volume 27 restrictions. The objective is to determine the optimal quantity of each item to maximize the total promotional impact of the booth setup while adhering to the physical constraints, ensuring an attractive and safe presentation.",
+    "data_template": {
+      "item_value": [
+        3,
+        8,
+        13,
+        9,
+        8,
+        20,
+        6,
+        15,
+        5,
+        17
+      ],
+      "item_weight": [
+        4,
+        3,
+        5,
+        7,
+        6,
+        10,
+        7,
+        8,
+        3,
+        1
+      ],
+      "item_volume": [
+        4,
+        3,
+        5,
+        5,
+        5,
+        5,
+        4,
+        5,
+        4,
+        5
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 32,
+        "volume": 27
+      }
+    }
+  },
+  {
+    "prompt_index": 96,
+    "desc_merge": "A chemical plant manager must decide the composition of a production batch from various raw chemicals, where each chemical has a weight [7, 2, 1, 6, 2, 10, 3, 2, 8, 9], a storage tank volume [3, 3, 4, 1, 2, 5, 5, 5, 5, 3], and a contribution to final product quality [10, 12, 12, 2, 5, 13, 19, 5, 16, 18], and each chemical can be used in any quantity. The reactor vessel has a maximum safe operating weight 30 and a maximum fill volume 21. The goal is to select the amounts of each chemical to blend in a single batch to maximize the overall product quality metric without exceeding the reactor's limitations, optimizing production efficiency and output consistency.",
+    "data_template": {
+      "item_value": [
+        10,
+        12,
+        12,
+        2,
+        5,
+        13,
+        19,
+        5,
+        16,
+        18
+      ],
+      "item_weight": [
+        7,
+        2,
+        1,
+        6,
+        2,
+        10,
+        3,
+        2,
+        8,
+        9
+      ],
+      "item_volume": [
+        3,
+        3,
+        4,
+        1,
+        2,
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 30,
+        "volume": 21
+      }
+    }
+  },
+  {
+    "prompt_index": 97,
+    "desc_merge": "A streaming service must allocate server storage for different types of media files, where each file type has a data size [3, 1, 2, 2, 9, 4, 6, 9, 6, 7], a required processing memory footprint [2, 5, 1, 5, 2, 5, 5, 3, 1, 4], and a user demand-based value [3, 4, 2, 15, 8, 15, 6, 8, 20, 11], and any number of files of each type can be stored. The server cluster has a total storage capacity 29 and a total available RAM limit 19. The problem is to determine the number of files of each type to store to maximize the total value derived from user access while respecting both storage and memory constraints, ensuring optimal service performance and content availability.",
+    "data_template": {
+      "item_value": [
+        3,
+        4,
+        2,
+        15,
+        8,
+        15,
+        6,
+        8,
+        20,
+        11
+      ],
+      "item_weight": [
+        3,
+        1,
+        2,
+        2,
+        9,
+        4,
+        6,
+        9,
+        6,
+        7
+      ],
+      "item_volume": [
+        2,
+        5,
+        1,
+        5,
+        2,
+        5,
+        5,
+        3,
+        1,
+        4
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 29,
+        "volume": 19
+      }
+    }
+  },
+  {
+    "prompt_index": 98,
+    "desc_merge": "A renewable energy company is installing components for a solar farm, where each component type (e.g., panel, inverter) has a weight [2, 2, 5, 10, 8, 8, 10, 3, 6, 5], a spatial footprint [3, 1, 3, 4, 1, 3, 5, 5, 2, 3], and an energy generation capacity value [2, 14, 5, 6, 7, 12, 6, 13, 15, 19], and components are available without quantity restrictions. The installation site has a maximum ground load-bearing capacity 35 and a total available area 18. The objective is to select the quantities of each component to install to maximize the total energy generation potential of the farm without surpassing the site's weight and area limits, ensuring structural safety and land use efficiency.",
+    "data_template": {
+      "item_value": [
+        2,
+        14,
+        5,
+        6,
+        7,
+        12,
+        6,
+        13,
+        15,
+        19
+      ],
+      "item_weight": [
+        2,
+        2,
+        5,
+        10,
+        8,
+        8,
+        10,
+        3,
+        6,
+        5
+      ],
+      "item_volume": [
+        3,
+        1,
+        3,
+        4,
+        1,
+        3,
+        5,
+        5,
+        2,
+        3
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 35,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 99,
+    "desc_merge": "A game developer is creating asset bundles for a mobile game download, where each asset type (e.g., texture, sound file) has a download size [8, 4, 4, 9, 5, 9, 6, 7, 7, 9], a decompressed runtime memory usage [3, 1, 2, 5, 1, 3, 4, 5, 5, 2], and a player engagement value [14, 9, 8, 17, 4, 11, 16, 11, 15, 15], and assets can be included in multiple copies. The target mobile device has a maximum download size limit per bundle 40 and a maximum RAM allocation for assets 18. The goal is to choose the number of each asset type to include in a bundle to maximize the total player engagement value while keeping the bundle within the device's download and memory constraints, optimizing the user experience and performance.",
+    "data_template": {
+      "item_value": [
+        14,
+        9,
+        8,
+        17,
+        4,
+        11,
+        16,
+        11,
+        15,
+        15
+      ],
+      "item_weight": [
+        8,
+        4,
+        4,
+        9,
+        5,
+        9,
+        6,
+        7,
+        7,
+        9
+      ],
+      "item_volume": [
+        3,
+        1,
+        2,
+        5,
+        1,
+        3,
+        4,
+        5,
+        5,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 40,
+        "volume": 18
+      }
+    }
+  },
+  {
+    "prompt_index": 100,
+    "desc_merge": "An urban gardening service must decide how many units of each supply type (e.g., bags of soil, fertilizer, pots) to deliver to community gardens, where each supply has a weight [7, 9, 1, 2, 4, 5, 1, 10, 8, 8], a storage volume [4, 2, 3, 1, 4, 5, 4, 4, 1, 2], and a utility value [1, 9, 15, 7, 6, 18, 3, 7, 14, 20] for garden health. The delivery vehicle has a strict maximum weight capacity of 33 and a cargo space volume limit of 18. The objective is to select the optimal quantity of each supply to maximize the total utility delivered to the gardens, ensuring the vehicle is loaded efficiently without exceeding its physical constraints, which is vital for supporting urban agriculture initiatives.",
+    "data_template": {
+      "item_value": [
+        1,
+        9,
+        15,
+        7,
+        6,
+        18,
+        3,
+        7,
+        14,
+        20
+      ],
+      "item_weight": [
+        7,
+        9,
+        1,
+        2,
+        4,
+        5,
+        1,
+        10,
+        8,
+        8
+      ],
+      "item_volume": [
+        4,
+        2,
+        3,
+        1,
+        4,
+        5,
+        4,
+        4,
+        1,
+        2
+      ],
+      "item_limit": [
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000,
+        1000000000
+      ],
+      "knapsack_capacity": {
+        "weight": 33,
+        "volume": 18
+      }
+    }
+  }
+]
