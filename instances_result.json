@@ -1,0 +1,115 @@
+[{
+    "Problem_type": "VRP",
+    "Instance": "A farming cooperative must deliver agricultural supplies from the central warehouse at [0.04399985074996948, 0.7681611776351929] to 5 farms scattered across rural areas using trucks with a [1.0] ton capacity. Each farm requires a specific amount of supplies ([0.1666666716337204, 0.10000000149011612, 0.23333333432674408, 0.10000000149011612, 0.06666667014360428]) and is located at [[0.534762978553772, 0.9705751538276672], [0.7859156727790833, 0.39296025037765503], [0.3597840666770935, 0.3227270245552063], [0.6016074419021606, 0.3110591769218445], [0.9469161033630371, 0.6398118734359741]], which includes the coordinate information of each customer. These supplies must be transported from the warehouse. The cooperative aims to design delivery routes that maximize efficiency by ensuring no truck exceeds its weight limit while serving all farms. The goal is to minimize fuel costs and reduce travel time, ensuring timely supply delivery and cost-effective operations.",
+    "Solution": "[[0, 1, 5, 2, 4, 3, 0]]",
+     "obj":2.3438511317206414
+},
+{
+    "Problem_type": "BPP",
+    "Instance": "Logistics companies face the challenge of placing various packages and boxes ([[5, 4], [4, 4], [9, 7], [6, 6], [3, 5], [6, 6], [1, 4], [9, 3], [7, 6], [7, 4]]) onto rectangular pallets ([10, 10]). The goal is to maximize space utilization on each pallet by arranging the items optimally, considering only their length and width, to reduce transportation costs and minimize unused space. Efficient packing reduces the number of pallets needed and lowers fuel consumption during transport.",
+    "Solution": "[{'bin_id': 3, 'items': [{'item_id': 4, 'original_size': [6, 6], 'placed_size': [6.0, 6.0], 'position': [0.0, 4.0], 'orientation_index': 0}, {'item_id': 10, 'original_size': [7, 4], 'placed_size': [7.0, 4.0], 'position': [0.0, 0.0], 'orientation_index': 0}]}, {'bin_id': 8, 'items': [{'item_id': 3, 'original_size': [9, 7], 'placed_size': [9.0, 7.0], 'position': [1.0, 3.0], 'orientation_index': 0}, {'item_id': 7, 'original_size': [1, 4], 'placed_size': [1.0, 4.0], 'position': [0.0, 3.0], 'orientation_index': 0}]}, {'bin_id': 9, 'items': [{'item_id': 1, 'original_size': [5, 4], 'placed_size': [5.0, 4.0], 'position': [0.0, 0.0], 'orientation_index': 0}, {'item_id': 2, 'original_size': [4, 4], 'placed_size': [4.0, 4.0], 'position': [6.0, 0.0], 'orientation_index': 0}, {'item_id': 6, 'original_size': [6, 6], 'placed_size': [6.0, 6.0], 'position': [0.0, 4.0], 'orientation_index': 0}]}, {'bin_id': 10, 'items': [{'item_id': 5, 'original_size': [3, 5], 'placed_size': [3.0, 5.0], 'position': [0.0, 4.0], 'orientation_index': 0}, {'item_id': 8, 'original_size': [9, 3], 'placed_size': [9.0, 3.0], 'position': [0.0, 0.0], 'orientation_index': 0}, {'item_id': 9, 'original_size': [7, 6], 'placed_size': [7.0, 6.0], 'position': [3.0, 3.0], 'orientation_index': 0}]}]",
+     "obj":4
+},
+{
+    "Problem_type": "GP",
+    "Instance": "In blockchain analysis, the [(0, 1), (0, 2), (1, 2), (3, 4), (3, 5), (3, 8), (3, 7), (4, 5), (4, 8), (5, 6), (5, 7), (5, 8), (6, 7), (6, 8), (7, 8)] represents transactional relationships between wallet addresses, where 1 indicates a direct transfer between wallets and 0 means no recorded interaction. The task is to uncover the largest group of wallets that have all transacted with each other, potentially exposing coordinated trading rings or illicit financial networks that regulators may investigate.",
+    "Solution": "[[3, 5, 7, 8]]",
+     "obj":4
+},
+{
+    "Problem_type": "MSP",
+    "Instance": "A car manufacturer assembles 4 transmission components across 1 robotic workstations. Tasks include gear alignment, clutch installation, and hydraulic system integration, with strict dependencies — e.g., lubrication cannot begin before gears are mounted. The precedence constraints are outlined in [[['job_0', 'op_0'], ['job_2', 'op_2']]], and task durations are specified in {'job_0': {'op_0': {'machine_0': [1, 'machine_0']}}, 'job_1': {'op_1': {'machine_0': [2, 'machine_0']}}, 'job_2': {'op_2': {'machine_0': [3, 'machine_0']}}, 'job_3': {'op_3': {'machine_0': [3, 'machine_0']}}}. The goal is to minimize the makespan of the transmission production line.",
+    "Solution": [
+        {
+          "schedule": [
+            {
+              "job": 0,
+              "tasks": [
+                {
+                  "duration": 5,
+                  "machine": 0,
+                  "start": 3,
+                  "task": 0
+                },
+                {
+                  "duration": 5,
+                  "machine": 1,
+                  "start": 8,
+                  "task": 1
+                }
+              ]
+            },
+            {
+              "job": 1,
+              "tasks": [
+                {
+                  "duration": 4,
+                  "machine": 0,
+                  "start": 13,
+                  "task": 3
+                },
+                {
+                  "duration": 2,
+                  "machine": 1,
+                  "start": 0,
+                  "task": 2
+                }
+              ]
+            },
+            {
+              "job": 2,
+              "tasks": [
+                {
+                  "duration": 5,
+                  "machine": 0,
+                  "start": 8,
+                  "task": 4
+                },
+                {
+                  "duration": 4,
+                  "machine": 1,
+                  "start": 13,
+                  "task": 5
+                }
+              ]
+            },
+            {
+              "job": 3,
+              "tasks": [
+                {
+                  "duration": 3,
+                  "machine": 0,
+                  "start": 0,
+                  "task": 6
+                },
+                {
+                  "duration": 3,
+                  "machine": 1,
+                  "start": 3,
+                  "task": 7
+                }
+              ]
+            }
+          ]
+        }
+      ]
+},
+{
+    "Problem_type": "KP",
+    "Instance":  "A cloud provider needs to distribute server resources (30) among competing customer requests, each requiring computational power [4, 4, 7, 3, 7, 9, 1, 6, 4, 5] and promising revenue [8, 9, 1, 12, 9, 17, 13, 13, 12, 5]. The goal is to maximize total revenue by selecting the most profitable requests while adhering to resource constraints, ensuring efficient utilization of infrastructure.",
+    "Solution": [
+        0,
+        1,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+     "obj": 76.0,
+     "used_weight": 27.0
+}
+]
