@@ -1,0 +1,7008 @@
+[
+  {
+    "prompt_index": 1,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 8,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 13,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 8,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 13,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 3,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 2,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 5,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 8,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 10,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 11.0
+  },
+  {
+    "prompt_index": 3,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 14,
+                "task": 3
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 9,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 9,
+                "task": 7
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 5,
+                "task": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 19.0
+  },
+  {
+    "prompt_index": 4,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 8,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 2,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 7,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 4,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 12,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 13,
+                "task": 8
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 7,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 5,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 6,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 3,
+                "task": 1
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 12,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 14,
+                "task": 5
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 7,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 14,
+                "task": 8
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 7,
+                "task": 7
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 3,
+                "task": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 6,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 7.0
+  },
+  {
+    "prompt_index": 7,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 5,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 12,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 7,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 5,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 8
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 6,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 8,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 7,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 6,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 1,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 9.0
+  },
+  {
+    "prompt_index": 9,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 8,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 13,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 5,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 3,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 8,
+                "task": 7
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 9,
+                "task": 8
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 13,
+                "task": 11
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 5,
+                "task": 10
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 0,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 16.0
+  },
+  {
+    "prompt_index": 10,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 12,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 10,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 8,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 18,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 16,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 11,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 4,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 8,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 5,
+                "task": 10
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 2,
+                "task": 9
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 3,
+                "task": 13
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 19,
+                "task": 14
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 0,
+                "task": 12
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 20.0
+  },
+  {
+    "prompt_index": 11,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 12,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 1,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 3,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 4,
+                "task": 6
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 10,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 8
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 8,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 12,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 17,
+                "task": 5
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 7,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 13,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 10,
+                "task": 7
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 5,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 17,
+                "task": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 13,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 4,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 2,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 8,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 4,
+                "task": 6
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 9,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 13,
+                "task": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 14,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 8,
+                "task": 2
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 5,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 3,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 1,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 11.0
+  },
+  {
+    "prompt_index": 15,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 10,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 17,
+                "task": 5
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 11,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 2,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 14,
+                "task": 8
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 9
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 12,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 7,
+                "task": 10
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 14,
+                "task": 14
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 9,
+                "task": 13
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 4,
+                "task": 12
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 19.0
+  },
+  {
+    "prompt_index": 16,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 7,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 5,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 8,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 17,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 13,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 8,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 18,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 3,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 8,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 10,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 1,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 9,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 3,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 9
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 8,
+                "task": 10
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 12,
+                "task": 11
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 19,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 10,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 13,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 10,
+                "task": 5
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 5,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 7,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 20,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 13,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 6,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 6,
+                "task": 5
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 11,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 6,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 21,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 7,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 7,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 6
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 9,
+                "task": 8
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 7,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 22,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 6,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 1,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 8,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 7,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 10,
+                "task": 7
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 4,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 8,
+                "task": 8
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 13,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 23,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 7,
+                "task": 1
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 3,
+                "task": 2
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 7,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 12,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 3,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 5,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 24,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 4.0
+  },
+  {
+    "prompt_index": 25,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 9,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 10.0
+  },
+  {
+    "prompt_index": 26,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 1,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 27,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 1,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 28,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 4,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 29,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 9,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 14,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 30,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 1,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 31,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 6,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 14,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 10,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 2,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 32,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 12,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 7,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 2,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 33,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 7,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 13,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 5,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 12,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 7
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 10,
+                "task": 9
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 16.0
+  },
+  {
+    "prompt_index": 34,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 7,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 15,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 4,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 5,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 10,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 10,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 15,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 16,
+                "task": 9
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 35,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 11,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 4,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 36,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 7,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 37,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 9,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 13,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 3,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 38,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 8,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 4,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 12,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 8,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 3,
+                "task": 5
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 12,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 8
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 3,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 39,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 5,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 11.0
+  },
+  {
+    "prompt_index": 40,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 1,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 3
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 4,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 9.0
+  },
+  {
+    "prompt_index": 41,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 6,
+                "task": 2
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 1,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 11,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 1,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 9,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 12.0
+  },
+  {
+    "prompt_index": 42,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 1,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 7.0
+  },
+  {
+    "prompt_index": 43,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 12,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 16.0
+  },
+  {
+    "prompt_index": 44,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 6,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 1,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 11.0
+  },
+  {
+    "prompt_index": 45,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 8,
+                "task": 1
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 9,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 5,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 5
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 9,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 9
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 1,
+                "task": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 46,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 2,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 2,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 47,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 6,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 4,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 48,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 8,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 4,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 4,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 11.0
+  },
+  {
+    "prompt_index": 49,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 10,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 9,
+                "task": 2
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 14,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 5
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 6
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 10,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 8
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 18,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 23.0
+  },
+  {
+    "prompt_index": 50,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 10,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 1,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 8,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 2,
+                "task": 7
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 3,
+                "task": 8
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 10,
+                "task": 10
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 15,
+                "task": 11
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 4,
+                "task": 9
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 12
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 6,
+                "task": 13
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 12,
+                "task": 14
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 51,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 10.0
+  },
+  {
+    "prompt_index": 52,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 12,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 5,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 7,
+                "task": 5
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 2,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 53,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 3,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 54,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 14,
+                "task": 2
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 4,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 10,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 10,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 7,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 12,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 4,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 4,
+                "task": 10
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 8,
+                "task": 11
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 0,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 55,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 8,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 6,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 56,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 9,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 16,
+                "task": 8
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 12,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 10
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 9
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 5,
+                "task": 11
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 57,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 4,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 58,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 10,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 13,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 5,
+                "task": 5
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 14,
+                "task": 7
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 10,
+                "task": 6
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 59,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 7.0
+  },
+  {
+    "prompt_index": 60,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 5,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 2,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 8,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 1,
+                "task": 6
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 6,
+                "task": 7
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 11,
+                "task": 8
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 4,
+                "task": 9
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 11,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 8,
+                "task": 10
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 61,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 3,
+                "task": 1
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 6,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 5,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 9.0
+  },
+  {
+    "prompt_index": 62,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 8,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 3,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 11,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 3,
+                "task": 7
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 6,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 2,
+                "task": 9
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 8,
+                "task": 10
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 12.0
+  },
+  {
+    "prompt_index": 63,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 64,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 7,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 1,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 8.0
+  },
+  {
+    "prompt_index": 65,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 12,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 4,
+                "task": 4
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 9,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 7,
+                "task": 6
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 12,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 66,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 12,
+                "task": 2
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 8,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 1,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 15,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 6
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 16,
+                "task": 8
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 11,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 9
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 12,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 8,
+                "task": 10
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 3,
+                "task": 13
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 5,
+                "task": 14
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 0,
+                "task": 12
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 19.0
+  },
+  {
+    "prompt_index": 67,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 11,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 15,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 3,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 15,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 7,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 7,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 4,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 6,
+                "task": 10
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 12,
+                "task": 11
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 0,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 18.0
+  },
+  {
+    "prompt_index": 68,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 5,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 7.0
+  },
+  {
+    "prompt_index": 69,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 70,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 10,
+                "task": 5
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 71,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 7,
+                "task": 1
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 2,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 15,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 1,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 7,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 10,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 1,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 5,
+                "task": 8
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 13,
+                "task": 10
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 10,
+                "task": 9
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 19,
+                "task": 11
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 20.0
+  },
+  {
+    "prompt_index": 72,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 2,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 73,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 2,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 3,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 74,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 11,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 3,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 9,
+                "task": 3
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 10,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 11,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 3,
+                "task": 8
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 1,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 11
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 9
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 6,
+                "task": 10
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 12.0
+  },
+  {
+    "prompt_index": 75,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 6,
+                "task": 2
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 2,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 6,
+                "task": 5
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 11,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 6,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 12.0
+  },
+  {
+    "prompt_index": 76,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 12,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 3,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 77,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 8,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 4,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 1,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 11.0
+  },
+  {
+    "prompt_index": 78,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 10,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 5,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 4
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 7,
+                "task": 5
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 12,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 10,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 7,
+                "task": 10
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 12,
+                "task": 11
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 3,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 79,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 4.0
+  },
+  {
+    "prompt_index": 80,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 4,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 10,
+                "task": 3
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 6,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 8,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 4,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 9,
+                "task": 7
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 81,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 12,
+                "task": 2
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 10,
+                "task": 1
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 6,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 10,
+                "task": 5
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 12,
+                "task": 8
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 3,
+                "task": 7
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 7,
+                "task": 10
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 11,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 0,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 15.0
+  },
+  {
+    "prompt_index": 82,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 8,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 3,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 5
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 0,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 83,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 5,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 6,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 9.0
+  },
+  {
+    "prompt_index": 84,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 8,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 1,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 10.0
+  },
+  {
+    "prompt_index": 85,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 9,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 8,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 0,
+                "task": 3
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 2,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 6,
+                "task": 8
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 2,
+                "task": 7
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 1,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 3,
+                "task": 9
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 6,
+                "task": 10
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 12,
+                "task": 11
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 86,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 17,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 9,
+                "task": 3
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 4,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 15,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 8,
+                "task": 4
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 19,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 12,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 11,
+                "task": 9
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 0,
+                "task": 8
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 20.0
+  },
+  {
+    "prompt_index": 87,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 4,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 13,
+                "task": 2
+              },
+              {
+                "duration": 3,
+                "machine": 2,
+                "start": 9,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 13,
+                "task": 5
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 12,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 2,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 7
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 4,
+                "task": 8
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 10
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 1,
+                "task": 9
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 12,
+                "task": 11
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 88,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 2,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 6.0
+  },
+  {
+    "prompt_index": 89,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 10.0
+  },
+  {
+    "prompt_index": 90,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 11,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 7,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 2,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 91,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 5.0
+  },
+  {
+    "prompt_index": 92,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 3,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 7.0
+  },
+  {
+    "prompt_index": 93,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 12,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 7,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 3,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 94,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 5,
+                "task": 1
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 11,
+                "task": 2
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 2,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 3,
+                "task": 4
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 1,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 7,
+                "task": 7
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 12,
+                "task": 8
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 9
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 6,
+                "task": 11
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 5,
+                "task": 10
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 95,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 5,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 0,
+                "task": 1
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 10.0
+  },
+  {
+    "prompt_index": 96,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 4,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 9,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 5,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 4,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 12,
+                "task": 4
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 17.0
+  },
+  {
+    "prompt_index": 97,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 0
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 4,
+                "task": 1
+              },
+              {
+                "duration": 1,
+                "machine": 2,
+                "start": 12,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 11,
+                "task": 5
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 10,
+                "task": 4
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 5,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 5,
+                "task": 7
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 11,
+                "task": 8
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 0,
+                "task": 6
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 0,
+                "task": 9
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 2,
+                "task": 10
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 10,
+                "task": 11
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 98,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 12,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 8,
+                "task": 2
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 4,
+                "machine": 0,
+                "start": 4,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 14.0
+  },
+  {
+    "prompt_index": 99,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 0,
+                "task": 0
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 3,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 5,
+                "machine": 0,
+                "start": 3,
+                "task": 2
+              },
+              {
+                "duration": 5,
+                "machine": 1,
+                "start": 8,
+                "task": 3
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  },
+  {
+    "prompt_index": 100,
+    "solution": [
+      {
+        "schedule": [
+          {
+            "job": 0,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 10,
+                "task": 2
+              },
+              {
+                "duration": 4,
+                "machine": 1,
+                "start": 1,
+                "task": 0
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 6,
+                "task": 1
+              }
+            ]
+          },
+          {
+            "job": 1,
+            "tasks": [
+              {
+                "duration": 3,
+                "machine": 0,
+                "start": 4,
+                "task": 4
+              },
+              {
+                "duration": 2,
+                "machine": 1,
+                "start": 9,
+                "task": 5
+              },
+              {
+                "duration": 4,
+                "machine": 2,
+                "start": 0,
+                "task": 3
+              }
+            ]
+          },
+          {
+            "job": 2,
+            "tasks": [
+              {
+                "duration": 2,
+                "machine": 0,
+                "start": 2,
+                "task": 7
+              },
+              {
+                "duration": 1,
+                "machine": 1,
+                "start": 0,
+                "task": 6
+              },
+              {
+                "duration": 5,
+                "machine": 2,
+                "start": 8,
+                "task": 8
+              }
+            ]
+          },
+          {
+            "job": 3,
+            "tasks": [
+              {
+                "duration": 1,
+                "machine": 0,
+                "start": 9,
+                "task": 11
+              },
+              {
+                "duration": 3,
+                "machine": 1,
+                "start": 6,
+                "task": 10
+              },
+              {
+                "duration": 2,
+                "machine": 2,
+                "start": 4,
+                "task": 9
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "obj": 13.0
+  }
+]
